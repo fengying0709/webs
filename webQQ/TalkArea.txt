@@ -1,0 +1,617 @@
+	<div class="TalkArea">
+		<div class="TalkTop">
+			<div class="TTTap" href="#">
+				<a href="#"></a>
+			</div>
+			<span class="TTName">Clearlove</span>
+			<a class="TTClose" href="#">关闭</a>
+		</div>
+		<div class="TalkContent">
+			<ul class="TCTap" isshow="false">
+				<li class="TCTapLi">
+					<a class="TCTPic t01"></a>
+					<a class="TCTWord">群成员</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t02"></a>
+					<a class="TCTWord">群资料</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t03"></a>
+					<a class="TCTWord">聊天记录</a>
+				</li>
+			</ul>
+		</div>
+		<div class="TalkBottom">
+			<div class="TBFace">
+				<a class="TBFacePic" href="#"></a>
+			</div>
+			<textarea class="TBInput"></textarea>
+			<button class="TBBtn">
+				<span>发送</span>
+			</button>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***********************************修改后***********************************************
+	<div id="'+ talkid +'"  class="TalkArea">
+		<div class="TalkTop">
+			<div class="TTTap" href="#">
+				<a href="#"></a>
+			</div>
+			<span class="TTName">'+ cAname +'</span>
+			<a class="TTClose" href="#">关闭</a>
+		</div>
+		<div class="TalkContent">
+			<ul class="TCTap" isshow="false">
+				<li class="TCTapLi">
+					<a class="TCTPic t01"></a>
+					<a class="TCTWord">群成员</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t02"></a>
+					<a class="TCTWord">群资料</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t03"></a>
+					<a class="TCTWord">聊天记录</a>
+				</li>
+			</ul>
+		
+			<div class="TalkBottomArea">
+
+				<!-- 聊天内容区域 -->
+
+				<div class="TalkDesContent">
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">你是我的小丫小苹果</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">怎么爱你都不嫌多</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">红红的小脸儿温暖我的心窝，点亮我生命的火火火火火火火！.........</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- 聊天内容区域 end-->
+
+				<!-- 聊天框底部 -->
+				<div class="TalkBottom">
+					<div class="TBFace">
+						<a class="TBFacePic" href="#"></a>
+					</div>
+					<input class="TBInput" value=""/>
+					<button class="TBBtn">
+						<span>发送</span>
+					</button>
+				</div>
+				<!-- 聊天框底部 end -->
+
+				<!-- 聊天表情 -->
+				<div isshow="no" class="qqimages">
+					<div class="qqimagesArea qqimagesA01">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="闭嘴"></li>
+							<li class="qqimageEve" title="睡"></li>
+							<li class="qqimageEve" title="大哭"></li>
+							<li class="qqimageEve" title="尴尬"></li>
+							<li class="qqimageEve" title="发怒"></li>
+							<li class="qqimageEve" title="调皮"></li>
+							<li class="qqimageEve" title="龇牙"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="惊讶"></li>
+							<li class="qqimageEve" title="难过"></li>
+							<li class="qqimageEve" title="酷"></li>
+							<li class="qqimageEve" title="冷汗"></li>
+							<li class="qqimageEve" title="抓狂"></li>
+							<li class="qqimageEve" title="吐"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA02 disnone">
+						<ul> 
+							<li class="qqimageEve" title="偷笑"></li>
+							<li class="qqimageEve" title="可爱"></li>
+							<li class="qqimageEve" title="白眼"></li>
+							<li class="qqimageEve" title="傲慢"></li>
+							<li class="qqimageEve" title="饥饿"></li>
+							<li class="qqimageEve" title="困"></li>
+							<li class="qqimageEve" title="惊恐"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="流汗"></li>
+							<li class="qqimageEve" title="憨笑"></li>
+							<li class="qqimageEve" title="大兵"></li>
+							<li class="qqimageEve" title="奋斗"></li>
+							<li class="qqimageEve" title="咒骂"></li>
+							<li class="qqimageEve" title="疑问"></li>
+							<li class="qqimageEve" title="嘘"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="晕"></li>
+							<li class="qqimageEve" title="折磨"></li>
+							<li class="qqimageEve" title="衰"></li>
+							<li class="qqimageEve" title="骷髅"></li>
+							<li class="qqimageEve" title="敲打"></li>
+							<li class="qqimageEve" title="再见"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA03 disnone">
+						<ul> 
+							<li class="qqimageEve" title="擦汗"></li>
+							<li class="qqimageEve" title="抠鼻"></li>
+							<li class="qqimageEve" title="鼓掌"></li>
+							<li class="qqimageEve" title="糗大了"></li>
+							<li class="qqimageEve" title="坏笑"></li>
+							<li class="qqimageEve" title="左哼哼"></li>
+							<li class="qqimageEve" title="右哼哼"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="哈欠"></li>
+							<li class="qqimageEve" title="鄙视"></li>
+							<li class="qqimageEve" title="委屈"></li>
+							<li class="qqimageEve" title="快哭了"></li>
+							<li class="qqimageEve" title="阴险"></li>
+							<li class="qqimageEve" title="亲亲"></li>
+							<li class="qqimageEve" title="吓"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="可怜"></li>
+							<li class="qqimageEve" title="菜刀"></li>
+							<li class="qqimageEve" title="西瓜"></li>
+							<li class="qqimageEve" title="啤酒"></li>
+							<li class="qqimageEve" title="篮球"></li>
+							<li class="qqimageEve" title="乒乓"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA04 disnone">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA05 disnone">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA06 disnone">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+					</div>
+
+
+
+					<div class="qqimagesSelect">
+						<ul>
+							<li><a changecss="qqimagesA01" class="qqISIcon qqISIconClick"></a> </li>
+							<li><a changecss="qqimagesA02" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA03" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA04" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA05" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA06" class="qqISIcon"></a> </li>
+						</ul>
+					</div>
+				</div>
+				<!-- 聊天表情 end-->
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+<div class="TalkArea">
+		<div class="TalkTop">
+			<div class="TTTap" href="#">
+				<a href="#"></a>
+			</div>
+			<span class="TTName">Clearlove</span>
+			<a class="TTClose" href="#">关闭</a>
+		</div>
+		<div class="TalkContent">
+			<ul class="TCTap" isshow="false">
+				<li class="TCTapLi">
+					<a class="TCTPic t01"></a>
+					<a class="TCTWord">群成员</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t02"></a>
+					<a class="TCTWord">群资料</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t03"></a>
+					<a class="TCTWord">聊天记录</a>
+				</li>
+			</ul>
+		
+			<div class="TalkBottomArea">
+
+				<!-- 聊天内容区域 -->
+
+				<div class="TalkDesContent">
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">你是我的小丫小苹果</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">怎么爱你都不嫌多</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">红红的小脸儿温暖我的心窝，点亮我生命的火火火火火火火！.........</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- 聊天内容区域 end-->
+
+				<!-- 聊天框底部 -->
+				<div class="TalkBottom">
+					<div class="TBFace">
+						<a class="TBFacePic" href="#"></a>
+					</div>
+					<textarea class="TBInput"></textarea>
+					<button class="TBBtn">
+						<span>发送</span>
+					</button>
+				</div>
+				<!-- 聊天框底部 end -->
+
+				<!-- 聊天表情 -->
+				<div isshow="no" class="qqimages">
+					<div class="qqimagesArea qqimagesA01">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="闭嘴"></li>
+							<li class="qqimageEve" title="睡"></li>
+							<li class="qqimageEve" title="大哭"></li>
+							<li class="qqimageEve" title="尴尬"></li>
+							<li class="qqimageEve" title="发怒"></li>
+							<li class="qqimageEve" title="调皮"></li>
+							<li class="qqimageEve" title="龇牙"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="惊讶"></li>
+							<li class="qqimageEve" title="难过"></li>
+							<li class="qqimageEve" title="酷"></li>
+							<li class="qqimageEve" title="冷汗"></li>
+							<li class="qqimageEve" title="抓狂"></li>
+							<li class="qqimageEve" title="吐"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA02 disnone">
+						<ul> 
+							<li class="qqimageEve" title="偷笑"></li>
+							<li class="qqimageEve" title="可爱"></li>
+							<li class="qqimageEve" title="白眼"></li>
+							<li class="qqimageEve" title="傲慢"></li>
+							<li class="qqimageEve" title="饥饿"></li>
+							<li class="qqimageEve" title="困"></li>
+							<li class="qqimageEve" title="惊恐"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="流汗"></li>
+							<li class="qqimageEve" title="憨笑"></li>
+							<li class="qqimageEve" title="大兵"></li>
+							<li class="qqimageEve" title="奋斗"></li>
+							<li class="qqimageEve" title="咒骂"></li>
+							<li class="qqimageEve" title="疑问"></li>
+							<li class="qqimageEve" title="嘘"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="晕"></li>
+							<li class="qqimageEve" title="折磨"></li>
+							<li class="qqimageEve" title="衰"></li>
+							<li class="qqimageEve" title="骷髅"></li>
+							<li class="qqimageEve" title="敲打"></li>
+							<li class="qqimageEve" title="再见"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA03 disnone">
+						<ul> 
+							<li class="qqimageEve" title="擦汗"></li>
+							<li class="qqimageEve" title="抠鼻"></li>
+							<li class="qqimageEve" title="鼓掌"></li>
+							<li class="qqimageEve" title="糗大了"></li>
+							<li class="qqimageEve" title="坏笑"></li>
+							<li class="qqimageEve" title="左哼哼"></li>
+							<li class="qqimageEve" title="右哼哼"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="哈欠"></li>
+							<li class="qqimageEve" title="鄙视"></li>
+							<li class="qqimageEve" title="委屈"></li>
+							<li class="qqimageEve" title="快哭了"></li>
+							<li class="qqimageEve" title="阴险"></li>
+							<li class="qqimageEve" title="亲亲"></li>
+							<li class="qqimageEve" title="吓"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="可怜"></li>
+							<li class="qqimageEve" title="菜刀"></li>
+							<li class="qqimageEve" title="西瓜"></li>
+							<li class="qqimageEve" title="啤酒"></li>
+							<li class="qqimageEve" title="篮球"></li>
+							<li class="qqimageEve" title="乒乓"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA04 disnone">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA05 disnone">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA06 disnone">
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="微笑"></li>
+							<li class="qqimageEve" title="撇嘴"></li>
+							<li class="qqimageEve" title="色"></li>
+							<li class="qqimageEve" title="发呆"></li>
+							<li class="qqimageEve" title="得意"></li>
+							<li class="qqimageEve" title="流泪"></li>
+							<li class="qqimageEve" title="害羞"></li>
+						</ul>
+					</div>
+
+
+
+					<div class="qqimagesSelect">
+						<ul>
+							<li><a changecss="qqimagesA01" class="qqISIcon qqISIconClick"></a> </li>
+							<li><a changecss="qqimagesA02" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA03" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA04" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA05" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA06" class="qqISIcon"></a> </li>
+						</ul>
+					</div>
+				</div>
+				<!-- 聊天表情 end-->
+
+			</div>
+		</div>
+	</div>
