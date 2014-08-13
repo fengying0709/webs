@@ -1,0 +1,108 @@
+*{margin: 0;  padding: 0;}
+ul,li{list-style: none; text-decoration: none;}
+img{border: 0;}
+
+
+#RConent:after{width: 0; height: 0; clear: both; display: block; content: "."; visibility: hidden;}
+
+
+#RHead{ width: 100%; min-width: 1300px; height: 72px; background-image: url("images/bg.png");}
+#RHContent{ width: 980px; height: 47px; margin: auto;}
+#PHCLogo{ width: 222px; height: 72px; display: block; background-image: url("images/logo_v6.png"); float: left;}
+#slogan{ width: 342px; height: 24px; background-image: url("images/slogan.png"); margin-left: 50px; margin-top: 25px; float: left;}
+#RHCWord{ display: inline-block; margin-top: 25px; float: right;}
+.RHCWA{ display: inline-block; height: 24px; font-size: 12px; color: rgb(206, 225, 238); float: left; padding: 0 10px 0 10px; line-height: 24px; text-decoration: none;}
+.more{ position: relative; padding-right: 20px;}
+.moreIcon{ position: absolute; background-image: url("images/ico_new.png"); background-position: -2px 0; display: block; width: 16px; height: 12px; top: 8px; left: 34px;}
+
+
+
+#RConent{ width: 980px; margin: auto; min-height: 700px; height: auto; display: block; padding-bottom: 20px;}
+#RCLogin{float: left; width: 220px; height: 692px; background-image: url("images/sidebar-bg.png"); background-repeat: no-repeat; background-color: #EBF2FA;box-shadow: 0px 1px 1px #CCC;}
+#RCLA{ width: 190px; height: 165px; padding: 35px 15px 15px 15px;}
+.RCLTXT{ width: 186px; height: 32px; border-radius: 3px; border: 1px solid #CCC; background-color: #FFF; margin-bottom: 15px;}
+.RCLTPic{ width: 25px; height: 25px; margin: 3px 0 0 5px; display: block; background-image: url("images/ico_new.png"); background-repeat: no-repeat; float: left;}
+.RCLTPic01{ background-position: 0 -85px;}
+.RCLTPic02{ background-position: 0 -115px;}
+.RCLTxtDes{ width: 150px; height: 32px; display: block; float: left; border: 0;}
+.RCLTExp{ width: 190px; height: 20px;font-size: 12px; line-height: 20px;}
+.RCLTBox{ float: left;font-size: 12px; line-height: 20px; margin-top: 2px; }
+.RCLTERember{ float: left;font-size: 12px; margin-left: 4px;}
+.RCLTEForget{ float: right;font-size: 12px; color: #005EAC; text-decoration: none;}
+.RCbtn{cursor: pointer; width: 190px; height: 35px; text-align: center; border: 0; background-image: url("images/btn.png"); font-size: 16px; font-family: "微软雅黑";}
+.btnlogin{ margin-top: 15px; margin-bottom: 15px;}
+#btnSignA{ padding: 15px 0; border-top:1px solid #CCC;}
+.btnSign{ background-position: 0 -38px;}
+.btnSpec{ background-image: url("images/student-enter.png"); background-size: 100% 100%; margin-top: 15px;}
+
+#RCRight{ width: 658px; height: 664px; float: left; margin: 32px 0 0 32px;}
+#RCRPic{display: block; width: 658px; height: 283px; background-image: url("../images/renren.jpg");}
+#introPhone{ width: 658px; height: 315px; margin-top: 20px;}
+.IPPic{ width: 266px; height: 307px; display: block; background-image: url("../images/phone-show.jpg"); float: left;}
+.IPRight{ width: 383px; height: 307px; float: left;}
+#IPRtop{ width: 383px; height: 90px; padding-top: 50px;}
+.IPBTPic{ width: 77px; height: 78px; display: block; background-image: url("../images/two-di-code-new.jpg"); float: left; margin-left: 10px;}
+.IPBTWord{ width: 290px; height: 78px; padding-left: 10px;}
+.IPBTWStrong{margin-bottom: 6px; width: 270px; display: inline-block; font-family: "Microsoft Yahei",Tahoma,Arial,Helvetica,Simsun,STHeiti; font-size: 24px;}
+.IPBTWSmall{width: 270px; display: inline-block; font-family: "Microsoft Yahei",Tahoma,Arial,Helvetica,Simsun,STHeiti; color: #A8A8A8; font-size: 14px; padding-left: 10px;}
+#twoBtn{ width: 380px; height: 48px; display: block; margin-top: 20px; padding-left: 10px;}
+.Tbtn01{ width: 143px; height: 40px; display: block; background-image: url("images/client-btn.jpg"); float: left; margin-right: 20px;}
+.Tbtn02{ width: 143px; height: 40px; display: block; background-image: url("images/client-btn.jpg"); background-position: -154px 0; float: left;}
+#IPRWindow{ display: block; width: 350px; height: 16px; margin-top: 20px; padding-left: 10px;}
+.IPRWLeft{ font-size: 12px; color: #888; float: left; font-family: "Microsoft Yahei",Tahoma,Arial,Helvetica,Simsun,STHeiti;}
+.IPRWRight{ font-size: 12px; padding-left: 20px; color: #005EAC;  font-family: "Microsoft Yahei",Tahoma,Arial,Helvetica,Simsun,STHeiti; background-image: url("images/win-sym.jpg"); background-position: 0 -22px; background-repeat: no-repeat; float: left;}
+.IPRWRight:hover{ text-decoration: underline;}
+#IPRBottom{ width: 383px; height: 16px; border-top: 1px solid #D6DFE4; margin-top: 35px; padding-left: 10px; padding-top: 13px;}
+.IPRBLi{font-size: 12px; padding-left: 20px; color: #005EAC;  font-family: "Microsoft Yahei",Tahoma,Arial,Helvetica,Simsun,STHeiti; float: left; text-decoration: none;}
+.IPRBLi:hover{ text-decoration: underline;}
+#RCRBottom{ width: 638px; height: 16px; padding: 10px; background-color: #F1F6F9; text-align: center; margin-top: 10px; cursor: pointer;}
+#RCRBottomA{ display: inline-block; height: 16px; margin: auto;}
+
+
+
+
+/*Hide*/
+#RCRHide{display: none; width: 658px; height: 1280px;margin-left: 32px; float: left;}
+#RCRHTop{ width: 638px; height: 14px; padding: 10px; background-color:  rgb(241, 246, 249); cursor: pointer;}
+#RCRHPic{display: block; margin: auto; width: 20px; height: 14px; background-image: url("images/ico_new.png"); background-position: 0 -65px;}
+.h1{ width: 100%; height: 40px; font-size: 32px; font-weight: bold; margin-bottom: 10px; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif; text-align: center;}
+#RCRHideArea{ width: 658px; height: 1243px; padding-top: 30px;}
+.c1{ text-align: center; color: #888; font-size: 16px; line-height: 20px; margin-bottom: 35px;}
+.RCRHDes{ width: 658px; height: 987px;}
+.RCRHDLeft{ width: 350px; height: 254px; padding: 30px 0 20px 0; float: left; border-top: 1px solid #DDD;}
+.RCRHDPic{ background-image: url("images/intro-ico-new.png"); display: block; width: 45px; height: 41px; margin-right: 20px; float: left;}
+.RCRHDPic02{background-position: 0 -40px; }
+.RCRHDPic03{background-position: 0 -80px; }
+.RCRHDPic04{background-position: 0 -120px; }
+.RCRHDPic05{background-position: 0 -160px; }
+.RCRHDPic06{background-position: 0 -200px; }
+.RCRHDPic07{background-position: 0 -240px; }
+
+
+
+.RCRHDLRight{ width: 230px; height: 239px; border-right: 1px solid #DDD; padding: 0 25px 15px 0; float: left;}
+.h2{ font-size: 18px; line-height: 22px; font-weight: bold;}
+.c2{ font-size: 14px; line-height: 24px; color: #666;}
+.p1 img{ display: block; height: 228px; height: 149px; margin-top: 10px;}
+.RCRHDRight{ width: 305px; height: 254px;padding: 30px 0 20px 0; float: left;border-top: 1px solid #DDD;}
+.RCRHDRRight{ width: 230px; height: 239px; padding: 0 0 15px 0; float: left;}  
+.RCRHDTop{ width: 658px; height: 200px; padding-bottom: 15px;}
+.RCRHDTopRight{ width: 301px; height: 183px; background-image: url("../images/renren.jpg"); background-size: 100% 100%; float: right;}
+.RCRHDTopLeftRight{ width: 230px; height: 183px; float: left;}
+#RCRHDTopLeftRightContent{margin-top: 20px;}
+
+
+#Footer{ width: 100%; height: 191px;}
+#FooterA{ width: 980px; height: 191px;margin: auto; border-top: 1px solid #CEE1EE;}
+#FATop{ width: 980px; height: 16px; margin-top: 10px;}
+#FATRight{ width: 813px; height: 16px; float: right; line-height: 16px;}
+.FATLeft{ display: inline-block; height: 16px; line-height: 16px; float: left; font-size: 12px; color: #808080;}
+.FATRLi{display: inline-block; height: 16px; color: #005EAC; font-size: 12px; border-right: 1px solid #AAA; padding: 0 5px 0 2px;}
+.FATRLiSpec{ border: 0;}
+#FABottom{ width: 964px; height: 65px; padding: 8px;margin: 15px auto; background-color: rgb(247, 247, 247); color: rgb(136, 136, 136);}
+.FABOne{ display: block; height: 16px; width: 630px; margin: auto; margin-bottom: 3px;}
+.FABTwo{ display: block; height: 16px; width: 540px; margin: auto; margin-bottom: 3px;}
+.FABOEve{display: inline-block; height: 16px; font-size: 12px; line-height: 16px; float: left;}
+.FABPic img{ width: 25px; height: 24px; display: block; float: left;}
+.FABThree{display: block; height: 24px; line-height: 24px; margin: auto; width: 860px;}
+.FABThree span{ height: 24px; line-height: 24px;}

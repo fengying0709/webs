@@ -1,0 +1,118 @@
+
+/*top*/
+#Top{position: fixed; width: 100%; height: 60px; background-color: #1A1A1A; z-index: 200;}
+#logo{ width: 55px; height: 55px; background-image: url("images/logo.png"); float: left; margin-left: 15px;}
+#TopChoice{cursor: pointer; padding: 10px 9px; float: left;  width: 200px; height: 14px; margin-top: 14px;  border-radius: 5px; background-color: #2B2B2B; margin-left: 15px;}
+#Purchase{cursor: pointer; position: absolute; left: 1100px; top:14px; background-image: linear-gradient(to bottom, #2A95C5, #21759B); background-color: #21759B; border-radius: 3px; padding: 8px 10px 7px 9px;}
+#Purchase a{display: block; width: 21px; height: 17px; float:left; background-image: url("images/purchase.png");}
+#Purchase span{display: inline-block; font-family:"Open Sans","sans-serif"; float: left; padding-left: 10px; height: 17px; display: inline-block; color: #FFF; font-weight: bold; font-size: 13px;}
+#Close{ cursor: pointer; padding: 8px 9px 7px 9px;position: absolute; left: 1250px; top: 14px; border-radius: 5px; background-color: #2B2B2B;}
+#Close a{display: block; width: 21px; height: 17px; float:left; background-image: url("images/cross.png"); background-repeat: no-repeat;}
+#Close span{display: inline-block; font-family:"Open Sans","sans-serif"; float: left; height: 17px; display: inline-block; color: #FFF; font-weight: bold; font-size: 13px;}
+#TCArea{float: left; width: 180px; font-family:"Open Sans","sans-serif"; height: 13px; display: block; color: #DFDFDF; font-weight: bold; font-size: 13px; line-height: 13px;}
+#TCAPic{ float: right; width: 12px; height: 9px;background-image: url("images/arrow.png"); background-repeat: no-repeat; float: left; margin-top: 4px;}
+
+/*top end*/
+
+
+#PicSlider{ width: 100%; min-width: 1300px; height: 625px; background-image: url("../images/slide3.jpg"); background-size: 100% 100%; position: relative;}
+#LeadBlock{ width: 100%; height: 374px; min-width: 1010px; background-color: #FAFAFA; padding: 50px 0 50px 0;}
+#LatestPosts{width: 100%; min-width: 1300px; height: 675px;}
+#Partners{width: 100%; min-width: 1300px; height: 330; background-color: #FAFAFA;} 
+#Projects{width: 100%; min-width: 1300px; height: 240px; padding: 40px 0 40px 0;}
+#FooterTop{width: 100%; min-width: 1300px; height: 190px; padding: 40px 0 40px 0; background-color: #2F2F2F;}
+#FooterBottom{width: 100%; min-width: 1300px; height: 23px; padding: 20px 0 20px 0; background-color: #292929;}
+#skinChange{ width: 36px; height: 40px; background-image: url("images/skinIcon.png"); display: block; position: absolute; top: 300px; background-repeat: no-repeat;  position: fixed; top: 200px; box-shadow: 2px 2px 2px #333; cursor: pointer;}
+
+
+/*#PicSlider*/
+#TitleArea{ width: 1080px; height: 112px; }
+#TAUp{ width: 1080px; height: 37px; margin: auto; background-color: #292929;position: absolute; top: 60px; left: 136px;}
+#TADown{  position: absolute; top: 97px; left: 136px; margin: auto; width: 1080px; min-width: 1080px; height: 75px; z-index: 100;background-color: rgba(255,255,255,0.9); border-bottom-right-radius: 5px; border-bottom-left-radius: 8px;}
+#TADownPic{ background-image: url("../images/Tlogo.png"); float: left; background-size: 100% 100%; background-repeat: no-repeat; display: block; width: 211px; height: 41px;margin-top: 20px; margin-left: 35px;}
+#TADMenu{ width: 622px; height: 75px; float: left; display: block; margin-left: 190px;}
+.TADMenuLi{display: inline-block; height: 75px; line-height: 75px; }
+.TADMenuLA{display: inline-block; height: 75px; font-size: 12px; float: left; font-weight: bold; font-family: "微软雅黑",Arial; color: #555; text-decoration: none; padding: 0 12px;}
+.TADMenuLAMore{}
+.TADMenuLAIcon{margin-left: 4px; background-image: url("images/arrow.png"); background-repeat: no-repeat; display: block; width: 12px; height: 9px; float: right; margin-top: 34px;}
+.ChangePicLeft{cursor: pointer; width: 40px; height: 40px; border-radius: 3px; background-color: rgba(0,0,0,0.5); position: absolute; top: 560px; left: 600px; color: #FFF; font-size: 24px; text-align: center; line-height: 40px; font-weight: bold;}
+.ChangePicRight{cursor: pointer; width: 40px; height: 40px; border-radius: 3px; background-color: rgba(0,0,0,0.5); position: absolute; top: 560px; left: 660px; color: #FFF; font-size: 24px; text-align: center; line-height: 40px; font-weight: bold;}
+
+
+
+.PicWordDemo{ position: absolute; top: 200px; left: 1600px; color: #FFF; display: inline-block; max-width: 500px;}
+.PicWordDemo01{ font-size: 20px; line-height: 24px; font-size: "微软雅黑";}
+.PicWordDemo02{ font-size: 42px; line-height: 80px; font-size: "微软雅黑";}
+.PicWordDemo03{ }
+.PicWordDemo04{ }
+.PicWordDemo05{ }
+/*#PicSlider   end*/
+
+
+/*LeadBlock*/
+#LeadBlockA{ width: 1010px; height: 374px; margin: auto;}
+#LBATitle{ width: 988px; height: 32px; border: 1px solid #E8E8E8; background-color: #FFF;}
+#LBATLeft{ width: 350px; height: 32px; float: left;}
+.LBATLLi{cursor: pointer; float: left; border-right: 1px solid #E8E8E8;display: inline-block; height: 32px; padding: 0 20px 0 20px; font-size: 14px; line-height: 32px;}
+#LBATRight{cursor: pointer; width: 115px; height: 32px; float: right; display: block; font-size: 13px; line-height: 32px;}
+#LBAContent{ width: 1010px; height: 290px; padding-top: 50px; position: relative;}
+#LBACLeft{ width: 663px; height: 59px;}
+.LBACTitle{ font-size: 21px; font-family:'Roboto',sans-serif; line-height: 29px; margin-bottom: 20px;}
+.LBACDes{ font-size: 14px; font-family:'Roboto',sans-serif; line-height: 23px; margin-bottom: 30px;}
+.LBACHeng{ display: block; width: 100px; height: 0; border: 1px solid #E8E8E8; margin-bottom: 20px;}
+.LBACBtn{ display: block; color: #FFF; width: 155px; height: 20px; padding: 10px 20px; border-radius: 10px; font-size: 16px; left: 20px; text-align: center;}
+#LBACRight{display: block; width: 302px; height: 312px; top: 20px; position: absolute; left: 700px; background-image: url("../images/img_mission.jpg");}
+
+/*LeadBlock end*/
+
+
+/*LatestPosts*/
+#LatestPostsA{ width: 1010px; height: 668px; margin: auto;}
+#LPLeft{ width: 662px; height: 588px; padding: 40px 10px 10px 15px; border-right: 1px solid #E8E8E8; float: left;}
+.LPTtile{ display: block; width: 100%; height: 45px ; border-bottom:1px solid #E8E8E8; margin-bottom: 18px;}
+.LPTA{ display: inline-block; height: 45px;font-family: FontAwesome;}
+.LPCBox{ width: 662px; height: 196px; border-bottom:1px solid #E8E8E8; padding: 20px 0 20px 0;}
+.LPCBPic{ display: block; width: 258px; height: 196px; float: left; margin-left: 15px;}
+.LPCBPic01{ background-image: url("../images/post-img1.jpg"); background-size: 100% 100%;}
+.LPCBPic02{ background-image: url("../images/post-img2.jpg"); background-size: 100% 100%;}
+.LPCBRight{ width: 340px; height: 153px; padding: 0 15px 0 30px; float: left;}
+.h3{ font-size: 18px; line-height: 27px; color: #333; font-family:'Roboto',sans-serif;}
+.h3_1{ font-size: 12px; line-height: 23px; font-weight: bold;}
+.h3_2{font-size: 14px; font-family:'Roboto',sans-serif; line-height: 23px; color: #666; margin-top: 15px;}
+#LPRight{ width: 300px; height: 630px; float: right; padding: 40px 10px;}
+.LPRArea{ width: 300px; height: 494px;}
+.LPRALi{ width: 300px; height: 97px; padding: 12px 0 0 0;}
+.LPRALPic img{ display: block; width: 67px; height: 67px; float: left; border-radius: 33px; }
+.LPRALRight{ width: 220px; height: 80px; float: right;}
+.h3R_1{ font-size: 12px; display: inline-block; width: 220px; color: #999; line-height: 23px; font-weight: bold;}
+.h3R_2{font-size: 12px; display: inline-block; width: 220px;}
+.h3R_3{ font-size: 12px; display: inline-block;  width: 220px; color: #999; line-height: 23px;}
+.LPRBottom{ width: 320px; height: 62px;}
+.LPRBHeng{ width: 40px;  margin: auto; display: block; height: 0;}
+.LPRBWord{ cursor: pointer; width: 317px; height: 23px; display: block; text-align: center; font-size: 12px; font-weight: bold;color: #555; padding-top: 20px;}
+/*LatestPosts end*/
+
+
+/*Projects*/
+#ProjectsA{ width: 1010px; height: 240px; margin: auto;}
+#PATitle{ width: 1010px; height: 48px; font-size: 24px; line-height: 36px;color: #FFF; margin-bottom: 18px; position: relative;}
+#PATitle small{ width: 1010px; height: 10px; display: block; font-size: 10px; line-height: 10px; color: #FFF;}
+.PATRight{cursor: pointer; position: absolute; width: 100px; height: 20px; line-height: 20px; display: block; padding: 6px 20px; border-radius: 14px; font-size: 13px; font-weight: bold; text-align: center; left: 840px; top: 10px; border: 2px solid #FFF;}
+#PAContent{ width: 1010px; height: 170px; }
+.PACLi{ width: 302px; height: 151px; border: 7px solid #FFF; float: left; margin-right: 20px; position: relative;}
+.PACLi img{ width: 302px; height: 151px; display: block;background-color: rgba(102,102,102,0.8);}
+.PACLPic{ width: 302px; height: 151px; display: block; background-color: #FFF;}
+.PACLPic01{ background-image: url("../images/Project1.jpg"); background-size: 302px 151px;}
+.PACLPic02{ background-image: url("../images/Project2.jpg"); background-size: 302px 151px;}
+.PACLPic03{ background-image: url("../images/Project3.jpg"); background-size: 302px 151px;}
+.PACLPicUp{display: block; width: 302px; height: 151px; opacity:20;background-color: rgba(102,102,102,0.5);}
+.PACLBottom{ display: block; width: 302px; height: 24px; position: absolute; top:128px; color: #FFF; background-color: rgba(0,0,0,0.5);}
+.PACLBLeft{ float: left; line-height: 24px; height: 24px; padding: 0 6px 0 6px; display: inline-block; font-size: 14px;}
+.PACLBRight{ float: right; line-height: 24px; height: 24px; padding: 0 6px 0 6px; display: inline-block; font-size: 14px;}
+.PACLMid{ width: 36px; height: 36px; display: none; position: absolute; top: 44px; left: 135px; color: #FFF; font-weight: bold; text-align: center; line-height: 36px; font-size: 28px; font-family: "微软雅黑";}
+/*Projects end*/ 
+
+
+
+
+

@@ -1,0 +1,53 @@
+#Top{ width: 100%; height: 235px; border-bottom: 1px solid #aaa;}
+#THead{ width: 100%; height: 160px; background-color: #222;}
+#TKind{ width: 958px; height: 74px; margin: auto; border-right: 1px solid #AAA; text-align: left;}
+#Pic{ width: 957px; height: 320px; margin: auto; border: 1px solid #CCC;}
+#Main{ width: 1000px; height: 1400px; padding: 30px 0 0 0; border: 1px solid #CCC; margin: auto;}
+#Footer{ width: 100%; height: 430px; background-color: #222; padding-top: 40px;}
+
+
+
+/*TOP*/
+#THArea{ width: 960px; height: 160px; margin: auto;}
+#THALeft{ width: 400px; height: 130px;padding: 27px 0 0 0; float: left;}
+#Logo{ width: 249px; height: 70px; margin-bottom: 25px; background-image: url("images/logo.png"); display: block;}
+#TMenu{ height: 36px; }
+.TMenuLi{ display: inline-block; position: relative; height: 36px;}
+.TMenuA{display: inline-block; height: 24px; line-height: 24px; padding: 6px 25px 6px 10px; font-size: 12px; text-decoration: none; color: rgb(170, 170, 170);}
+.TMenuTap{display: none; width: 172px; position: absolute; height: auto; background-color: #222;}
+.TMenuTap li{ height: 23px; border-top: 1px solid rgb(170, 170, 170); padding-top: 6px;}
+.TMenuTap a{text-decoration: none; color: rgb(170, 170, 170); line-height: 20px; padding-left: 10px;}
+
+#THARight{width: 300px; height: 160px; float: right;}
+#THARTip{ width: 318px; height: 25px; border: 1px solid #333; padding: 8px 14px 10px 10px; float: right; background-color: #131313;}
+.THART_mail{width: 16px; height: 16px; background-image: url("images/email_16.png"); display: block; float: left; margin-top: 6px; margin-left: 6px;}
+.THART_res{width: 16px; height: 16px; background-image: url("images/rss_16.png"); display: block; float: left; margin-top: 6px;margin-left: 6px;}
+.THART_twitter{width: 16px; height: 16px; background-image: url("images/twitter_16.png"); display: block; float: left; margin-top: 6px;margin-left: 6px;}
+#SearchArea{width: 220px; height: 17px;padding: 3px 10px 5px 8px; float: left; background-color: #FFF; border: 1px solid #FFF; border-radius: 4px 4px 4px 4px; margin-left: 10px;}
+#txtSearch{ width: 200px; height: 15px; border:0;  display: block; float: left; margin-top: 2px;}
+#THARSearch{width: 18px; height: 18px; background-image: url("images/search.png"); display: block; float: left;}
+#THARIcon{ width: 102px; height: 22px; float: right; margin-top: 84px;}
+#THARIWords{ color: #FFF; font-size: 12px; line-height: 22px; float: left; padding-right: 6px;}
+#THARIPic{display: block; float: left; background-image: url("images/submit_news.png"); width: 18px; height: 18px;}
+
+.TKLi{  float: left;display: block;}
+.TKTitle{ color: rgb(102, 102, 102); width: 114px; height: 51px; padding: 13px 10px 10px 10px; display: block; border-left: 1px solid #AAA; line-height: 17px; font-family: Arial, Helevtica, Verdana, san-serif;}
+.TKTitle strong{width: 114px; height: 17px; line-height: 17px; font-size: 16px; display: block;}
+.TKTitle span{width: 114px; height: 34px; line-height: 17px; font-size: 12px; display: block;}
+/*TOP  END*/
+
+
+
+
+/*Footer*/
+#FooterColumn{width: 1000px; height: 430px; margin: auto;}
+.column{width: 293px; padding-left: 20px; margin-right: 20px; float: left;}
+#Footer_column1{  height: 544px;}
+#Footer_column2{ height: 449px;}
+#Footer_column3{ height: 366px;}
+.columnTitle{ width: 293px; height: 22px; display: block; padding: 8px 0 4px 0; border-bottom: 1px solid #333; color: rgb(238, 238, 238); font-size: 16px; }
+.columnBox{width: 293px; height: 147px; border-bottom: 1px solid #333;}
+.CBTitle{ color: rgb(238, 238, 238); display: inline-block; font-size: 12px; padding-bottom: 5px;}
+.CBCPic{ width: 60px; height: 60px; display: block; padding: 3px 3px 3px 3px;background-image: url("../images/content_pic1-60x60.jpg");}
+.columnBox p{width: 293px; height: 114px;  color: rgb(238, 238, 238);}
+/*Footer  end*/
