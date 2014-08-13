@@ -20,11 +20,14 @@ img{border: 0;}
 #RConent{ width: 980px; margin: auto; min-height: 700px; height: auto; display: block; padding-bottom: 20px;}
 #RCLogin{float: left; width: 220px; height: 692px; background-image: url("images/sidebar-bg.png"); background-repeat: no-repeat; background-color: #EBF2FA;box-shadow: 0px 1px 1px #CCC;}
 #RCLA{ width: 190px; height: 165px; padding: 35px 15px 15px 15px;}
-.RCLTXT{ width: 186px; height: 32px; border-radius: 3px; border: 1px solid #CCC; background-color: #FFF; margin-bottom: 15px;}
+.RCLTXT{position: relative; width: 186px; height: 32px; border-radius: 3px; border: 1px solid #CCC; background-color: #FFF; margin-bottom: 15px;}
 .RCLTPic{ width: 25px; height: 25px; margin: 3px 0 0 5px; display: block; background-image: url("images/ico_new.png"); background-repeat: no-repeat; float: left;}
 .RCLTPic01{ background-position: 0 -85px;}
 .RCLTPic02{ background-position: 0 -115px;}
-.RCLTxtDes{ width: 150px; height: 32px; display: block; float: left; border: 0;}
+.RCLTxtDes{ width: 152px; height: 32px; line-height: 32px; display: block;color: #888; float: left; border: 0; position: absolute; left: 25px; }
+.RCLTxtTip{ position: absolute;   left: 30px; font-size: 12px;}
+
+
 .RCLTExp{ width: 190px; height: 20px;font-size: 12px; line-height: 20px;}
 .RCLTBox{ float: left;font-size: 12px; line-height: 20px; margin-top: 2px; }
 .RCLTERember{ float: left;font-size: 12px; margin-left: 4px;}
@@ -34,6 +37,16 @@ img{border: 0;}
 #btnSignA{ padding: 15px 0; border-top:1px solid #CCC;}
 .btnSign{ background-position: 0 -38px;}
 .btnSpec{ background-image: url("images/student-enter.png"); background-size: 100% 100%; margin-top: 15px;}
+#RLoginOther{width: 190px; height: 71px; margin-top: 45px;}
+#RLOTop{ line-height: 14px; font-size: 12px; color: #666;}
+.RLOLi{cursor: pointer; min-width: 24px; color: rgb(0, 94, 172); width: auto; height: 16px; padding-left: 22px; float: left; margin: 10px 10px 0 0; line-height: 16px; font-size: 12px; background-image: url("images/icon_new2.png"); background-repeat: no-repeat;}
+.RLOLimsn{ background-position: 0 -290px;}
+.RLOLi360{ background-position: 0 -320px;}
+.RLOLity{ background-position: 0 -380px;}
+.RLOLibaidu{ background-position: 0 -415px;}
+.RLOLiyd{ background-position: 0 -445px;}
+.RLOLi:hover{text-decoration: underline;}
+
 
 #RCRight{ width: 658px; height: 664px; float: left; margin: 32px 0 0 32px;}
 #RCRPic{display: block; width: 658px; height: 283px; background-image: url("../images/renren.jpg");}
@@ -70,12 +83,12 @@ img{border: 0;}
 .c1{ text-align: center; color: #888; font-size: 16px; line-height: 20px; margin-bottom: 35px;}
 .RCRHDes{ width: 658px; height: 987px;}
 .RCRHDLeft{ width: 350px; height: 254px; padding: 30px 0 20px 0; float: left; border-top: 1px solid #DDD;}
-.RCRHDPic{ background-image: url("images/intro-ico-new.png"); display: block; width: 45px; height: 41px; margin-right: 20px; float: left;}
+.RCRHDPic{ background-image: url("images/intro-ico-new.png"); background-repeat: no-repeat; display: block; width: 45px; height: 40px; margin-right: 20px; float: left;}
 .RCRHDPic02{background-position: 0 -40px; }
-.RCRHDPic03{background-position: 0 -80px; }
-.RCRHDPic04{background-position: 0 -120px; }
-.RCRHDPic05{background-position: 0 -160px; }
-.RCRHDPic06{background-position: 0 -200px; }
+.RCRHDPic03{background-position: 0 -81px; }
+.RCRHDPic04{height: 38px; background-position: 0 -120px; }
+.RCRHDPic05{height: 38px; background-position: 0 -160px; }
+.RCRHDPic06{height: 36px; background-position: 0 -200px; }
 .RCRHDPic07{background-position: 0 -240px; }
 
 
@@ -87,7 +100,7 @@ img{border: 0;}
 .RCRHDRight{ width: 305px; height: 254px;padding: 30px 0 20px 0; float: left;border-top: 1px solid #DDD;}
 .RCRHDRRight{ width: 230px; height: 239px; padding: 0 0 15px 0; float: left;}  
 .RCRHDTop{ width: 658px; height: 200px; padding-bottom: 15px;}
-.RCRHDTopRight{ width: 301px; height: 183px; background-image: url("../images/renren.jpg"); background-size: 100% 100%; float: right;}
+.RCRHDTopRight{ width: 301px; height: 183px; background-image: url("../images/message-pic.jpg"); background-size: 100% 100%; float: right;}
 .RCRHDTopLeftRight{ width: 230px; height: 183px; float: left;}
 #RCRHDTopLeftRightContent{margin-top: 20px;}
 

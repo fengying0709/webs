@@ -15,14 +15,14 @@
 /*top end*/
 
 
-#PicSlider{ width: 100%; min-width: 1300px; height: 625px; background-image: url("../images/slide3.jpg"); background-size: 100% 100%; position: relative;}
+#PicSlider{ width: 100%; min-width: 1300px; height: 625px; overflow: hidden; background-image: url("../images/slide3.jpg"); background-size: 100% 100%; position: relative;}
 #LeadBlock{ width: 100%; height: 374px; min-width: 1010px; background-color: #FAFAFA; padding: 50px 0 50px 0;}
 #LatestPosts{width: 100%; min-width: 1300px; height: 675px;}
-#Partners{width: 100%; min-width: 1300px; height: 330; background-color: #FAFAFA;} 
+#Partners{width: 100%; min-width: 1300px; height: 237px; background-color: #FAFAFA;} 
 #Projects{width: 100%; min-width: 1300px; height: 240px; padding: 40px 0 40px 0;}
 #FooterTop{width: 100%; min-width: 1300px; height: 190px; padding: 40px 0 40px 0; background-color: #2F2F2F;}
 #FooterBottom{width: 100%; min-width: 1300px; height: 23px; padding: 20px 0 20px 0; background-color: #292929;}
-#skinChange{ width: 36px; height: 40px; background-image: url("images/skinIcon.png"); display: block; position: absolute; top: 300px; background-repeat: no-repeat;  position: fixed; top: 200px; box-shadow: 2px 2px 2px #333; cursor: pointer;}
+
 
 
 /*#PicSlider*/
@@ -31,21 +31,27 @@
 #TADown{  position: absolute; top: 97px; left: 136px; margin: auto; width: 1080px; min-width: 1080px; height: 75px; z-index: 100;background-color: rgba(255,255,255,0.9); border-bottom-right-radius: 5px; border-bottom-left-radius: 8px;}
 #TADownPic{ background-image: url("../images/Tlogo.png"); float: left; background-size: 100% 100%; background-repeat: no-repeat; display: block; width: 211px; height: 41px;margin-top: 20px; margin-left: 35px;}
 #TADMenu{ width: 622px; height: 75px; float: left; display: block; margin-left: 190px;}
-.TADMenuLi{display: inline-block; height: 75px; line-height: 75px; }
-.TADMenuLA{display: inline-block; height: 75px; font-size: 12px; float: left; font-weight: bold; font-family: "微软雅黑",Arial; color: #555; text-decoration: none; padding: 0 12px;}
-.TADMenuLAMore{}
-.TADMenuLAIcon{margin-left: 4px; background-image: url("images/arrow.png"); background-repeat: no-repeat; display: block; width: 12px; height: 9px; float: right; margin-top: 34px;}
-.ChangePicLeft{cursor: pointer; width: 40px; height: 40px; border-radius: 3px; background-color: rgba(0,0,0,0.5); position: absolute; top: 560px; left: 600px; color: #FFF; font-size: 24px; text-align: center; line-height: 40px; font-weight: bold;}
-.ChangePicRight{cursor: pointer; width: 40px; height: 40px; border-radius: 3px; background-color: rgba(0,0,0,0.5); position: absolute; top: 560px; left: 660px; color: #FFF; font-size: 24px; text-align: center; line-height: 40px; font-weight: bold;}
+.TADMenuLi{position: relative; display: inline-block; height: 75px; line-height: 75px; float: left;}
+.TADMenuLA{display: inline-block; height: 75px; font-size: 12px;  font-weight: bold; font-family: "微软雅黑",Arial; color: #555; text-decoration: none; padding: 0 12px;}
+
+/*.TADMenuLAIcon{ margin-left: 4px; background-image: url("images/arrow.png"); background-repeat: no-repeat; display: block; width: 12px; height: 9px; float: right; margin-top: -40px;}
+*/
+.TADMenuLATip{position: absolute; display: inline-block; padding:5px 15px;  border-bottom: 1px solid #FFF;}
+.TADMenuLATipLi{ display: inline-block; font-family: "微软雅黑"; color: #FFF; padding: 5px 0; font-weight: bold; height: 18px; line-height: 18px; font-size: 12px;}
 
 
+.ChangePicLeft{display: none; cursor: pointer; width: 40px; height: 40px; border-radius: 3px; background-color: rgba(0,0,0,0.5); position: absolute; top: 560px; left: 600px; color: #FFF; font-size: 24px; text-align: center; line-height: 40px; font-weight: bold;}
+.ChangePicRight{display: none; cursor: pointer; width: 40px; height: 40px; border-radius: 3px; background-color: rgba(0,0,0,0.5); position: absolute; top: 560px; left: 660px; color: #FFF; font-size: 24px; text-align: center; line-height: 40px; font-weight: bold;}
+.ChangePicLeft:hover{background-color: #000;}
+.ChangePicRight:hover{background-color: #000;}
 
-.PicWordDemo{ position: absolute; top: 200px; left: 1600px; color: #FFF; display: inline-block; max-width: 500px;}
-.PicWordDemo01{ font-size: 20px; line-height: 24px; font-size: "微软雅黑";}
-.PicWordDemo02{ font-size: 42px; line-height: 80px; font-size: "微软雅黑";}
-.PicWordDemo03{ }
-.PicWordDemo04{ }
-.PicWordDemo05{ }
+.PicWordDemo{ color: #FFF; display: inline-block; max-width: 500px;}
+.PicWordDemo01{ position: absolute; left: 1600px; top: 255px; font-size: 20px; line-height: 24px; font-family: "微软雅黑";}
+.PicWordDemo02{ position: absolute; left: 1600px; top: 285px; font-size: 42px; line-height: 80px; font-family: "微软雅黑";}
+.PicWordDemo03{ position: absolute; left: 1600px; top: 385px; display: block; width: 100px; height: 0; border: 1px solid #FFF;}
+.PicWordDemo04{ position: absolute; left: 1600px; top: 415px; font-size: 14px; max-width: 400px; line-height: 16px; font-family: "微软雅黑";}
+.PicWordDemo05{ position: absolute; left: 1600px; top: 485px; width: 99px; height: 44px; cursor: pointer; border-radius: 12px; border: 2px solid #FFF; line-height: 44px; font-family: "微软雅黑"; text-align: center; font-size: 18px; font-weight: bold;}
+.PicWordDemo05:hover{ background-color: #FFF; color: #666;}
 /*#PicSlider   end*/
 
 
@@ -95,8 +101,8 @@
 
 /*Projects*/
 #ProjectsA{ width: 1010px; height: 240px; margin: auto;}
-#PATitle{ width: 1010px; height: 48px; font-size: 24px; line-height: 36px;color: #FFF; margin-bottom: 18px; position: relative;}
-#PATitle small{ width: 1010px; height: 10px; display: block; font-size: 10px; line-height: 10px; color: #FFF;}
+.PATitle{ width: 1010px; height: 48px; font-size: 24px; line-height: 36px;color: #FFF; margin-bottom: 18px; position: relative;}
+.PATitle small{ width: 1010px; height: 10px; display: block; font-size: 10px; line-height: 10px; color: #FFF;}
 .PATRight{cursor: pointer; position: absolute; width: 100px; height: 20px; line-height: 20px; display: block; padding: 6px 20px; border-radius: 14px; font-size: 13px; font-weight: bold; text-align: center; left: 840px; top: 10px; border: 2px solid #FFF;}
 #PAContent{ width: 1010px; height: 170px; }
 .PACLi{ width: 302px; height: 151px; border: 7px solid #FFF; float: left; margin-right: 20px; position: relative;}
@@ -114,5 +120,46 @@
 
 
 
+/*Partners*/
+#PartnersA{ margin: auto; width: 1010px; height: 237px;}
+.PartnersTitle{ width: 100% ; height: 57px; margin-bottom: 10px;}
+.PartnersTitleA{display: block; font-weight: bold; width: 100px; height: 48px; font-size: 24px; line-height: 36px;color: #333; margin-bottom: 18px;padding-bottom: 15px;}
+.PartnersTitleA small{ width: 100px; height: 10px; font-weight: normal; display: block; font-size: 10px; line-height: 10px; color: #666;}
+#PartnersLeft{ width: 230px; height: 161px; float: left;padding: 10px 0 20px 0; font-size: 14px; font-family: "微软雅黑"; color: #666; line-height: 20px;}
+.PartnersRightPic{display: block; float: left; margin-right: 40px; width: 100px; height: 100px;}
+#PartnersRight{ width: 700px; float: right; height: 150px;}
 
 
+
+.PartnersRightPic img {
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out; 
+-o-transition: all 1s ease-in-out; 
+-ms-transition: all 1s ease-in-out; 
+}
+
+.PartnersRightPic img:hover { 
+-webkit-transform: rotate(360deg); 
+-moz-transform: rotate(360deg); 
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg); 
+}
+/*Partners END*/
+
+/*设置皮肤*/
+#skinChange{ z-index: 10; width: 36px; height: 40px; background-image: url("images/skinIcon.png"); position: absolute; top: 300px; background-repeat: no-repeat;  position: fixed; top: 200px; box-shadow: 2px 2px 2px #333; cursor: pointer;}
+#skinChangeAllChoice{display: none; z-index: 10; width: 200px; border: 1px solid #000; height: 200px; background-color: #FFF; box-shadow: 2px 2px 2px #333; position: absolute; top:180px;}
+#skinChangeAllIcon{display: none; z-index: 10; left: 200px; width: 36px; height: 40px; background-image: url("images/skinIcon.png"); position: absolute; top: 300px; background-repeat: no-repeat;  position: fixed; top: 200px; box-shadow: 2px 2px 0 #333; cursor: pointer;}
+#SCACArea{ width: 182px; height: 124px; margin: 30px auto;}
+#SCACTitle{font-size: 20px; line-height: 24px; padding: 10px 5px 5px 10px; display: inline-block; font-family: "微软雅黑"; color: #888;}
+.SCACEve{cursor: pointer; margin: 5px 8px 15px 8px; width: 28px; height: 28px;  float: left;}
+.SCACEve01{background-image: url("images/color1.png"); background-size: 28px 28px;}
+.SCACEve02{background-image: url("images/color2.png"); background-size: 28px 28px;}
+.SCACEve03{background-image: url("images/color3.png"); background-size: 28px 28px;}
+.SCACEve04{background-image: url("images/color4.png"); background-size: 28px 28px;}
+.SCACEve05{background-image: url("images/color5.png"); background-size: 28px 28px;}
+.SCACEve06{background-image: url("images/color6.png"); background-size: 28px 28px;}
+.SCACEve07{background-image: url("images/color7.png"); background-size: 28px 28px;}
+.SCACEve08{background-image: url("images/color8.png"); background-size: 28px 28px;}
+.SCACEve:hover{ box-shadow: 2px 2px 2px #888;}
+/*设置皮肤 end*/

@@ -12,5 +12,17 @@ $(function(){
 		$("#RCRight").show();
 	});
 
-	
+
+
+	//密码和用户名文本框
+	$(".RCLTxtDes").click( function(){
+			$(this).val("");
+		});
+	$(document).click(function(){
+		$(".RCLTxtDes").click( function(){
+			$(this).val("");
+		});
+
+		return false;
+	});
 });
