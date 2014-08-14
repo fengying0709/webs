@@ -4,8 +4,9 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui/css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/skin_blue.css">
+	<link id="skin" rel="stylesheet" type="text/css" href="css/skin_blue.css">
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
@@ -18,14 +19,13 @@
 	<div id="skinChangeAllChoice">
 		<a id="SCACTitle">COLOR SKIN</a>
 		<ul id="SCACArea">
-			<li class="SCACEve SCACEve01"></li>
-			<li class="SCACEve SCACEve02"></li>
-			<li class="SCACEve SCACEve03"></li>
-			<li class="SCACEve SCACEve04"></li>
-			<li class="SCACEve SCACEve05"></li>
-			<li class="SCACEve SCACEve06"></li>
-			<li class="SCACEve SCACEve07"></li>
-			<li class="SCACEve SCACEve08"></li>
+			<li id="skin_blue" class="SCACEve SCACEve01"></li>
+			<li id="skin_red" class="SCACEve SCACEve02"></li>
+			<li id="skin_yellow" class="SCACEve SCACEve03"></li>
+			<li id="skin_green" class="SCACEve SCACEve04"></li>
+			<li id="skin_darkblue" class="SCACEve SCACEve05"></li>
+			<li id="skin_pink" class="SCACEve SCACEve06"></li>
+			
 		</ul>
 	</div>
 	<div id="skinChangeAllIcon"></div>
@@ -87,43 +87,66 @@
 						<a class="TADMenuLA" href="#">Home</a>
 					</li>
 					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">
+						<a class="TADMenuLA TADMenuLA03" href="#">
 							Pages
 							<i class="TADMenuLAIcon"></i>
 						</a>
-						<ul class="TADMenuLATip skin_bg">
-							<li class="TADMenuLATipLi"><a>About Us</a></li>
-							<li class="TADMenuLATipLi"><a>Gallery</a></li>
-							<li class="TADMenuLATipLi"><a>404 Error</a></li>
-							<li class="TADMenuLATipLi"><a>Typography</a></li>
-							<li class="TADMenuLATipLi"><a>Shortcodes</a></li>
+
+						<ul class="TADMenuLATip TADMenuLATip01 skinA">
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;About Us</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Gallery</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;404 Error</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Typography</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Shortcodes</a></li>
 						</ul>
 
 
 					</li>
 					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">
+						<a class="TADMenuLA TADMenuLA03" href="#">
 							Events
 							<i class="TADMenuLAIcon"></i>
 						</a>
+						<ul class="TADMenuLATip TADMenuLATip02 skinA">
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Events List</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Events Calendar</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Events Grid</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Single Event</a></li>
+						</ul>
+
 					</li>
 					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">
+						<a class="TADMenuLA TADMenuLA04" href="#">
 							Projects
 							<i class="TADMenuLAIcon"></i>
 						</a>
+
+						<ul class="TADMenuLATip TADMenuLATip03 skinA">
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Projects List</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Projects Grid</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Single Project</a></li>
+						</ul>
 					</li>
 					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">
+						<a class="TADMenuLA TADMenuLA05" href="#">
 							Mega Menu
 							<i class="TADMenuLAIcon"></i>
 						</a>
+						<ul class="TADMenuLATip TADMenuLATip04 skinA">
+							
+						</ul>
 					</li>
 					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">
+						<a class="TADMenuLA TADMenuLA06" href="#">
 							Blog
 							<i class="TADMenuLAIcon"></i>
 						</a>
+
+						<ul class="TADMenuLATip TADMenuLATip05 skinA">
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Classic</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Masonry</a></li>
+							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Single Post</a></li>
+						</ul>
 					</li>
 					<li class="TADMenuLi">
 						<a class="TADMenuLA" href="#">Contact</a>
@@ -152,13 +175,13 @@
 		<div id="LeadBlockA">
 			<div id="LBATitle">
 				<ul id="LBATLeft">
-					<li class="LBATLLi">Our Mission</li>
-					<li class="LBATLLi">Why you should join us</li>
+					<li upid="LBAContent01" class="LBATLLi skin_bottom">Our Mission</li>
+					<li upid="LBAContent02" class="LBATLLi">Why you should join us</li>
 				</ul>
 				<a id="LBATRight">more about us > </a>
 			</div>
 
-			<div id="LBAContent">
+			<div class="LBAContent LBAContent01">
 				<div id="LBACLeft">
 					<p class="LBACTitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.
@@ -171,6 +194,36 @@
 				</div>
 				<a id="LBACRight"></a>
 			</div>
+
+			<div class="LBAContent LBAContent02 disnone">
+				<div class="LBAC2Eve">
+					<a class="LBAC2EIcon LBAC2EIcon_blue">
+						<i class="fa fa-globe"></i>
+					</a>
+					<p class="LBAC2ETitle">To make the planet lively</p>
+					<p class="LBAC2EContent">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
+					</p>
+				</div>
+				<div class="LBAC2Eve">
+					<a class="LBAC2EIcon LBAC2EIcon_yellow">
+						<i class="fa fa-umbrella"></i>
+					</a>
+					<p class="LBAC2ETitle">To make the planet lively</p>
+					<p class="LBAC2EContent">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
+					</p>
+				</div>
+				<div class="LBAC2Eve">
+					<a class="LBAC2EIcon LBAC2EIcon_green">
+						<i class="fa fa-tree"></i>
+					</a>
+					<p class="LBAC2ETitle">To make the planet lively</p>
+					<p class="LBAC2EContent">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -180,7 +233,8 @@
 		<div id="LatestPostsA">
 			<div id="LPLeft">
 				<div class="LPTtile">
-					<a class="LPTA skin_bottom">Latest Posts</a>
+
+					<a class="LPTA skin_bottom"><i class="LPTA fa fa-folder skin_color"></i>Latest Posts</a>
 				</div>
 				<div class="LPCBox">
 					<a class="LPCBPic LPCBPic01"></a>
@@ -189,6 +243,8 @@
 						<p class="h3_1 skin_color">Wed 20th July, 14</p>
 						<p class="h3_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel...</p>
 					</div>
+					<a class="LPCBMid skinA">+</a>
+					
 				</div>
 				<div class="LPCBox">
 					<a class="LPCBPic LPCBPic02"></a>
@@ -197,11 +253,12 @@
 						<p class="h3_1 skin_color">Sun 17th July, 14</p>
 						<p class="h3_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel...</p>
 					</div>
+					<a class="LPCBMid skinA">+</a>
 				</div>
 			</div>
 			<div id="LPRight">
 				<div class="LPTtile">
-					<a class="LPTA skin_bottom">  Upcoming Events</a>
+					<a class="LPTA skin_bottom"><i class="LPTA fa fa-calendar skin_color"></i>  Upcoming Events</a>
 				</div>
 				<ul class="LPRArea">
 					<li class="LPRALi">
@@ -284,25 +341,25 @@
 					</a>
 					<div class="PACLBottom">
 						<span class="PACLBLeft">Life of the whales</span>
-						<span class="PACLBRight skinProject">Oceans</span>
+						<span class="PACLBRight skinA">Oceans</span>
 					</div>
-					<a class="PACLMid skinProject">+</a>
+					<a class="PACLMid skinA">+</a>
 				</li>
 				<li class="PACLi">
 					<a class="PACLPic PACLPic02"><span class="PACLPicUp"></span></a>
 					<div class="PACLBottom">
 						<span class="PACLBLeft">We will miss them</span>
-						<span class="PACLBRight skinProject">Forests</span>
+						<span class="PACLBRight skinA">Forests</span>
 					</div>
-					<a class="PACLMid skinProject">+</a>
+					<a class="PACLMid skinA">+</a>
 				</li>
 				<li class="PACLi">
 					<a class="PACLPic PACLPic03"><span class="PACLPicUp"></span></a>
 					<div class="PACLBottom">
 						<span class="PACLBLeft">How to feed the world</span>
-						<span class="PACLBRight skinProject">Food</span>
+						<span class="PACLBRight skinA">Food</span>
 					</div>
-					<a class="PACLMid skinProject">+</a>
+					<a class="PACLMid skinA">+</a>
 				</li>
 			</ul>
 		</div>

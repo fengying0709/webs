@@ -1,4 +1,33 @@
 $(function(){
+
+
+	$(".LBATLLi").click(function(){
+		var upid= $(this).attr("upid");
+		$(".LBATLLi").removeClass("skin_bottom");
+		$(this).addClass("skin_bottom");
+		$(".LBAContent").addClass("disnone");
+		$("."+ upid).removeClass("disnone");
+		
+	});
+
+
+	//图片特效
+	$(".PACLi").hover(function(){
+		$(this).find(".PACLMid").show();
+	},function(){
+		$(this).find(".PACLMid").hide();
+	});
+	$(".LPCBPic").hover(function(){
+		$(this).next().next().show();
+	},function(){
+		$(this).next().next().hide();
+	});
+
+	//换皮肤
+	$(".SCACEve").click(function(){
+		var cssid=$(this).attr("id");
+		$("#skin").attr("href","css/"+ cssid +".css");
+	});
 	
 	$("#PicSlider").hover(function(){
 		$(".ChangePicLeft").show();
@@ -101,6 +130,14 @@ $(function(){
 	setInterval("showChangePic()",5000);
 	wordShow();
 	wordClear();
+
+
+
+	$(".TADMenuLi").hover(function(){
+		$(this).find(".TADMenuLATip").css("visibility","visible");
+	},function(){
+		$(this).find(".TADMenuLATip").css("visibility","hidden");
+	});
  
  });
 
@@ -129,9 +166,9 @@ function wordShow(){
 
 
 function wordClear(){
-	$(".PicWordDemo01").css({"left":"","top":""});
-	$(".PicWordDemo02").css({"left":"","top":""});
-	$(".PicWordDemo03").css({"left":"","top":""});
-	$(".PicWordDemo04").css({"left":"","top":""});
-	$(".PicWordDemo05").css({"left":"","top":""});
+	$(".PicWordDemo01").css({"left":"1600px","top":""});
+	$(".PicWordDemo02").css({"left":"1600px","top":""});
+	$(".PicWordDemo03").css({"left":"1600px","top":""});
+	$(".PicWordDemo04").css({"left":"1600px","top":""});
+	$(".PicWordDemo05").css({"left":"1600px","top":""});
 }

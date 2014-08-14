@@ -13,16 +13,25 @@ $(function(){
 	});
 
 
-
-	//密码和用户名文本框
-	$(".RCLTxtDes").click( function(){
-			$(this).val("");
-		});
-	$(document).click(function(){
-		$(".RCLTxtDes").click( function(){
-			$(this).val("");
-		});
-
-		return false;
+	$(".btnlogin").click(function(){
+		if($(".RCLTxtDes01").val() == "" || $(".RCLTxtDes02").val() == "")
+			$(".RCLTxtTip").show();
+		else{
+			$(".RCLTxtTip").hide();
+		}
 	});
+	//密码和用户名文本框
+	/*$(".RCLTxtDes").focus(function(){
+		$(this).val("");
+		$(this).css("color","#333");
+	
+	});
+	$(".RCLTxtDes").blur(function(){
+		if( $(this).val() == "" ){
+			var txtvalue = $(this).attr("txtvalue");
+			$(this).val(txtvalue);
+			$(this).css("color","");
+		}
+		
+	});*/
 });

@@ -1,7 +1,7 @@
 #Top{ width: 100%; height: 235px; border-bottom: 1px solid #aaa;}
 #THead{ width: 100%; height: 160px; background-color: #222;}
 #TKind{ width: 958px; height: 74px; margin: auto; border-right: 1px solid #AAA; text-align: left;}
-#Pic{ width: 957px; height: 320px; margin: auto; border: 1px solid #CCC;}
+#Pic{position: relative; width: 957px; height: 320px; margin: auto; border: 1px solid #CCC; overflow: hidden;}
 #Main{ width: 1000px; height: 1400px; padding: 30px 0 0 0; border: 1px solid #CCC; margin: auto;}
 #Footer{ width: 100%; height: 430px; background-color: #222; padding-top: 40px;}
 
@@ -36,7 +36,15 @@
 .TKTitle span{width: 114px; height: 34px; line-height: 17px; font-size: 12px; display: block;}
 /*TOP  END*/
 
-
+/*PIC*/
+.PicEve{position: absolute; width: 700px; height: 320px; display: block; box-shadow: -18px 0 20px #222; cursor: pointer;}
+.PicEve01{background-image: url("../images/content_pic1.jpg"); left: 0; z-index: 1;}
+.PicEve02{background-image: url("../images/content_pic2.jpg"); left: 191px;  z-index: 2;}
+.PicEve03{background-image: url("../images/content_pic3.jpg"); left: 382px;  z-index: 3;}
+.PicEve04{background-image: url("../images/content_pic4.jpg"); left: 574px;  z-index: 4;}
+.PicEve05{background-image: url("../images/content_pic5.jpg"); left: 765px;  z-index: 5;}
+.PicEve06{background-image: url("../images/content_pic5.jpg"); left: 957px;  z-index: 6;}
+/*PIC end*/
 
 
 /*Footer*/
@@ -48,6 +56,6 @@
 .columnTitle{ width: 293px; height: 22px; display: block; padding: 8px 0 4px 0; border-bottom: 1px solid #333; color: rgb(238, 238, 238); font-size: 16px; }
 .columnBox{width: 293px; height: 147px; border-bottom: 1px solid #333;}
 .CBTitle{ color: rgb(238, 238, 238); display: inline-block; font-size: 12px; padding-bottom: 5px;}
-.CBCPic{ width: 60px; height: 60px; display: block; padding: 3px 3px 3px 3px;background-image: url("../images/content_pic1-60x60.jpg");}
-.columnBox p{width: 293px; height: 114px;  color: rgb(238, 238, 238);}
+.CBCPic{ width: 60px; height: 60px; display: block; margin: 5px;background-image: url("../images/content_pic1-60x60.jpg"); background-repeat: no-repeat; float: left;}
+.columnBox p{width: 293px; height: 114px; font-size: 12px; color: rgb(238, 238, 238);}
 /*Footer  end*/
