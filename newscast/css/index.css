@@ -1,9 +1,9 @@
 #Top{ width: 100%; height: 235px; border-bottom: 1px solid #aaa;}
 #THead{ width: 100%; height: 160px; background-color: #222;}
 #TKind{ width: 958px; height: 74px; margin: auto; border-right: 1px solid #AAA; text-align: left;}
-#Pic{position: relative; width: 957px; height: 320px; margin: auto; border: 1px solid #CCC; overflow: hidden;}
-#Main{ width: 1000px; height: 1400px; padding: 30px 0 0 0; border: 1px solid #CCC; margin: auto;}
-#Footer{ width: 100%; height: 430px; background-color: #222; padding-top: 40px;}
+#Pic{position: relative; width: 957px; height: 320px; margin: auto; overflow: hidden;}
+#Main{ width: 1000px; height: 1581px; padding: 30px 0 0 0; margin: auto;}
+#Footer{ width: 100%; height: 575px; background-color: #222; padding-top: 40px;}
 
 
 
@@ -14,7 +14,7 @@
 #TMenu{ height: 36px; }
 .TMenuLi{ display: inline-block; position: relative; height: 36px;}
 .TMenuA{display: inline-block; height: 24px; line-height: 24px; padding: 6px 25px 6px 10px; font-size: 12px; text-decoration: none; color: rgb(170, 170, 170);}
-.TMenuTap{display: none; width: 172px; position: absolute; height: auto; background-color: #222;}
+.TMenuTap{display: none; width: 172px; position: absolute; height: auto; background-color: #222; z-index: 100;}
 .TMenuTap li{ height: 23px; border-top: 1px solid rgb(170, 170, 170); padding-top: 6px;}
 .TMenuTap a{text-decoration: none; color: rgb(170, 170, 170); line-height: 20px; padding-left: 10px;}
 
@@ -47,6 +47,51 @@
 /*PIC end*/
 
 
+
+/*Main*/
+#MainLeft{ width: 580px; height: 1386px; float: left; padding: 0 0 50px 20px;}
+.MLContentEve{ width: 580px; height: 210px; padding-bottom: 50px;}
+.MLCEPic{ width: 180px; height: 180px; padding: 7px; float: left; margin-right: 20px; border: 1px solid #ddd; border-radius: 3px;}
+.MLCEPic:hover{ border: 1px solid #666;}
+.MLCEPicA{ width: 180px; height: 180px; display: block; }
+.MLCEContent{ width: 350px; height: 205px; float: left;}
+.h1{ width: 350px; cursor: pointer; height: 33px; padding-bottom: 8px; font-size: 28px; left: 33px; color: #222; font-family: "Trebuchet MS",Arial,Helvetica,san-serif;}
+.h1:hover{ color: #888f96;}
+.MLCEContentT2{ width: 350px; height: 23px; padding-bottom: 11px;}
+.c1{ width: 350px; height: 98px; font-size: 13px; line-height: 20px; font-family: "Trebuchet MS",Arial,Helvetica,san-serif; color: #666;}
+.MLCEContentT2Eve{ height: 23px; color: #888f96; padding-left: 30px; font-size: 12px; line-height: 23px; background-repeat: no-repeat; display: inline-block;}
+.MLCEContentT2Eve01{background-image: url("images/mcc1.png");}
+.MLCEContentT2Eve02{background-image: url("images/mcc2.png");}
+.MLCEContentT2Eve03{background-image: url("images/mcc3.png");}
+.MLCEContentT2Eve a{ text-decoration: none; color: #888f96;}
+.MLCEContentT2Eve a:hover{text-decoration: underline; color: #333;}
+.btn1{display: block; width: 62px; height: 12px; padding: 5px 7px; background-color: #F6F6F6; border: 1px solid #E1E1E1; border-radius: 4px; font-size: 12px; line-height: 12px; color: #888f96; text-align: center; float: left;}
+.box1{height: 12px; padding: 5px 7px;display: inline-block;  background-color: #F6F6F6; border: 1px solid #E1E1E1; border-radius: 4px; font-size: 12px; line-height: 12px; color: #888f96; float: right;}
+.box1 a{font-size: 12px; line-height: 12px; color: #888f96;}
+.box1 a:hover{text-decoration: underline; color: #333;}
+
+
+
+.MainRightA{ width: 150px; height: 1480px; border-left: 1px solid #E1E1E1; padding: 0 20px 0 19px; float: left;}
+.MainRightATitle{display: block; width: 150px; height: 22px; padding: 8px 0 4px 0; margin-bottom: 5px; border-bottom: 1px solid #E1E1E1; color: #222; font-size: 18px; line-height: 22px; text-align: center; font-family: "Trebuchet MS",Arial,Helvetica,san-serif;}
+.MRAEve{ width: 150px; height: 242px; padding-bottom: 8px; border-bottom: 1px solid #E1E1E1; margin-bottom: 5px;}
+.MRAEveTitle{ width: 150px; height: 17px; padding-bottom: 5px; line-height: 17px; font-size: 12px; color: #222;}
+.MRAEveContent{ width: 150px; height: 200px; padding-bottom: 10px; font-size: 12px; color: #666; line-height: 18px; padding-top: 5px;}
+.MRAEveContentPic{ width: 60px; height: 60px; padding: 3px; border: 1px solid #ddd; border-radius: 2px; margin: 6px 9px 0 0; float: left;}
+.MRAEveContentPic a{ width: 60px; height: 60px; display: block;}
+.MRAEveContentPic:hover{ border: 1px solid #666;}
+
+
+.MRA02Pic{ width: 125px; height: 125px; padding: 3px 3px 3px 3px; border: 1px solid #ddd; border-radius: 2px; margin-top: 10px;}
+.MRAEveContentPic a{ width: 125px; height: 125px; display: block;}
+.Tip{ width: 150px; margin-top: 12px;}
+.h3{display: block; width: 150px; height: 22px; padding: 8px 0 4px 0; line-height: 22px; font-size: 16px; color: #222; border-bottom: 1px solid #E1E1E1;}
+.c3{ }
+.c3Li{ cursor: pointer; height: 22px; line-height: 22px; font-size: 12px;  border-bottom: 1px solid #E1E1E1; color: #888f96; padding: 3px 10px; background-image: url("images/icon1.png"); background-position: 0 12px; background-repeat: no-repeat;}
+.c3Li:hover{color: #333;}
+
+/*Main end*/
+
 /*Footer*/
 #FooterColumn{width: 1000px; height: 430px; margin: auto;}
 .column{width: 293px; padding-left: 20px; margin-right: 20px; float: left;}
@@ -54,8 +99,12 @@
 #Footer_column2{ height: 449px;}
 #Footer_column3{ height: 366px;}
 .columnTitle{ width: 293px; height: 22px; display: block; padding: 8px 0 4px 0; border-bottom: 1px solid #333; color: rgb(238, 238, 238); font-size: 16px; }
-.columnBox{width: 293px; height: 147px; border-bottom: 1px solid #333;}
-.CBTitle{ color: rgb(238, 238, 238); display: inline-block; font-size: 12px; padding-bottom: 5px;}
+.columnBox{width: 293px; height: 147px; border-bottom: 1px solid #333; padding-bottom: 5px;}
+.CBTitle{ width: 157px; height: 18px; line-height: 18px; color: rgb(238, 238, 238); display: block; font-size: 12px; padding-bottom: 5px;}
 .CBCPic{ width: 60px; height: 60px; display: block; margin: 5px;background-image: url("../images/content_pic1-60x60.jpg"); background-repeat: no-repeat; float: left;}
-.columnBox p{width: 293px; height: 114px; font-size: 12px; color: rgb(238, 238, 238);}
+.columnBox p{ width: 293px; height: 124px; font-size: 12px; color: rgb(238, 238, 238); line-height: 18px; color: #666;}
+.Tip01{ margin-top: 20px;}
+.h4{ color: #FFF; border-bottom: 1px solid #333; width: 290px;}
+.c4Li{border-bottom: 1px solid #333;  width: 290px;}
+.c4Li:hover{ color: #FFF;}
 /*Footer  end*/

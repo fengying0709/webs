@@ -32,7 +32,10 @@ $(function  () {
 		//alert("1");
 		$(this).css("width","700px");
 		$(this).css("left","64px");
-		picmouseover();
+		$(".PicEve01").css("left","");
+		$(".PicEve03").css("left","764px");
+		$(".PicEve04").css("left","828px");
+		$(".PicEve05").css("left","892px");
 	},function(){	
 		picmouseover();
 	});
@@ -56,6 +59,7 @@ $(function  () {
 		$(".PicEve03").css("left","128px");
 		$(".PicEve05").css("left","892px");
 	},function(){
+		picmouseover();
 	});
 	$(".PicEve05").hover(function(){
 		//alert("1");
