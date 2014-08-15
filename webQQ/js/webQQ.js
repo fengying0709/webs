@@ -1,8 +1,9 @@
 $(function(){
 
 
-	 
 
+
+	//
 
 
 	//背景图片
@@ -97,6 +98,16 @@ $(function(){
 			}
 		});
 
+
+	//关闭最小化窗口
+	$(document).on("click", ".chatMinEveClose", function () {
+			//$(".chatMinEveClose").click(function(){
+		var count =$("#chatMinArea").attr("count");
+		count -- ;
+		$("#chatMinArea").attr("count",count);
+		$(this).parent().hide();
+		count --;
+	});
 
 
 	//发送
@@ -194,6 +205,7 @@ $(function(){
 	//alert("1");
 	//切换QQ下面的栏目
 	$(".FAF01").click(function(){
+		$(this).find(".FAFPic").removeClass("weidu2");
 		$(this).find(".FAFPic").addClass("FAFP01");
 		$(".FAFPic02").removeClass("FAFP02");
 		$(".FAFPic03").removeClass("FAFP03");
@@ -206,6 +218,7 @@ $(function(){
 		$("#huihua").removeClass("disnone");
 	});
 	$(".FAF02").click(function(){
+		$(this).find(".FAFPic").removeClass("weidu2");
 		$(this).find(".FAFPic").addClass("FAFP02");
 		$(".FAFPic01").removeClass("FAFP01");
 		$(".FAFPic03").removeClass("FAFP03");
@@ -218,6 +231,7 @@ $(function(){
 		$("#lianxiren").removeClass("disnone");
 	});
 	$(".FAF03").click(function(){
+		$(this).find(".FAFPic").removeClass("weidu2");
 		$(this).find(".FAFPic").addClass("FAFP03");
 		$(".FAFPic01").removeClass("FAFP01");
 		$(".FAFPic02").removeClass("FAFP02");
@@ -230,6 +244,7 @@ $(function(){
 		$("#faxian").removeClass("disnone");
 	});
 	$(".FAF04").click(function(){
+		$(this).find(".FAFPic").removeClass("weidu2");
 		$(this).find(".FAFPic").addClass("FAFP04");
 		$(".FAFPic01").removeClass("FAFP01");
 		$(".FAFPic03").removeClass("FAFP03");
@@ -255,11 +270,10 @@ $(function(){
 
 	
 
-
 });
   
 
-
+/*var count = "0";*/
 
 
 
@@ -270,14 +284,17 @@ function chathtml(){
 
 	$(".chatA").click(function(){
 
+		$(this).find(".chatAHeader").removeClass("weidu");
+
 		var talkid=$(this).attr("talkid");
 		var cAname=$(this).attr("cafName");
-
-
+		var headerpic=$(this).find(".chatAHeader").html();
+		//alert(headerpic);
 		var isappear = $(this).attr("isappear");
 		if(isappear=="yes"){
 
 			$("#"+talkid).show();
+			$("#min" + talkid).hide();
 			$(".TalkArea").css("z-index","10");
 			$("#"+talkid).css("z-index","12");
 
@@ -291,13 +308,14 @@ function chathtml(){
 			var chathtmlA = '';
 
 
-			chathtmlA +='				<div id="'+ talkid +'"  class="TalkArea">                                   ';
+			chathtmlA +='				<div ismin="no" id="'+ talkid +'"  class="TalkArea">                                   ';
 			chathtmlA +='					<div class="TalkTop">';
 			chathtmlA +='						<div class="TTTap" href="#">';
 			chathtmlA +='							<a href="#"></a>';
 			chathtmlA +='						</div>';
 			chathtmlA +='						<span class="TTName">'+ cAname +'</span>';
 			chathtmlA +='						<a class="TTClose" href="#">关闭</a>';
+			chathtmlA +='						<a class="TTMin">最小化</a>';
 			chathtmlA +='					</div>';
 			chathtmlA +='					<div class="TalkContent">';
 			chathtmlA +='						<ul class="TCTap" isshow="false">';
@@ -571,11 +589,13 @@ function chathtml(){
 		//出现在随机的位置
 		var randomleft= (Math.random()+5)*100;
 		//alert(randomleft);
-		var randomtop= (Math.random()*2)*70;
+		var randomtop= (Math.random()*2)*45;
 		//alert("left:"+randomleft);
 		$("#"+talkid).css({
 			"left":randomleft+"px",
 			"top":randomtop+"px"
+			/*"left":"620px",
+			"top":"80px"*/
 		});
 
 
@@ -592,6 +612,86 @@ function chathtml(){
 
 
 
+		
+		//最小化
+		$(".TTMin").click(function(){
+
+			var x = document.getElementsByClassName("chatMinEve");
+			var count = x.length;
+			if(count >=6 )
+			{
+				alert("窗口最小化已经最多！");
+				return;
+			}
+			else{
+
+
+
+				var ismin = $(this).parent().parent().attr("ismin");
+				
+
+				$(this).parent().parent().hide();
+
+
+				if(ismin == "no"){
+
+
+					
+
+
+					var tminid = "min" + talkid ;
+					var chatminhtml = '';
+					chatminhtml += '<div maxid="'+talkid+'" id="'+ tminid +'" class="chatMinEve">';
+					chatminhtml += '	<div class="chatMinEveContent">';
+					chatminhtml += '		<a class="chatMinEvePic">'+ headerpic+'</a>';
+					chatminhtml += '		<p class="chatMinEveName">'+ cAname+'</p>';
+					chatminhtml += '	</div> ';
+					chatminhtml += '	<a class="chatMinEveClose">X</a>';
+					chatminhtml += '</div> ';
+
+					$("#chatMinArea").append(chatminhtml);
+
+					//alert(count);
+
+					$(this).parent().parent().attr("ismin","yes");
+
+				}else{
+					var test01 = $(this).parent().parent().attr("id");
+					var tminid = "min" + test01;
+					//alert(tminid);
+					$("#" + tminid).show();
+				}
+				
+			}
+			
+			$("#chatMinArea").attr("count",count);	
+
+			$(".chatMinEve").hover(function(){
+				$(this).find(".chatMinEveClose").show();
+			},function(){
+				$(this).find(".chatMinEveClose").hide();
+			});
+
+
+			$(".chatMinEveContent").click(function(){
+ 				var maxid = $(this).parent().attr("maxid");
+
+				$(this).parent().hide();
+				//alert(talkid);
+				$("#"+maxid).show();
+			});
+
+		
+
+
+		});
+
+		
+			
+			
+			
+		
+	
 
 
 

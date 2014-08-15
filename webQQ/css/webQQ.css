@@ -35,7 +35,7 @@ body{ background-image: url("../images/background_01.jpg"); background-size: 100
 .FAFLi{width: 68px; height: 50px; cursor: pointer;border-right: 1px solid #222;border-left: 1px solid #555; float: left;}
 .FAFLiLeft{ border-left: 0;}
 .FAFLiRight{ border-right: 0;}
-.FAFPic{ display: block; width: 34px; height: 34px; margin:  0 17px 0 17px;}
+.FAFPic{position: relative; display: block; width: 34px; height: 34px; margin:  0 17px 0 17px;}
 .FAFPic01{ background-image: url("images/huihua.png"); background-size: 34px 34px;}
 .FAFPic02{ background-image: url("images/lianxiren.png"); background-size: 34px 34px;}
 .FAFPic03{ background-image: url("images/faxian.png"); background-size: 34px 34px;}
@@ -52,7 +52,8 @@ body{ background-image: url("../images/background_01.jpg"); background-size: 100
 
 
 .chatA{ width: 261px; height: 57px; padding: 2px 1px 2px 1px;background-image: linear-gradient(#FFF, #F1F1F1); cursor: pointer;}
-.chatAHeader{ width: 40px; height: 40px; margin: 8px 8px 8px 8px;  background-size: 40px 40px; display: block; float: left;}
+.chatAHeader{position: relative; width: 40px; height: 40px; margin: 8px 8px 8px 8px;  background-size: 40px 40px; display: block; float: left;}
+.chatAHeader img{ width: 40px; height: 40px;  background-size: 40px 40px; display: block; float: left;}
 #Friend01{background-image: url("../images/hanbing.jpg");background-size: 40px 40px; }
 #Friend02{background-image: url("../images/kate.jpg");background-size: 40px 40px; }
 #Friend03{background-image: url("../images/baonv.jpg");background-size: 40px 40px; }
@@ -152,8 +153,9 @@ body{ background-image: url("../images/background_01.jpg"); background-size: 100
 .TalkBottom{ position: absolute; top: 405px; width: 684px; height: 42px; background-image: linear-gradient(#555, #222);  border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; padding: 3px 10px 5px 6px;}
 .TTTap{width: 49px; height: 19px; border: 1px solid #2C2727; border-radius: 3px; float: left; margin:5px 0 7px 15px;  padding: 6px 10px 6px 10px; cursor: pointer;background-image: linear-gradient(#555, #222);}
 .TTTap a{ width: 14px; height: 14px; background-image: url("images/TalkTop01.png"); background-size: 100% 100%; background-repeat: no-repeat; display: block;}
-.TTName{ float: left; width: 471px; height: 19px; padding: 13px 30px 13px 20px; text-align: center; color: #FFF; font-size: 18px; font-weight: bold;}
+.TTName{ float: left; width: 371px; height: 19px; padding: 13px 30px 13px 20px; text-align: center; color: #FFF; font-size: 18px; font-weight: bold;}
 .TTClose{width: 61px; height: 19px; margin: 5px 10px 7px 0; padding: 6px 10px 6px 10px; float: right;font-size: 14px; font-family: "微软雅黑"; text-align: center; display: block;border: 1px solid #2C2727; border-radius: 3px; text-decoration: none;color: #FFF;cursor: pointer;background-image: linear-gradient(#555, #222);}
+.TTMin{width: 61px; height: 19px; margin: 5px 10px 7px 0; padding: 6px 10px 6px 10px; float: right;font-size: 14px; font-family: "微软雅黑"; text-align: center; display: block;border: 1px solid #2C2727; border-radius: 3px; text-decoration: none;color: #FFF;cursor: pointer;background-image: linear-gradient(#555, #222);}
 .TBFace{ width:38px; height: 32px; float: left; padding: 5px; cursor: pointer;}
 .TBFacePic{width: 30px; height: 30px; display: block; background-image: url("images/TalkBottom01.png"); background-size: 30px 30px;}
 .TBInput{display: block; width: 558px; height: 32px; border-radius: 5px; padding: 5px 10px 5px 10px; margin: 5px 10px 5px 6px; float: left;background: none repeat scroll 0% 0% #F9F9F9;box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) inset;font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px;}
@@ -210,5 +212,19 @@ body{ background-image: url("../images/background_01.jpg"); background-size: 100
 /*底部图片切换 end*/
 
 
+.weidu:after{ width: 12px; height: 12px; content: ""; position: absolute; top: -6px; left: 36px; display: block; background-image: url("images/weiduIcon.png"); background-size: 100% 100%;}
+.weidu2:after{ width: 12px; height: 12px; content: ""; position: absolute;  left: 20px; display: block; background-image: url("images/weiduIcon.png"); background-size: 100% 100%;}
 
-#chatAllArea{width: 860px; height: 620px; float: left;}
+
+/*最小化*/
+#chatAllArea{width: 840px; height: 580px; float: left; margin-left: 20px;}
+#chatMinArea{ width: 860px; height: 40px; float: right; margin-top: 8px;}
+.chatMinEve{ position: relative; width: 160px; height: 40px; margin-right: 8px; border-radius: 3px; box-shadow: 4px 4px 4px #000; background-image: linear-gradient(#FFF, #CCC); cursor: pointer; float: left;}
+.chatMinEvePic img{display: block; width: 30px; height: 30px; margin:5px 4px; float: left;}
+.chatMinEveContent{width: 115px; height: 40px; float: left;}
+.chatMinEveName{ width: 60px; height: 40px; overflow: hidden; float: left; font-size: 14px; line-height: 40px; font-family: "微软雅黑"; color: #222; padding-left: 8px;}
+.chatMinEveClose{position: absolute; left: 120px; z-index: 3; border: 1px solid #888; width: 20px; color: #666; height: 20px; display: none; margin: 10px; float: right; text-align: center; font-weight: bold; line-height: 20px; font-family: "微软雅黑"; background-image: linear-gradient(#FFF, #CCC); border-radius: 3px;}
+
+
+.chatAllTip{ margin-top: 80px;}
+.chatAllTipEve{ position: relative; width: 120px; height: 40px; margin-right: 8px; border-radius: 3px; box-shadow: 4px 4px 4px #000; background-image: linear-gradient(#FFF, #CCC); cursor: pointer;}

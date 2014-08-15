@@ -1,6 +1,11 @@
 $(function(){
 
+	//倒计时
 
+
+
+
+	//选项卡切换
 	$(".LBATLLi").click(function(){
 		var upid= $(this).attr("upid");
 		$(".LBATLLi").removeClass("skin_bottom");
@@ -138,8 +143,90 @@ $(function(){
 	},function(){
 		$(this).find(".TADMenuLATip").css("visibility","hidden");
 	});
+
+
+	//倒计时
+	countdown();
  
  });
+
+
+//倒计时
+function countdown(){
+	var ct = new Date();
+	var month = ct.getMonth() + 1;
+	//alert(month);
+	var date = ct.getDate();
+	var hour = ct.getHours();
+	var minute = ct.getMinutes();
+	var second = ct.getSeconds();
+
+	var ss = 60 - second;
+	//alert(ss);
+	$("#ss").html(ss);
+
+	var mm = 59 - minute;
+	$("#mm").html(mm);
+
+	var hh = 23 - hour;
+	$("#hh").html(hh);
+
+	var dd="";
+	if( month == 1 ){
+		dd = ( 31 - date ) + 28 + 31 + 30 + 31 + 30 + 12;
+	}
+	if( month == 2 ){
+		dd = ( 28 - date ) + 31 + 30 + 31 + 30 + 12;
+	}
+	if( month == 3 ){
+		dd = ( 31 - date ) + 30 + 31 + 30 + 12;
+	}
+	if( month == 4 ){
+		dd = ( 30 - date ) + 31 + 30 + 12;
+	}
+	if( month == 5 ){
+		dd = ( 31 - date ) + 30 + 12;
+	}
+	if( month == 6 ){
+		dd = ( 31 - date ) + 12;
+	}
+	if( month == 7 ){
+		if( date < 12){
+			dd = 12 - date ;
+		}
+		else{
+			dd = 365 -( date - 12);
+		}
+	}
+	if( month == 8 ){
+		dd = ( 31 - date ) + 30 + 31 + 30 + 31 + 193;
+		
+	}
+	if( month == 9 ){
+		dd = ( 31 - date ) + 31 + 30 + 31 + 193;
+	}
+	if( month == 10 ){
+		dd = ( 31 - date ) + 30 + 31 + 193;
+	}
+	if( month == 11 ){
+		dd = ( 31 - date ) + 30 + 193;
+	}
+	if( month == 12 ){
+		dd = ( 31 - date ) + 193;
+	}
+
+	//alert(dd);
+	$("#dd").html(dd);
+
+
+
+
+
+	setTimeout('countdown()',1000);
+}
+
+
+
 
 var bgindex = 2;
 
