@@ -4,7 +4,10 @@ $(function(){
 
 
 	//
-
+	$(document).on("click","#btnwarn",function(){
+		//alert("1");
+		$("#warning").hide();
+	});
 
 	//背景图片
 	$("#PCLeft").hover(function(){
@@ -102,11 +105,11 @@ $(function(){
 	//关闭最小化窗口
 	$(document).on("click", ".chatMinEveClose", function () {
 			//$(".chatMinEveClose").click(function(){
-		var count =$("#chatMinArea").attr("count");
-		count -- ;
-		$("#chatMinArea").attr("count",count);
+		//var count =$("#chatMinArea").attr("count");
+		//count -- ;
+		//$("#chatMinArea").attr("count",count);
 		$(this).parent().hide();
-		count --;
+		//count --;
 	});
 
 
@@ -616,14 +619,15 @@ function chathtml(){
 		//最小化
 		$(".TTMin").click(function(){
 
-			var x = document.getElementsByClassName("chatMinEve");
-			var count = x.length;
-			if(count >=6 )
-			{
-				alert("窗口最小化已经最多！");
-				return;
-			}
-			else{
+			//var x = document.getElementsByClassName("chatMinEve");
+			//var count = x.length;
+			//if(count > 5 )
+			//{
+				//alert("窗口最小化已经最多！");
+				//$("#warning").show();
+				//return;
+			//}
+			//else{
 
 
 
@@ -662,11 +666,12 @@ function chathtml(){
 					$("#" + tminid).show();
 				}
 				
-			}
+			//}
 			
-			$("#chatMinArea").attr("count",count);	
+			//$("#chatMinArea").attr("count",count);	
 
 			$(".chatMinEve").hover(function(){
+				//alert("1");
 				$(this).find(".chatMinEveClose").show();
 			},function(){
 				$(this).find(".chatMinEveClose").hide();
@@ -674,6 +679,10 @@ function chathtml(){
 
 
 			$(".chatMinEveContent").click(function(){
+
+				//var count =$("#chatMinArea").attr("count");
+				//count -- ;
+				//$("#chatMinArea").attr("count",count);
  				var maxid = $(this).parent().attr("maxid");
 
 				$(this).parent().hide();
