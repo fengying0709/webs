@@ -1,0 +1,203 @@
+#htmlAll{width: 100%; height: 630px; background-color: #FFF; overflow:hidden;}
+#MailTop{ width: 100%; height: 66px; min-width: 1300px;}
+#MailBorder{ width: 100%; height: 6px; position: absolute; top: 66px; background-image: url("images/border.gif"); background-position: 0 -115px;}
+#MailTip{ position: absolute; width: 179px; height: 550px; padding-left: 8px; background-color: #FFF;}
+#MailContent{ position: absolute; width: 1160px; height: 550px; top: 75px; left: 190px; float: right;}
+
+
+
+
+/*TOP*/
+#MTLeft{width: 399px; height: 60px; float: left; padding-left: 8px;}
+#MLogo{ width: 209px; height: 60px; display: block; float: left; background-image: url("images/logo.png");}
+#MailMyInfo{ width: 184px; height: 39px; margin-top: 12px; float: left; margin-left: 5px;}
+.MyName{ line-height: 18px; font-size: 12px; font-family: "lucida Grande",Verdana; float: left; color: #000;}
+.MyMailNumA{ display: inline-block; cursor: pointer;}
+.MyMailNum{ line-height: 18px; font-size: 12px; font-family: "lucida Grande",Verdana; float: left;}
+.MyMailNumIcon{ line-height: 18px; font-size: 11px; font-family: "lucida Grande",Verdana; float: left;}
+.addrtitle a,span{ line-height: 18px; font-size: 12px; color: #1E5494; font-family: "lucida Grande",Verdana; text-decoration: none; }
+.addrtitle a:hover{text-decoration: underline;}
+.MTRightTop{ float: right; margin-right: 6px;}
+.MTRightSearch{width: 278px; height: 18px; padding: 1px; position: absolute; top: 40px; left: 180px;border: 1px solid #BBB; border-radius: 2px; background-color: #FFF;}
+.MTRightSearchTxt{ width: 235px; height: 18px; float: left; border: 0;}
+.MTRightSearchIcon{ width: 20px; height: 18px; background-image: url("images/search.png"); background-position: -3px -3px; float: left; display: block;}
+.MTRightSearchSpan{ width: 20px; height: 18px; display: block; float: left;background-image: url("images/search.png"); background-position: -27px -3px;}
+#MTRight{width: 463px; height: 66px; float: right; position: relative; background-image: url("images/top_rightbg.jpg"); background-size: 100% 100%;}
+/*TOP end*/
+
+/*birder*/
+#borderLeft{width: 184px; height: 11px; background-image: url("images/topline16a498.gif"); position: absolute; background-position: -184px 0; top: 66px; z-index: 2; left: 8px; display: block;}
+#MainFunction{width: 179px; height: 107px; background-image: url("images/border.gif"); margin-top: 11px;}
+#MainBar{ width: 179px; height: 435px; background-image: url("images/topline16a498.gif"); background-repeat: repeat-y;}
+#MainBottom{ width: 179px; height: 11px; background-image: url("images/topline16a498.gif"); background-position: -184px -11px;}
+/*border end*/
+
+
+
+
+/*Left*/
+.MFTipLi{width: 158px; height: 24px; display: block; margin-left: 11px; padding-top: 2px; cursor: pointer;}
+.MFfs{margin-top: 5px;}
+.MFTipLi:hover{ background-color: #E0ECF9;}
+.MFTipLiAPic{ display: block; margin: 4px 4px 0 12px; width: 25px; height: 20px; background-image: url("images/mailIcon.png"); background-repeat: no-repeat; float: left;}
+.MFTipLiA{ width: 116px; height: 24px; float: left; color: #1E5494; text-decoration: none; font-size: 14px; line-height: 24px; font-weight: bold;}
+.MFTipLiAPicXX{background-position: 0 -1px; }
+.MFTipLiAPicSX{background-position: 0 -32px; margin-top: 2px;}
+.MFTipLiAPicTXL{background-position: 0 -64px; }
+
+.MBTipLi{width: 148px; height: 24px; display: block; margin-left: 11px; padding-left: 13px; cursor: pointer;}
+.MBBorder{width: 158px; height: 0; display: block; border-top: 1px solid #E0ECF9; margin: 2px 0 2px 11px;}
+.MBTipLi:hover{ background-color: #E0ECF9;}
+.MBfs{margin-top: 0;}
+.MBTipLiA{display: inline-block; height: 24px; font-size: 12px; color: #1E5494; line-height: 24px; float: left;}
+.MBTipLiASpec{ font-weight: bold;}
+.MBTipLiXJYX{ background-image: url("images/mailIcon.png"); width: 15px; height: 13px; background-position: -80px -175px; display: block; float: left; margin: 5px 0 0 4px;}
+.MBTipLiPLP{ background-image: url("images/mailIcon.png"); width: 15px; height: 16px; background-position: 0 -190px; display: block; float: left; margin: 5px 0 0 4px;}
+/*Left end*/
+
+
+
+/*TodayBody*/
+#TodayBody{ width: 1160px; height: 550px; }
+#TodayBody a:hover{ text-decoration: underline;}
+#TodayMain{ display: block; width: 831px; height: 123px; padding: 13px 0 0 8px; float: left;}
+#TodayWelcome{ width: 800px; height: 22px; line-height: 22px; margin-bottom: 5px;}
+#TodayWelcome span{line-height: 22px; font-size: 16px; font-weight: bold;color: #000; float: left;}
+#TodayWelcome a{line-height: 22px; font-size: 16px; font-weight: bold; color: #1E5494; text-decoration: none; float: left;}
+#TodayMailRemind{ width: 800px; height: 16px; line-height: 16px;}
+#TodayMailRemind span{ font-size: 12px; color: #000; float: left;}
+#TodayMailRemind a{ font-size: 12px; color: #1E5494; text-decoration: none; float: left;}
+.TodayMailRemindIcon{ width: 16px; height: 12px; margin: 4px 8px 0 0; background-image: url("images/mailIcon.png"); background-position: -48px -2px; display: block; float: left;}
+#TodayTipRemind{ width: 780px;height: 24px; padding-top: 5px; line-height: 29px; padding-left: 20px;}
+#TodayTipRemind a{ font-size: 14px; color: #1E5494; text-decoration: none; font-weight: bold; margin-right: 4px;}
+
+
+
+
+
+
+
+
+#TodayTop{ width: 300px; height: 122px; float: right; margin-right: 8px; float: right;}
+#TodayTopA{ width: 275px; height: 68px; padding: 4px 10px 3px 15px; background-color: #E0ECF9; border-radius: 3px; margin-top: 45px;}
+#TodayTopATitle{ width: 273px; height: 20px; line-height: 20px; font-weight: bold; color: #000; font-size: 14px;}
+#TodayTopAContent{ width: 273px; height: 20px; font-size: 12px; line-height: 20px; color: #798699;}
+#TodayTopAContent a{color: #1E5494;}
+
+.TodayKong{ width: 1160px; height: 10px; float: left;}
+
+
+#TodayBirthDay{ width: 300px; height: 232px; float: right; margin-right: 8px;border: 1px solid #A7C5E2; border-radius: 3px; overflow: hidden;}
+#TodayBirthDayTitle{ width: 292px; height: 24px; border-bottom: 1px solid #A7C5E2; background-color: #EFF5FB; padding: 3px 4px 0 4px; position: relative;}
+.TodayBirthDayContent{ width: 298px; height: 143px; border-bottom: 1px solid #A7C5E2;}
+#TodayBirthDayTitleA{position: absolute; top: 4px; width: 290px; height: 23px; border: 1px solid #A7C5E2; border-bottom: 0; border-top-right-radius: 4px; border-top-left-radius: 4px; overflow: hidden;}
+.TodayBirthDayTitleAEve{display: block; width: 124px; height: 15px; padding: 4px 10px 3px 10px; text-align: center; line-height: 15px; font-size: 12px; float: left; }
+.TodayBirthDayTitleACheck{display: block; width: 124px; height: 16px; padding: 4px 10px 3px 10px; background-color: #FFF; border: 1px solid #A7C5E2; border-top-right-radius: 4px; border-top-left-radius: 4px;}
+.TBDCEve{ width: 278px; height: 57px; padding-top: 10px; margin: 0 10px;}
+.TBDCEvePic{ width: 40px; height: 40px; display: block; float: left; margin-right: 10px;}
+.TBDCEveInfo{ width: 220px; height: 57px; float: left; }
+.TBDCEveName{ width: 220px; height: 17px; line-height: 17px; font-size: 13px; color: #5FA207; font-weight: bold; display: block; margin-bottom: 4px;}
+.TBDCEveTime{ width: 220px; height: 16px; line-height: 16px; font-size: 12px; display: block; margin-bottom: 4px; color: #000;}
+.TBDCEveBottom{ width: 220px; height: 16px; line-height: 16px;}
+.TBDCEveBottom a{ color: #1E5494; text-decoration: none; font-size: 12px;}
+#TodayBirthDayBottom{ width: 298px; height: 60px;}
+.TBDBPic{ width: 44px; height: 44px; background-image: url("images/icon_phone.png"); margin: 8px 4px 0 16px; display: block; float: left;}
+.TBDBWord{ width: 220px; height: 60px; float: left;}
+.TBDBWord span{ line-height: 30px; font-size: 14px; color: #000; margin-top: 4px; display: block; float: left;}
+.TBDBWord i{display: block; float: left; color: red; margin-top: 4px; line-height: 30px; font-size: 14px; font-weight: bold;}
+.TBDBWord a{ line-height: 20px; font-size: 12px; color: #1E5494; text-decoration: none; font-weight: bold;}
+
+
+
+
+#TodayInfo{ width: 831px; height: 232px; float: left; margin-left: 8px;border: 1px solid #A7C5E2; float: left; border-radius: 3px; overflow: hidden;}
+#TodayInfoTitle{ width: 821px; height: 23px; border-bottom: 1px solid #A7C5E2; background-color: #EFF5FB; padding: 5px 0 0 10px; float: left; font-size: 14px;}
+#TodayInfoPic{ display: block; width: 825px; height: 83px; padding: 2px 3px; border-bottom: 1px solid #A7C5E2;   float: left;}
+#TodayInfoPicA{display: block; width: 825px; height: 83px; background-image: url("../images/jlyyhj.jpg"); background-repeat: no-repeat; }
+#TodayInfoUl{ width: 829px; height: 102px; display: block;  padding-top: 8px; float: left;}
+.TodayInfoLiLeft{ width: 340px; height: 28px; padding: 7px 0 0 25px; display: block; float: left;}
+.TodayInfoLiPic{ display: block; width: 24px; height: 24px; background-image: url("images/todayInfoIcon.png"); background-repeat: no-repeat; float: left;}
+.TodayInfoLiA{ display: inline-block; font-size: 14px; color: #1E5494; line-height: 22px; text-decoration: none;}
+.TodayInfoLiRight{ width: 431px; height: 28px; padding: 7px 0 0 25px; display: block; float: left;}
+.IconiPhone{ background-position: 1px 0;}
+.IconCard{ background-position: 0 -31px;}
+.IconiPad{ background-position: 0 -61px;}
+.Icondate{ background-position: 0 -91px;}
+.IconAndroid{ background-position: 0 -121px;}
+.Icontxt{ background-position: 0 -156px;}
+
+
+
+#TodayBottom{ width: 1149px; height: 36px; margin: 15px 0 0 10px; float: left;}
+#TodayBottomUl{ width: 1149px; height: 36px;}
+.TodayBottomLi{ width: 1110px; height: 18px; line-height: 16px;}
+.TodayBottomLi a{display: inline-block; font-size: 12px; color: #1E5494; text-decoration: none;}
+.TodayBottomLi span{ font-size: 11.5px; color: #798699;}
+
+
+
+/*TodayBody end*/
+
+
+
+
+/*收件箱*/
+.MailCommon{ display: none; width: 1162px; height: 550px; overflow-y: auto; overflow-x:hidden;  padding-left: 8px;}
+.MailCommonTitle{ width: 1138px; height: 18px; margin: 5px 0 5px 8px;}
+.MailCommonTitle span{ line-height: 18px; font-size: 14px; color: #093665; font-weight: bold;}
+.MailCommonTitle p{ display: inline-block; font-size: 12px; color: #000;}
+.MailCommonTitle a{ text-decoration: none; color: #5FA207; font-size: 12px;}
+.MailCommonTitle a:hover{text-decoration: underline;}
+.MailCommonTool{ width: 1132px; height: 24px; padding: 7px; background-color: #C1D9F3; }
+.MCTBtn{position: relative; cursor: pointer; display: block; float: left; margin-right: 4px; height: 22px; font-size: 12px; text-decoration: none; color: #000; line-height: 22px; padding: 0 12px; border: 1px solid #888; border-radius: 3px; background-image: linear-gradient(to bottom, #FFF, #EBEBEB); background-image: -moz-linear-gradient(50% 0%, #FFF 0%, #EBEBEB 90%, #F3F3F3 100%);}
+.MCTBtnIcon{ width: 7px; height: 4px; display: inline-block; margin-left: 3px; background-image: url("images/mailIcon.png"); background-position: -32px -128px;}
+.MCTBtnDelete{ width: 24px;}
+.MCTBtnDeleteAll{ width: 48px;}
+.MCTBtnMarkHave{ width: 88px;}
+.MCTBtnMark{ width: 68px;}
+.MCTBtnRemove{width: 68px;}
+
+.MCTBtnUp{ width:92px; height: 140px; background-color: #FFF; box-shadow: 2px 2px 2px #ccc; position: absolute; border: 1px solid #888; border-radius: 3px; top: 23px; left: -1px;}
+.MCTBtnUp li{ line-height: 22px; height: 22px; width: 68px; padding: 0 12px; cursor: pointer;}
+.MCTBtnUp li:hover{ background-color: #3470CC; color: #FFF;}
+.MCTBtnMarkUp{ display: none;}
+.MCTBtnRemoveUp{ height: 100px; display: none;}
+.MCTHeng{ width: 68px; height: 0; border-bottom: 1px solid #ddd; margin: 5px 0;}
+.MCTPage{ width: 130px; height: 22px; float: right; display: block;}
+.MCTPage span{ font-size: 12px; line-height: 22px; color: #000;}
+.MCTPageA{ font-size: 12px; line-height: 22px; color: #1E5494; display: inline-block; cursor: pointer; text-decoration: none;}
+.MCTPageA:hover{text-decoration: underline;}
+
+/*.MCTPage{ width: 86px; height: auto; display: inline-block;}*/
+
+.MailCommonTip{ width: 1146px; height: 22px; background-color: #F2F4F6; border-bottom: 1px solid #C1C8D2;}
+
+
+.MCTCheckbox{ width: 27px; height: 19px; padding: 1px 0 1px 5px; border-right: 1px solid #C1C8D2; float: left;}
+.MCTCheckboxA{ width: 13px; height: 13px; margin: 3px 3px 3px 4px;}
+.MCTReadIcon{ width: 31px; height: 21px; padding: 0 0 0 6px; border-right: 1px solid #C1C8D2; float: left;}
+.MCTReadIconA{ width: 31px; height: 21px; background-image: url("images/mailIcon.png"); background-position: 1px -80px; display: block;}
+.MCTSender{ width: 135px; height: 21px; padding-left: 12px; border-right: 1px solid #C1C8D2; float: left; font-size: 12px; line-height: 21px; color: #000;}
+.MCTTheme{ width: 794px; height: 21px; padding-left: 12px; border-right: 1px solid #C1C8D2; float: left; font-size: 12px; line-height: 21px; color: #000;}
+.MCTTime{ width: 100px; height: 21px; padding-left: 12px; float: left; font-size: 12px; line-height: 21px; color: #000;}
+.MailCommonLastMonth{ width: 1137px; height: 18px; padding: 8px 0 3px 9px; border-bottom: 2px solid #A7C5E2; margin-bottom: 2px;}
+.MailCommonLastMonth span{line-height: 18px; font-size: 14px; color: #093665; font-weight: bold;}
+.MailCommonLastMonth a{line-height: 18px; font-size: 12px; color: #093665; text-decoration: none;}
+.MailCommonLastMonth a:hover{text-decoration: underline;}
+.MCList{ width: 1146px; height: 23px; cursor: pointer; background-color: #FFFFFF;  border-bottom: 1px solid #E3E6EB;}
+.MCList:hover{ background-color: #F2F4F6;}
+.MCLCheckbox{ width: 27px; height: 19px; padding: 1px 0 1px 5px;  float: left;}
+.MCLCheckboxA{ width: 13px; height: 13px; margin: 3px 3px 3px 4px;}
+.MCLReadIcon{ width: 31px; height: 21px; padding: 3px 0 0 6px;  float: left;}
+.MCLReadIconA{ width: 18px; height: 16px; background-image: url("images/mailIcon.png"); background-position: -48px -16px; display: block;}
+.MCLReadIconB{background-position: -48px -1px;}
+.MCLSender{ width: 135px; height: 21px; padding-left: 12px;  float: left; font-size: 12px; line-height: 21px; color: #000;}
+.MCLTheme{ width: 794px; height: 21px; padding-left: 12px; float: left; font-size: 12px; line-height: 21px; color: #000;}
+.MCLThemeTitle{font-size: 12px; line-height: 21px; color: #000; display: inline-block;}
+.MCLThemeContent{ line-height: 21px; font-size: 12px; color: #A0A0A0; display: inline-block;}
+.MCLTime{ width: 100px; height: 21px; padding-left: 12px; float: left; font-size: 12px; line-height: 21px; color: #000;}
+.MailCommonBottomSelect{ width: 1137px; height: 19px; padding: 5px 0 2px 9px; line-height: 19px; background-color: #F2F4F6;} 
+.MailCommonBottomSelect span{ display: inline-block; font-size: 12px; color: #000; line-height: 19px;}
+.MailCommonBottomSelect a{ display: inline-block; color: #1E5494; text-decoration: none; font-size: 12px; line-height: 19px;}
+.MailCommonBottomSelect a:hover{text-decoration: underline;}
+/*收件箱 end*/
