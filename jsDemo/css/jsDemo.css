@@ -1,0 +1,33 @@
+.Title{ margin: auto; color: blue; text-align: center; font-size: 14px; font-weight: bold;}
+
+/*//显示时间*/
+#TimeArea{ width: 620px; height: 30px; padding: 10px 0 10px 0; margin: 30px auto;}
+#TDate{width: 320px; height: 30px; float: left;}
+#TTime{ width: 260px; height: 30px; float: right;}
+.TDA{ width: 20px; height: 30px; margin: 0 5px 0 5px; border: 1px solid #CCC; float: left; background-image: url("images/num.png");}
+.Heng{ background-position: 0 -330px;}
+.Dian{ background-position: 0 -300px;}
+
+
+
+
+
+
+/*下拉菜单*/
+#xialaliebiao{width: 100%; min-width: 1000px; height: 600px; background-color: rgb(221,221,221); padding-top: 50px;}
+#MenuArea{width: 1000px; height: 40px; margin: auto; border-bottom: 1px solid rgb(202,202,202);}
+.MenuLi{display:inline-block; height: 40px; position: relative;}
+.MenuA{border-top-right-radius: 5px; border-top-left-radius: 5px; border: 1px solid rgb(221,221,221); color: rgb(102, 102, 102); display: inline-block; height: 12px; line-height: 12px; text-decoration: none; padding:10px 10px 10px 10px;  font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.MenuTap{display: none; position: absolute;  width: 210px;  border:1px solid rgb(68, 68, 68); box-shadow: rgba(0, 0, 0, 0.298039) 3px 3px 10px 0px; background-color: #FFFFFF; }
+.MenuTap li{ height: 31px;}
+.MenuTap a{color: rgb(102, 102, 102); height: 31px; line-height: 31px; padding-left: 12px; text-decoration: none;font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+
+
+
+/*选项卡*/
+#SelectCard{ width: 100%; height: 450px;}
+.SCTitle{ width: 1000px; height:36px; margin: auto;}
+.SCTitle li{ float: left;}
+.SCT{ display: inline-block; height: 36px; text-decoration: none; line-height: 36px; font-size: 12px; background-color: #c5c5c5; color: #666;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 0 10px 0 10px; font-weight: bold; border-right: 1px solid #FFF;}
+.SCTActive{ background-color: rgb(227, 227, 227); color: rgb(68, 68, 68);}

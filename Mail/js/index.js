@@ -16,8 +16,9 @@ $(function  () {
 
 	//首页
 	$(".shouye").click(function(){
-		$(".MBTipLi").hide();
+		//alert("s");
+		$(".MailCommon").hide();
 		$("#TodayBody").show();
 		
-	}):
+	});
 });
