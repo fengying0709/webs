@@ -2,11 +2,11 @@
 #QzoneAll{ position: absolute; top: 40px; width: 100%; height: auto; min-width: 980px; background-image: url("../images/top.jpg"); background-position: -120px 0; background-repeat: no-repeat;}
 #QATop{ width: 980px; height: 220px; margin: auto;  position: relative;}
 #QAMenu{ width: 980px; height: 50px; margin: auto; position: relative; margin-bottom: 30px;}
-#QAContent{ width: 980px; min-height: 2000px; height: auto;  margin: auto; overflow: auto;}
+#QAContent{ width: 982px; min-height: 2000px; height: auto;  margin: auto; overflow: auto;}
 #QACColumnLeft{ width: 170px; height: 1727px; float: left; }
 #QACColumnRight{ width: 810px; height: 2000px; float: left; }
-
-
+#QACColumnRightMid{ width: 534px; height: 2000px; float: left; padding-left: 20px;}
+#QACColumnRightRight{ width: 230px; height: 2000px; float: right;}
 
 
 /*Qzone Top*/
@@ -48,5 +48,63 @@
 #QACCL3{ width: 170px; height: auto; min-height: 1140px; overflow: auto;}
 
 .QACCLUl{ width: 168px; height: auto; overflow: auto; padding: 2px 0;}
-.QACCLLi{ width: 160px; height: 20px; padding: 8px 2px; margin: auto;}
-.QACCLLiPic{ width: 16px; height: 16px; display: block; margin: 0 10px 0 14px;}
+.QACCLUlHide{ display: none;}
+.QACCLLi{ width: 150px; height: 20px; padding: 8px 14px 8px 2px; margin: auto; cursor: pointer; margin: 1px 0;}
+.QACCLLi:hover{background-color: #FAE1E7;}
+.QACCLLiPic{ width: 16px; height: 16px; display: block; margin: 0 10px 0 14px; float: left; background-image: url("images/iconLeft.png");}
+.QACCLLiPic01{ background-position: -815px -50px;}
+.QACCLLiPic02{ background-position: -340px -50px;}
+.QACCLLiPic03{ background-position: -465px -100px;}
+.QACCLLiPic04{ background-position: -415px -25px;}
+.QACCLLiPic05{ background-position: -840px -75px;}
+.QACCLLiPic06{ background-position: -890px -50px;}
+.QACCLLiPic07{ background-position: -865px -125px;}
+.QACCLLiPic08{ background-position: -815px -125px;}
+.QACCLLiPic09{ background-position: -815px -175px;}
+.QACCLLiPic10{ background-position: -840px -175px;}
+.QACCLLiPic11{ background-position: -890px 0px;}
+.QACCLLiPic12{ background-position: -840px -125px;}
+.QACCLLiPic13{ background-image: url("images/i13.png");}
+.QACCLLiPic14{ background-image: url("images/i14.png");}
+.QACCLLiPic15{ background-image: url("images/i15.png");}
+.QACCLLiPic16{ background-image: url("images/i16.png");}
+.QACCLLiPic17{ background-image: url("images/i17.png");}
+.QACCLLiPic18{ background-image: url("images/i18.png");}
+.QACCLLiPic19{ background-image: url("images/i19.png");}
+.QACCLLiPic20{ background-image: url("images/i20.png");}
+.QACCLLiPic21{ background-image: url("images/i21.png");}
+.QACCLLiPic22{ background-image: url("images/i22.png");}
+.QACCLLiPic23{ background-position: -865px -175px;}
+.QACCLLiPic24{ background-position: -840px -175px;}
+.QACCLLiPic25{ background-position: -865px -25px;}
+
+
+
+.QACCLLiSpan{ width: 85px; height: 16px; float: left; font-size: 12px; color: #332f30; line-height: 16px;}
+.QACCLLiNum{width: 25px; height: 13px; float: left;}
+.QACCLLiNumA{ height: 13px; display: inline-block; min-width: 8px; padding: 0 5px; line-height: 13px; font-size: 11px; color: #FFF; font-family: Tahoma; border-radius: 7px; background-color: #d8615d;}
+.QACCLLiWordA{ height: 13px; display: inline-block; min-width: 16px; line-height: 13px; font-size: 11px; color: #FFF; font-family: Tahoma; color: #d8615d;}
+.QACCLLiWordA:hover{text-decoration: underline;}
+.QACCLA{ width: 168px; height: 17px;background-color: #fff0f4;border-top: 1px #f5dce4 solid; display: block; cursor: pointer;}
+.QACCLAIcon{ width: 16px; height: 16px; display: block; margin: auto; background-image: url("images/iconLeft.png"); background-position: -890px -150px;}
+
+.QACCL3A{ width: 164px; height: auto; overflow: auto; min-height: 255px; border: #f5d0dc 1px solid; margin-bottom: 12px; padding-left: 4px;}
+.QACCL3ATitle{ width: 160px; height: 16px; color: #332f30; font-size: 12px; line-height: 16px; margin: 6px 0 9px 0;}
+.QACCL3A a{ width: 163px; height: 210px; display: block; }
+.QACCL3AContent{ width: 163px; height: 210px; }
+.c3{ display: inline-block; height: 16px; color: #d8615d; font-size: 12px; line-height: 16px; margin: 13px 0 8px 0; cursor: pointer; overflow:hidden;}
+.c3:hover{ text-decoration: underline;}
+
+.QACCL3AEve{width: 160px; height: 68px;}
+.QACCL3AContent a{ width: 50px; height: 50px; display: block; float: left; cursor: pointer;}
+.QACCL3AContent a img{ width: 50px; height: 50px;}
+.QACCL3AERight{ width: 100px; height: 68px; float: right;}
+.c4{ margin: 0;}
+.c5{ width: 90px; height: 16px; cursor: pointer; font-size: 12px; color: #000; line-height: 16px; display: block; padding-top: 10px; }
+
+
+
+/*Mid*/
+.QAMShuoshuo{width: 534px; height: auto; min-height: 70px; overflow: auto;  border: #f5d0dc 1px solid; }
+.QAMTxt{width: 369px; height: 60px; padding: 3px 8px 5px 8px; background-color: #FFF; float: left;}
+.QAMIcon{ width: 147px; height: 68px; background-color: #FFF2F5; float: left;}
