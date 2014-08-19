@@ -12,20 +12,37 @@ $(function(){
 		$(this).addClass("skin_bottom");
 		$(".LBAContent").addClass("disnone");
 		$("."+ upid).removeClass("disnone");
-		
+
+
+		$(".LBAC2EIcon").animate({"top":"1px"},300)
+						.animate({"top":"-10px"},100)
+						.animate({"top":"-5px"},100)
+						.animate({"top":"-10px"},100)
+						.animate({"top":"1px"},100)
+						return false;
 	});
 
 
 	//图片特效
 	$(".PACLi").hover(function(){
 		$(this).find(".PACLMid").show();
+
+		//$(this)
 	},function(){
 		$(this).find(".PACLMid").hide();
 	});
 	$(".LPCBPic").hover(function(){
 		$(this).next().next().show();
+		$(this).css({
+			"background-size":"130% 130%",
+			"background-position":"-15px -10px"
+		});
 	},function(){
 		$(this).next().next().hide();
+		$(this).css({
+			"background-size":"",
+			"background-position":""
+		});
 	});
 
 	//换皮肤
@@ -103,22 +120,28 @@ $(function(){
 		}  
 	});
 
-
+	
 	//幻灯片
 	$(".ChangePicLeft").click(function(){
+		wordShowStop();
+		//clearInterval(wordShow());
 		var bgindex = $(this).parent().attr("bgindex");
 		//alert(bgindex);
 		if(bgindex =="1"){
 			bgindex = 5;
 		}
 		bgindex--;
+		$(this).parent().attr("bgindex",bgindex);
+		//alert("1");
 		wordClear();
 		//alert("url('../images/slide"+ bgindex +".jpg')");
 		$("#PicSlider").css("background-image","url('images/slide"+bgindex+".jpg')");
+		//alert("2");
 		wordShow();
-		$(this).parent().attr("bgindex",bgindex);
+		
 	});
 	$(".ChangePicRight").click(function(){
+		wordShowStop();
 		var bgindex = $(this).parent().attr("bgindex");
 		//alert(bgindex);
 		if(bgindex =="4"){
@@ -231,7 +254,7 @@ function countdown(){
 var bgindex = 2;
 
 function showChangePic(){
-	
+	wordShowStop();
 	wordClear();
 	$("#PicSlider").css("background-image","url('images/slide"+ bgindex +".jpg')");
 	//图片出现
@@ -244,18 +267,27 @@ function showChangePic(){
 }
 
 function wordShow(){
-	$(".PicWordDemo01").animate({"left":"1075px","top":"255px"},100);
-	$(".PicWordDemo02").animate({"left":"900px","top":"285px"},1100);
+	$(".PicWordDemo01").animate({"left":"1075px","top":"255px"},1100);
+	$(".PicWordDemo02").animate({"left":"900px","top":"285px"},1600);
 	$(".PicWordDemo03").animate({"left":"1070px","top":"385px"},2100);
-	$(".PicWordDemo04").animate({"left":"800px","top":"415px"},3100);
-	$(".PicWordDemo05").animate({"left":"1080px","top":"485px"},4100);
+	$(".PicWordDemo04").animate({"left":"800px","top":"415px"},2600);
+	$(".PicWordDemo05").animate({"left":"1080px","top":"485px"},3100);
 }
 
 
 function wordClear(){
-	$(".PicWordDemo01").css({"left":"1600px","top":""});
-	$(".PicWordDemo02").css({"left":"1600px","top":""});
-	$(".PicWordDemo03").css({"left":"1600px","top":""});
-	$(".PicWordDemo04").css({"left":"1600px","top":""});
-	$(".PicWordDemo05").css({"left":"1600px","top":""});
+	$(".PicWordDemo01").css({"left":"1600px","top":"255px"});
+	$(".PicWordDemo02").css({"left":"1600px","top":"285px"});
+	$(".PicWordDemo03").css({"left":"1600px","top":"385px"});
+	$(".PicWordDemo04").css({"left":"1600px","top":"415px"});
+	$(".PicWordDemo05").css({"left":"1600px","top":"485px"});
+}
+
+
+function wordShowStop(){
+	$(".PicWordDemo01").stop();
+	$(".PicWordDemo02").stop();
+	$(".PicWordDemo03").stop();
+	$(".PicWordDemo04").stop();
+	$(".PicWordDemo05").stop();
 }

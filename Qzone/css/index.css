@@ -1,26 +1,52 @@
 #QzoneTop{ width: 100% ; height: 41px; min-width: 980px; background-color: #C68; position: fixed; z-index: 1000;}
 #QzoneAll{ position: absolute; top: 40px; width: 100%; height: auto; min-width: 980px; background-image: url("../images/top.jpg"); background-position: -120px 0; background-repeat: no-repeat;}
 #QATop{ width: 980px; height: 220px; margin: auto;  position: relative;}
-#QAMenu{ width: 980px; height: 50px; margin: auto; }
-#QAContent{ width: 980px; height: auto; margin-top: 20px; margin: auto; }
+#QAMenu{ width: 980px; height: 50px; margin: auto; position: relative; margin-bottom: 30px;}
+#QAContent{ width: 980px; min-height: 2000px; height: auto;  margin: auto; overflow: auto;}
 #QACColumnLeft{ width: 170px; height: 1727px; float: left; }
 #QACColumnRight{ width: 810px; height: 2000px; float: left; }
 
 
 
 
-/*Qzone*/
-#QzoneName{ width: 141px; height: 40px; position: absolute; top: 20px; color: #C35673; font-size: 28px; font-family: punctuation,"微软雅黑"; text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;}
-.QzoneLevel{}
+/*Qzone Top*/
+#QzoneName{ width: 145px; height: 40px; position: absolute; top: 20px; color: #C35673; font-size: 28px; font-family: punctuation,"微软雅黑"; text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;}
+.QzoneLevel{ width: 24px; height: 36px; float: right;}
+.QzoneLevelPic{ width: 16px; height: 16px; display: block; margin-top: 12px; background-image: url("images/qzone_level.png"); background-position: -34px 0;}
+.QzoneLevelNum{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -170px 0; display: block; position: absolute;}
+.QzoneLevelNum1{background-position: -170px 0; top: 20px; left: 130px;}
+.QzoneLevelNum2{background-position: -170px 0; top: 20px; left: 138px;}
 #QATNickName{ width: 140px; height: 27px; position: absolute; left: 165px; bottom: 20px; font-size: 20px; color: #C35673; font-family: punctuation,"微软雅黑";  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;line-height: 26px;}
 #QATNickNameIcon{ width: 95px; height: 26px; float: right;}
 .QATNNHuangzuan{ cursor: pointer; width: 23px; height: 26px; display: block; float: left; background-image: url("images/huangzuan.png"); background-position: 0 -4px;}
 .QATNNKaitong{ cursor: pointer; width: 55px; height: 26px; background-image: url("images/icon-vip-open.gif"); display: block; margin-left: 2px; float: left; background-repeat: no-repeat; background-position: 0 4px;}
-
-
+#QAWeater{ width: 160px; padding-left: 20px; height: 56px; position: absolute; top: 30px; right: 20px; border: 1 dashed #FFF;}
+.QAWeaterPic{ width: 56px; height: 56px; display: block; float: left; background-image: url("../images/weather-overcast.png");}
+.QAWeaterTemperature{ font-size: 40px; line-height: 56px;color: #FFF;text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px; float: left; width: 45px; text-align: center;}
+.QAWeaterDu{ width: 8px; height: 20px;color: #FFF;text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px; float: left; margin-top: 5px;}
+.QAWeaterLocation{ width: 28px; height: 22px;color: #FFF;text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px; float: left; font-size: 14px; margin-top: 6px;}
+.QAWeaterDate{ width: 55px; height: 28px;color: #FFF;text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px; font-size: 14px; float: right; }
+.QAWeaterHide{ width: 48px; height: 25px; cursor: pointer; display: none; position: absolute; top: -25px; left: 132px; border-radius: 3px; font-size: 14px; text-align: center; color: #FFF; background-color: #54B3F3;}
+#QATZan{ width: 138px; height: 32px; border: 1px solid #000; border-radius: 3px; position: absolute; bottom: 20px; right: 20px; background-image: url("images/btn-x.png"); background-repeat: repeat-x; }
+.QATZanA{ width: 56px; height: 32px; padding: 0 10px 0 14px; float: left;}
+.QATZanLine{ width: 2px; height: 32px; float: left; background-image: url("images/iconAll.png"); background-position: -291px -35px;}
+.QATQiuZan{ width: 24px; height: 32px; padding: 0 14px 0 10px; float: right;}
+.QATZanAPic{ width: 20px; height: 20px; display: block; margin: 6px 5px 0 0; float: left; background-image: url("images/iconsmall.png"); background-position: -130px -42px;}
+.QATZanSpan{ display: block; width: 27px; float: left; height: 16px; line-height: 16px; color: #FFF;  font-size: 10px; margin-top: 8px;}
 
 /*Menu*/
 .QAMUl{ width: 700px; height: 50px; margin-left: 150px;}
 .QAMLi{ display: inline-block; line-height: 50px; font-size: 14px; padding: 0 15px; color: #332F30; text-decoration: none; cursor: pointer;}
 .QAMLi:hover{ text-decoration: underline;}
+.MyHeader{ width: 120px; height: 120px; display: block; position: absolute; top: -95px; background-image: url("../images/MyHeader.jpg"); background-size: 100% 100%; border: 3px solid #FFF;  box-shadow: 2px 2px 2px #d9d9d9;}
 
+
+
+/*QACCL1*/
+#QACCL1{ width: 168px; height: auto; min-height: 247px; overflow: auto; margin-bottom: 12px; border: 1px solid #f5d0dc; background-color: #FFFFFF;}
+#QACCL2{ width: 168px; height: auto; min-height: 326px; overflow: auto; margin-bottom: 12px; border: 1px solid #f5d0dc;}
+#QACCL3{ width: 170px; height: auto; min-height: 1140px; overflow: auto;}
+
+.QACCLUl{ width: 168px; height: auto; overflow: auto; padding: 2px 0;}
+.QACCLLi{ width: 160px; height: 20px; padding: 8px 2px; margin: auto;}
+.QACCLLiPic{ width: 16px; height: 16px; display: block; margin: 0 10px 0 14px;}
