@@ -9,13 +9,15 @@
 #QACColumnRightRight{ width: 230px; height: 2000px; float: right;}
 
 
+.disnone{display: none;}
+
+
+
+
 /*Qzone Top*/
 #QzoneName{ width: 145px; height: 40px; position: absolute; top: 20px; color: #C35673; font-size: 28px; font-family: punctuation,"微软雅黑"; text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;}
-.QzoneLevel{ width: 24px; height: 36px; float: right;}
-.QzoneLevelPic{ width: 16px; height: 16px; display: block; margin-top: 12px; background-image: url("images/qzone_level.png"); background-position: -34px 0;}
-.QzoneLevelNum{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -170px 0; display: block; position: absolute;}
-.QzoneLevelNum1{background-position: -170px 0; top: 20px; left: 130px;}
-.QzoneLevelNum2{background-position: -170px 0; top: 20px; left: 138px;}
+.QNLevel{ margin-top: 16px;float: right; }
+
 #QATNickName{ width: 140px; height: 27px; position: absolute; left: 165px; bottom: 20px; font-size: 20px; color: #C35673; font-family: punctuation,"微软雅黑";  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;line-height: 26px;}
 #QATNickNameIcon{ width: 95px; height: 26px; float: right;}
 .QATNNHuangzuan{ cursor: pointer; width: 23px; height: 26px; display: block; float: left; background-image: url("images/huangzuan.png"); background-position: 0 -4px;}
@@ -104,7 +106,186 @@
 
 
 
-/*Mid*/
-.QAMShuoshuo{width: 534px; height: auto; min-height: 70px; overflow: auto;  border: #f5d0dc 1px solid; }
-.QAMTxt{width: 369px; height: 60px; padding: 3px 8px 5px 8px; background-color: #FFF; float: left;}
-.QAMIcon{ width: 147px; height: 68px; background-color: #FFF2F5; float: left;}
+/*Mid shuoshuo*/
+#QAMSs:after{width: 0; height: 0; clear: both; display: block; content: "."; visibility: hidden;}
+
+#QAMSs{ width: 534px; height: auto; position: relative; margin-bottom: 12px;}
+.QAMShuoshuo{width: 534px; height: 70px; border: #f5d0dc 1px solid;}
+.QAMTxt{width: 370px; height: 62px; padding: 3px 8px 5px 8px; background-color: #FFF; float: left;}
+.QAMTxtA{width: 370px; height: 60px; border: 0; line-height: 20px; outline: 0;}
+.QAMIcon{ width: 148px; height: 70px; background-color: #FFF2F5; float: left;}
+.QAMIconA{width: 48px; height: 70px; border-left: 1px solid #F5DCE4; float: left; cursor: pointer; position: relative;}
+.QAMIA01Ul{position: absolute; width: 197px; height: 70px; background-color: #FFF; left: -50px; z-index: 5; border:1px solid #F5DCE4; top: 70px; border-left: 0;}
+.QAMIA02Ul{position: absolute; width: 98px; height: 70px; background-color: #FFF; z-index: 5; border:1px solid #F5DCE4; top: 70px; border-left: 0;}
+.QAMIA03Ul{position: absolute; width: 197px; height: 70px; background-color: #FFF; left: -148px; z-index: 5; border:1px solid #F5DCE4; top: 70px; border-left: 0;}
+.QAMIconAChild{width: 48px; height: 70px; border-left: 1px solid #F5DCE4; float: left; cursor: pointer;}
+.QAMIconAChildPic{width: 24px; height: 24px; margin: 15px 12px 0 12px; display: block; background-image: url("images/iconLeft.png");}
+.QAMIconAChildSpan{ width: 24px; height: 16px; font-size: 12px; text-align: center; line-height: 16px; margin: 0 12px 0 12px; color: #8C7E83;}
+.QAMIconAChildPic01{ background-position: -540px -150px;}
+.QAMIconAChildPic02{ background-position: -565px -50px;}
+.QAMIconAChildPic03{ background-position: -565px -100px;}
+.QAMIconAChildPic04{ background-position: -565px -150px;}
+.QAMIconAChildPic05{ background-position: -515px 0;}
+.QAMIconAChildPic06{ background-position: -515px -50px;}
+.QAMIconAChildPic07{ background-position: -540px 0;}
+.QAMIconAChildPic08{ background-position: -540px -50px;}
+.QAMIconAChildPic09{ background-position: -540px -100px;}
+.QAMIconAChildPic10{ background-position: -565px 0;}
+/*.QAMIconAChildPic01:hover{ background-position: -540px -175px;}
+.QAMIconAChildPic02:hover{ background-position: -565px -75px;}
+.QAMIconAChildPic03:hover{ background-position: -565px -125px;}
+.QAMIconAChildPic04:hover{ background-position: -565px -175px;}
+*/
+
+
+
+
+.QAMIA{width: 24px; height: 24px; margin: 22px auto; display: block; background-image: url("images/iconLeft.png");}
+.QAMIA01{ background-position: -490px -50px;}
+.QAMIA02{ background-position: -490px -100px;}
+.QAMIA03{ background-position: -490px -150px;}
+.QAMSBottom{width: 534px; height: 38px; border: 1px solid #F5DCE4; border-top: 0; background-color: #FFF;/* position: absolute; top: 72px;*/}
+.QAMSBottomIcon{ width: 78px; height: 16px; padding: 11px 10px; float: left;}
+.QAMSBottomIconA{width: 16px; height: 16px; background-image: url("images/iconLeft.png"); display: block; float: left; cursor: pointer; margin-right: 10px;}
+
+.QAMSBottomIconAemot{ background-position: -340px 0px;}
+.QAMSBottomIconAaite{ background-position: -465px -100px;}
+.QAMSBottomIconAjin{ background-position: -465px -150px;}
+.QAMSBottomIconAsync{ background-position: -690px -75px;}
+.QAMSBottomIconAweibo{ background-position: -665px -175px;}
+
+
+.QAMSBottomIconAemothover{ background-position: -465px -75px;}
+.QAMSBottomIconAaitehover{ background-position: -465px -125px;}
+.QAMSBottomIconAjinhover{ background-position: -465px -175px;}
+.QAMSBottomIconAsynchover{ background-position: -690px -100px;}
+.QAMSBottomIconAweibohover{ background-position: -690px 0;}
+
+/*.QAMSBottomIconAemotclick{ background-position: -465px -75px;}
+.QAMSBottomIconAaiteclick{ background-position: -465px -125px;}
+.QAMSBottomIconAjinclick{ background-position: -465px -175px;}*/
+.QAMSBottomIconAsyncclick{ background-position: -690px -125px;}
+.QAMSBottomIconAweiboclick{ background-position: -690px -25px;}
+
+.QAMSBottomIconAtip{ background-position: -390px -145px;}
+.QAMSBottomMid{width: 210px; height: 16px; float: right; padding: 11px;}
+.QAMSBottomBtn{ width: 55px; height: 28px; padding: 0 10px; border: 1px solid #CC4371;background-color: #E65C8A; border-radius: 3px; float: right; margin: 4px;  color: #fff; font-size: 14px; text-align: center; line-height: 28px; cursor: pointer;}
+.QAMSBottomSpan{ line-height: 16px; height: 16px; font-size: 12px; color: #8C7E83; font-family: Microsoft Yahei; float: left;}
+.QAMSBottomSpan1{ width: 2px; margin: 0 15px 0 8px; color: #F5DCE4;}
+.QAMSBottomSpan2{ width: 60px;}
+.QAMSBottomSpan3{ width: 68px; cursor: pointer;}
+.QAMSBottomSpan3 i{ float: right;}
+
+
+/*Mid 去年今日*/
+#QALN{ width: 536px; height: auto; overflow-y: auto; overflow-x: hidden; }
+#LastNow{width: 514px; height: 32px; border: #f5d0dc 1px solid; cursor: pointer; background-color: #FFF;  margin-bottom: 12px; padding: 12px 10px; overflow: hidden;}
+.LNHeader{ width: 30px; height: 30px; margin-right: 10px; display: block; float: left; cursor: pointer;}
+.LNHeader img{ width: 30px; height: 30px; }
+.LHSpan{width: 145px; height: 30px; line-height: 30px; font-size: 12px; color: #8c7e83; float: left; display: block;}
+.LHIcon{ width: 16px; height: 16px; display: block; float: right; margin-top: 7px; background-image: url("images/iconLeft.png"); background-position: -940px -50px;}
+
+
+#QADA{ width: 536px; height: auto; overflow-y: auto; overflow-x: hidden;}
+#DynamicAllTitle{ width: 534px; height: 42px;  border: 1px solid #f5d0dc;  background-color: #FFF0F4;  overflow: hidden;}
+.DATArea{ width: 70px; height: 24px; padding: 14px 0 0 20px; float: left;}
+.DATArea span{ width: 55px; height: 17px; line-height: 16px; font-size: 12px; color: #332f30; font-weight: bold; display: block; float: left;}
+.DATArea i{ width: 10px; height: 10px; margin: 4px 0 0 3px; display: block; float: left;background-image: url("images/iconLeft.png"); background-position: -390px -150px;}
+.DATIcon{width: 65px; height: 22px; padding: 11px 11px 0 0; float: right;}
+.DATIconA{ width: 16px; height: 16px; display: block; float: left; background-image: url("images/iconLeft.png"); margin: 2px 0 0 8px;}
+.DATIconA01{ background-position: -940px -175px;}
+.DATIconA02{ background-position: -715px -75px;}
+
+.DATIconSpan{ width: 2px; height: 20px; color: #F5DCE4; display: block; float: left; margin: 0 4px 0 8px;}
+
+#DynamicAllUpdate{ cursor: pointer; width: 150px; height: 19px; padding: 10px 192px;  border: 1px solid #f5d0dc; border-top: 0; background-color: #FFF0F4;}
+.DAUSpan{ width: 115px; height: 19px; font-size: 13px; line-height: 19px; float: left; color: #c35673;}
+.DAUIcon{width: 10px; height: 10px; background-image: url("images/iconLeft.png"); margin: 4px 0; background-position: -390px -150px; display: block; float: left;}
+#DynamicAllUpdate:hover{ background-color: #FAE1E7;}
+
+
+
+
+
+.DynamicEve{ width: 534px; height: auto; overflow: auto; border: 1px solid #f5d0dc; background-color: #FFF; }
+.DEHeader{ width: 50px; height: 50px; display: block; float: left; border-radius: 4px; overflow: hidden; margin: 15px 0 12px 10px;}
+.DEHeader img{ width: 50px; height: 50px;}
+.DEInfo{ width: 450px; height: 50px; float: right; margin: 15px 10px 12px 0;}
+
+.DEInfoTop{ width: 260px; height: 22px; margin-bottom: 8px;}
+.DEName{ line-height: 22px; color: #332f30; height: 22px; display: inline-block; font-size: 14px; float: left; cursor: pointer;}
+.DEName:hover{text-decoration: underline;}
+.DELevel{ display: block; width: 26px; height: 20px; padding-top: 2px; float: left; margin-left: 4px;}
+.DEInfoBottom{ width: 450px; height: 16px;}
+.DEInfoBottom span,a{ font-size: 12px; float: left; color: #8c7e83; height: 16px; line-height: 16px; margin-right: 8px;}
+.DEInfoBottom a{ cursor: pointer;}
+.DEInfoBottom a:hover{text-decoration: underline;}
+.DATIconA03{ background-position: -390px -175px; float: left; margin-top: 0; margin-right: 2px;}
+.DEChat{ width: 534px; height: auto; min-height: 81px;  border-top: 1px solid #f5d0dc; float: left;  background-color: #FFF0F4;}
+.DECTop{ width: 512px; height: 28px; padding: 5px 10px;}
+
+.DEContent{ width: 512px; height: 25px; float: left; padding: 0 10px 8px 10px; }
+.DEContentTop{ color: #332f30; font-size: 14px; height: 25px; line-height: 22px;}
+
+
+.DEChatTA{ min-width: 16px; width: auto; height: 16px; padding: 6px 8px; margin-right: 7px; float: left; cursor: pointer; border: 1px solid #FFF0F4;}
+.DEChatTA:hover{ background-color: #FFF; border: 1px solid #f5d0dc;}
+.DATIconA04{ background-position: -390px -25px; float: left; margin: 0 7px 0 0;}
+.DATIconA05{ background-position: -390px -50px; float: left; margin: 0 7px 0 0;}
+.DATIconA06{ background-position: -365px -150px;; float: left; margin: 0 7px 0 0;}
+.DATIconA07{ background-position: -390px -100px; float: left; margin: 0 7px 0 0;}
+.DATIconA08{ background-position: -390px 0px; float: left; margin: 0 0 0 0;}
+.DEChatTAC{ float: left; font-size: 12px; height: 16px; line-height: 16px; color: #c35673;}
+.DECTopLine{width: 1px; height: 11px; border-right: 1px solid #f5d0dc; line-height: 11px; font-size: 11px; float: left; margin: 8px 9px 0 0;}
+.DECLike{ width: 522px; height: 40px; padding-left: 10px; margin-bottom: 2px;}
+.DECLBtn{ width: 16px; height: 16px; border: 1px solid #f5d0dc; padding: 6px; background-color: #FFF; float: left; margin-right: 10px; cursor: pointer;}
+.DATIconA09{ background-position: -365px -175px; margin: 0;}
+.DECLikeHeader{ width: 30px; height: 30px; display: block; margin: 0 10px 10px 0; float: left; cursor: pointer;}
+.DECLikeHeader img{ width: 30px; height: 30px;}
+.DECContent{ width: 512px; height: 30px; padding: 0 10px 12px 10px;}
+.DECCtxt{ width: 440px; height: 30px; line-height: 20px; float: left; padding:2px 3px 2px 10px; font-size: 12px; border: 1px solid #f5d0dc; outline: 0;}
+.DECContentIcon{ cursor: pointer; width: 56px; height: 28px; float: left;  border: 1px solid #f5d0dc; background-color: #FFF; border-left: 0;}
+.DECCIcon{ width: 18px; height: 14px; margin: 6px auto; background-image: url("images/iconLeft.png"); background-position: -640px -150px; display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*空间等级*/
+.d1{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -119px 0px; display: block; position: absolute;}
+.d2{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -136px 0; display: block; position: absolute;}
+.d3{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -153px 0px; display: block; position: absolute;}
+.d4{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -170px 0; display: block; position: absolute;}
+.d5{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -187px 0px; display: block; position: absolute;}
+.d6{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -204px 0; display: block; position: absolute;}
+.d7{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -221px 0px; display: block; position: absolute;}
+.d8{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -238px 0; display: block; position: absolute;}
+.d9{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -255px 0px; display: block; position: absolute;}
+.d0{ width: 8px; height: 7px; background-image: url("images/qzone_level.png"); background-position: -272px 0; display: block; position: absolute;}
+
+
+.n1{ top: 8px; left: 8px}
+.n2{ top: 8px; left: 16px;}
+
+
+.p1{ width: 16px; height: 16px; display: block; background-image: url("images/qzone_level.png"); background-position: 0px 0;}
+.p2{ width: 16px; height: 16px; display: block; background-image: url("images/qzone_level.png"); background-position: -17px 0;}
+.p3{ width: 16px; height: 16px; display: block; background-image: url("images/qzone_level.png"); background-position: -34px 0;}
+.p4{ width: 16px; height: 16px; display: block; background-image: url("images/qzone_level.png"); background-position: -51px 0;}
+
+.QzoneLevel{ width: 24px; height: 20px; position: relative;}
+/*.QzoneLevelPic{ width: 16px; height: 16px; display: block; background-image: url("images/qzone_level.png"); background-position: -34px 0;}
+*/
+/*空间等级 end*/
