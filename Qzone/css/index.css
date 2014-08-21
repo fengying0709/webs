@@ -11,8 +11,33 @@
 
 .disnone{display: none;}
 
+/*QzoneTopA*/
+#QzoneTopA{ width: 980px; height: 41px; margin: auto;}
+#Logo{ width: 90px; height: 41px; float: left; background-image: url("images/IconTop.png"); background-position: -62px 0px;}
+#TopNav{ display: block; width: 433px; height: 41px; padding-left: 10px; float: left;}
+#UserInfo{ width: 158px; height: 41px; float: right;}
+.TNavLi{ height: 17px; display: inline-block; float: left; padding: 11px 0; cursor: pointer;}
+.TNavPerson{width: 91px; }
+.TNavMain{width: 91px; }
+.TNavFriend{ width: 77px;}
+.TNavStore{ width: 77px;}
+.TNavDress{ width: 77px;}
+.DATIconA11{ background-position: -740px -50px; float: left;}
+.DATIconA12{ background-position: -740px -100px; float: left;}
+.DATIconA13{ background-position: -740px -75px; float: left;}
+.DATIconA14{ background-position: -740px -125px; float: left;}
+.DATIconA15{ background-position: -740px -150px; float: left;}
+.TNavSpan{display: inline-block; height: 17px; line-height: 17px; font-size: 12px; color: #FFF; float: left; padding: 1px 0 0 6px;}
+.TNavTipIcon{ width: 0; height: 0; border: 3px solid #FFF; display: block;border-left-color: transparent;border-right-color: transparent;border-bottom-color: transparent; float: left; margin: 8px 0 0 4px;}
+#UserInfoDes{ width: 58px; height: 41px; padding: 0 5px; float: left;}
+#UserInfoDes a{ width: 24px; height: 24px; display: block; margin: 9px 8px 0 0; float: left;}
+#UserInfoDes a img{ width: 24px; height: 24px;}
+#UserInfoDes span{display: inline-block; height: 17px; line-height: 17px; font-size: 12px; color: #FFF; padding: 1px 0 0 6px; float: left;}
+.UserInfoIcon{ width: 26px; height: 41px; margin-left: 4px; float: left;}
 
 
+#Search{ width: 135px; height: 24px; margin: 9px 0 0 5px; float: right;}
+#Music{ width: 50px; height: 20px; padding: 10px;}
 
 /*Qzone Top*/
 #QzoneName{ width: 145px; height: 40px; position: absolute; top: 20px; color: #C35673; font-size: 28px; font-family: punctuation,"微软雅黑"; text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;}
@@ -224,7 +249,7 @@
 .DEChat{ width: 534px; height: auto; min-height: 81px;  border-top: 1px solid #f5d0dc; float: left;  background-color: #FFF0F4;}
 .DECTop{ width: 512px; height: 28px; padding: 5px 10px;}
 
-.DEContent{ width: 512px; height: 25px; float: left; padding: 0 10px 8px 10px; }
+.DEContent{ width: 512px; height: auto; overflow: auto; min-height: 25px; float: left; padding: 0 10px 8px 10px; }
 .DEContentTop{ color: #332f30; font-size: 14px; height: 25px; line-height: 22px;}
 
 
@@ -240,7 +265,7 @@
 .DECLike{ width: 522px; height: 40px; padding-left: 10px; margin-bottom: 2px;}
 .DECLBtn{ width: 16px; height: 16px; border: 1px solid #f5d0dc; padding: 6px; background-color: #FFF; float: left; margin-right: 10px; cursor: pointer;}
 
-.DEComment{ width: 512px; height: auto; overflow: auto; min-height: 36px; padding: 5px 10px;}
+.DEComment{ width: 512px; height: auto; overflow: auto; min-height: 0; padding: 5px 10px;}
 .DECommentA{ width: 512px; height: auto; overflow: auto; min-height: 36px; margin-bottom: 4px;}
 .DECommentAPic{width: 30px; height: 34px; display: block; float: left;}
 .DECommentAPic img{ width: 30px; height: 34px;}
@@ -266,15 +291,17 @@
 .DECContentBottomIcon1{ margin: 10px 8px 10px 0;}
 
 
+.DEContentDes{ width: 512px; height: auto; overflow: auto; min-height: 0; }
+.DEContentDesPic{ width: 512px; height: 384px; display: block; float: left; cursor: pointer;}
+.DEContentDesPic img{ width: 512px; height: 384px;}
 
 
 
-
-
-
-
-
-
+/*右边板块*/
+#QACCRRCheckin{ width: 228px; height: 68px; border: 1px solid #f5d0dc; margin-bottom: 12px; background-color: #FFF;}
+#QACCRRAdv{ width: 220px; height: 120px;border: 1px solid #f5d0dc; margin-bottom: 12px; padding: 4px; background-color: #FFF;}
+#QACCRRCare{ width: 219px; height: 270px; padding-left: 9px; border: 1px solid #f5d0dc;  margin-bottom: 12px; background-color: #FFF;}
+#QACCRRWho{ width: 219px; height: 443px; padding-left: 9px; border: 1px solid #f5d0dc;  margin-bottom: 12px; background-color: #FFF;}
 
 
 
@@ -305,3 +332,19 @@
 /*.QzoneLevelPic{ width: 16px; height: 16px; display: block; background-image: url("images/qzone_level.png"); background-position: -34px 0;}
 */
 /*空间等级 end*/
+
+
+
+
+
+
+
+
+
+
+
+/*照片门板*/
+.menban{ width: 100%; height: 100%; background-color: rgba(0,0,0,0.99); position: absolute; z-index: 9999; overflow: hidden; position: fixed;}
+.mbbg{ width: 800px; height: 500px; margin: 50px auto;}
+.mbbg img{width: 800px; height: 500px;}
+.mbclose{ width: 30px; height: 30px; font-size: 24px; color: #FFF; background-color: #888; position: absolute; background-image: url("images/iconPic.png"); background-position: -141px -33px; left: 1060px; top: 40px; cursor: pointer; text-align: center; line-height: 30px; border-radius: 15px; overflow: hidden;}

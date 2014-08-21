@@ -1,9 +1,52 @@
 $(function(){
 
+	//门板关闭
+	
+
+
+	//点击图片
+	/*<div class="menban">
+		<div class="mbbg">
+			<img src="images/comment2.jpg">
+		</div>
+		<a class="mbclose"></a>
+	</div>*/
+	$(".DEContentDesPic").click(function(){
+		var stop = $("body").scrollTop();  
+
+		var htmlMenban = '';
+		htmlMenban+='  ';	
+		htmlMenban+=' <div class="menban"> 					';
+		htmlMenban+=' 	<div class="mbbg">					';
+		htmlMenban+=' 		<img src="images/comment2.jpg">	';
+		htmlMenban+=' 	</div>								';
+		htmlMenban+=' 	<a class="mbclose"></a>				';
+		htmlMenban+=' </div>								';
+
+		$("#QzoneTop").hide();
+		$("#QzoneAll").hide();
+
+		$("body").append(htmlMenban);
+
+
+		$(".mbclose").click(function(){
+			$("html,body").animate({scrollTop:stop},10);
+			$(this).parent().hide();
+			$("#QzoneTop").show();
+			$("#QzoneAll").show();
+		});
+	});
 
 	//评论
 	$(".DECContentBottomBtn").click(function(){
-
+		var ct = new Date();
+		var hour = ct.getHours();
+		var minute = ct.getMinutes();
+		var h1=Math.floor( ( hour % 100 ) /10 );
+		var h2= hour % 10;
+		var mi1=Math.floor( ( minute % 100 ) /10 );
+		var mi2= minute % 10;
+		var txtTime = h1 + '' + h2 + ':' + mi1 + '' + mi2 ;
 
 		var txtcomment = $(this).parent().parent().find(".DECCtxt").val();
 		//alert(txtcomment);
@@ -14,10 +57,10 @@ $(function(){
 		htmlComment += '				<p class="DECommentARightContent">								';
 		htmlComment += '					&nbsp;														';
 		htmlComment += '					<a class="DECommentARightContentName">Van</a>				';
-		htmlComment += '					:'+txtcomment+'													';
+		htmlComment += '					:'+txtcomment+'												';
 		htmlComment += '				</p>															';
 		htmlComment += '				<div class="DECommentARightBottom">								';
-		htmlComment += '					<span>12:55</span>											';
+		htmlComment += '					<span>' + txtTime + '</span>								';
 		htmlComment += '					<i class="DATIconA DATIconA DATIconA10"></i>				';
 		htmlComment += '				</div>															';
 		htmlComment += '			</div>																';
@@ -25,6 +68,19 @@ $(function(){
 
 		$(this).parent().parent().parent().find(".DEComment").append(htmlComment);
 		$(this).parent().parent().find(".DECCtxt").val("");
+
+
+		var commentNum = $(this).parent().parent().parent().find(".DEChatTACNum").html();
+		if(commentNum == "0"){
+			$(this).parent().parent().parent().find(".DEChatTACNum").parent().removeClass("disnone");
+		}
+
+		//评论数字变化
+		var commentNum = $(this).parent().parent().parent().find(".DEChatTACNum").html();
+		commentNum++;
+		$(this).parent().parent().parent().find(".DEChatTACNum").html(commentNum);
+
+
 
 
 		$(".DECContentBottom").hide();
@@ -151,7 +207,13 @@ $(function(){
 		var isclick = $(this).attr("isclick");
 		if( isclick == "no"){
 			//var htmlword = $(this).find(".DEChatTAC").html();
-			$(this).find(".DEChatTAC").html("取消赞(1)");
+			$(this).find(".DEChatTAC:first").html("取消赞");
+			var zanNum = $(this).find(".DEChatTACNum").html();
+			if ( zanNum == "0"){
+				$(this).find(".DEChatTACNum").parent().removeClass("disnone");
+			}
+			zanNum++;
+			$(this).find(".DEChatTACNum").html(zanNum);
 			$(this).attr("isclick","yes");
 			$(this).parent().next().find(".DECLikeMyHeader").css("display","block");
 			
@@ -165,7 +227,14 @@ $(function(){
 			if( len == "1" ){
 				$(this).parent().next().addClass("disnone");
 			}
-			$(this).find(".DEChatTAC").html("赞(1)");
+			$(this).find(".DEChatTAC:first").html("赞");
+			var zanNum = $(this).find(".DEChatTACNum").html();
+			zanNum--;
+			$(this).find(".DEChatTACNum").html(zanNum);
+			if ( zanNum == "0"){
+				$(this).find(".DEChatTACNum").parent().addClass("disnone");
+			}
+			
 			$(this).attr("isclick","no");
 			$(this).parent().next().find(".DECLikeMyHeader").css("display","none");
 		}

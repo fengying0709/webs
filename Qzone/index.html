@@ -8,7 +8,57 @@
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-	<div id="QzoneTop"></div>
+
+	<!-- <div class="menban">
+		<div class="mbbg">
+			<img src="images/comment2.jpg">
+		</div>
+		<a class="mbclose"></a>
+	</div> -->
+
+	<div id="QzoneTop">
+		<div id="QzoneTopA">
+			<div id="Logo"></div>
+			<ul id="TopNav">
+				<li class="TNavLi TNavPerson">
+					<i class="DATIconA DATIconA11"></i>
+					<span class="TNavSpan">个人中心</span>
+				</li>
+				<li class="TNavLi TNavMain">
+					<i class="DATIconA DATIconA12"></i>
+					<span class="TNavSpan">我的主页</span>
+				</li>
+				<li class="TNavLi TNavFriend">
+					<i class="DATIconA DATIconA13"></i>
+					<span class="TNavSpan">好友</span>
+					<i class="TNavTipIcon"></i>
+				</li>
+				<li class="TNavLi TNavStore">
+					<i class="DATIconA DATIconA14"></i>
+					<span class="TNavSpan">应用</span>
+					<i class="TNavTipIcon"></i>
+				</li>
+				<li class="TNavLi TNavDress">
+					<i class="DATIconA DATIconA15"></i>
+					<span class="TNavSpan">装扮</span>
+					<i class="TNavTipIcon"></i>
+				</li>
+
+			</ul>
+			<div id="UserInfo">
+				<div id="UserInfoDes">
+					<a href="#"><img src="images/MyHeader.jpg"> </a>
+					<span>Van</span>
+				</div>
+				<div class="UserInfoIcon"></div>
+				<div class="UserInfoIcon"></div>
+				<div class="UserInfoIcon"></div>
+			</div>
+			<div id="Search"></div>
+			<div id="Music"></div>
+		</div>
+
+	</div>
 	<div id="QzoneAll">
 		<div id="QATop">
 			<!-- 空间名字 -->
@@ -462,6 +512,7 @@
 						</div>
 
 
+
 						<div class="DynamicEve">
 							<a class="DEHeader"><img src="images/mh01.jpg"> </a>
 							<div class="DEInfo">
@@ -497,6 +548,7 @@
 									<div class="DEChatTA">
 										<i class="DATIconA DATIconA04"></i>
 										<span class="DEChatTAC">评论</span>
+										<span class="DEChatTAC disnone">(<i class="DEChatTACNum">0</i>)</span>
 									</div>
 									<span class="DECTopLine"></span>
 									<div class="DEChatTA">
@@ -506,7 +558,8 @@
 									<span class="DECTopLine"></span>
 									<div isclick="no" class="DEChatTA DEChatTACancelZan">
 										<i class="DATIconA DATIconA06"></i>
-										<span class="DEChatTAC">赞(1)</span>
+										<span class="DEChatTAC">赞</span>
+										<span class="DEChatTAC">(<i class="DEChatTACNum">1</i>)</span>
 									</div>
 									<span class="DECTopLine"></span>
 									<div isclick="no" class="DEChatTA DEChatTACancelCollect">
@@ -527,6 +580,114 @@
 									<a class="DECLikeHeader"><img src="images/header01.jpg"> </a>
 									<a ishide="no" class="DECLikeMyHeader"><img src="images/MyHeader.jpg"> </a>
 								</div>
+
+
+
+								<!-- 评论区 -->
+								<div class="DEComment">
+
+									
+								</div>
+								<!-- 评论区 end -->
+
+
+								<div class="DECContent">
+									<textarea class="DECCtxt"  placeholder="我也说一句"></textarea>
+									<div class="DECContentIcon"> 
+										<i class="DECCIcon"></i>
+									</div>
+
+									<div class="DECContentBottom">
+										<i class="QAMSBottomIconA QAMSBottomIconAemot DECContentBottomIcon1" hid="QAMSBottomIconAemot"></i>
+										<i class="QAMSBottomIconA QAMSBottomIconAaite DECContentBottomIcon1" hid="QAMSBottomIconAaite"></i>
+
+										<div class="QAMSBottomBtn DECContentBottomBtn">发表</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="DynamicEve">
+							<a class="DEHeader"><img src="images/header03.png"> </a>
+							<div class="DEInfo">
+								<div class="DEInfoTop">
+									<div class="DEName">刘琴</div>
+									<div class="DELevel">
+										<div class="QzoneLevel">
+											<i class="p3">
+												<span class="n1 d5"></span>
+												<span class="n2 d1"></span>
+											</i>
+										</div>
+									</div>
+									
+								</div>
+								<div class="DEInfoBottom">
+									<span>09:10</span>
+									<a>扬州市仪征市</a>
+									<span>来自</span>
+									<a>华为</a>
+									<i class="DATIconA DATIconA03"></i>
+									<a>浏览(113)</a>
+								</div>
+							</div>
+							<div class="DEContent">
+								<div class="DEContentTop">
+									大泰兴，黄桥烧饼~~
+								</div>
+								<div class="DEContentDes">
+									<!-- 图片 -->
+									<a class="DEContentDesPic"><img src="images/comment2.jpg"></a>
+								</div>
+							</div>
+							<div class="DEChat">
+								<div class="DECTop">
+									<div class="DEChatTA">
+										<i class="DATIconA DATIconA04"></i>
+										<span class="DEChatTAC">评论</span>
+										<span class="DEChatTAC disnone">(<i class="DEChatTACNum">0</i>)</span>
+									</div>
+									<span class="DECTopLine"></span>
+									<div class="DEChatTA">
+										<i class="DATIconA DATIconA05"></i>
+										<span class="DEChatTAC">转发</span>
+									</div>
+									<span class="DECTopLine"></span>
+									<div isclick="no" class="DEChatTA DEChatTACancelZan">
+										<i class="DATIconA DATIconA06"></i>
+										<span class="DEChatTAC">赞</span>
+										<span class="DEChatTAC">(<i class="DEChatTACNum">1</i>)</span>
+									</div>
+									<span class="DECTopLine"></span>
+									<div isclick="no" class="DEChatTA DEChatTACancelCollect">
+										<i class="DATIconA DATIconA07"></i>
+										<span class="DEChatTAC">收藏</span>
+									</div>
+									<span class="DECTopLine"></span>
+									<div class="DEChatTA DEChatTASpec">
+										<i class="DATIconA DATIconA08"></i>
+									</div>
+									
+								</div>
+
+								<div class="DECLike">
+									<div class="DECLBtn">
+										<i class="DATIconA DATIconA09"></i>
+									</div>
+									<a class="DECLikeHeader"><img src="images/header01.jpg"> </a>
+									<a ishide="no" class="DECLikeMyHeader"><img src="images/MyHeader.jpg"> </a>
+								</div>
+
+
+
+								<!-- 评论区 -->
+								<div class="DEComment">
+
+									
+								</div>
+								<!-- 评论区 end -->
+
 
 								<div class="DECContent">
 									<textarea class="DECCtxt"  placeholder="我也说一句"></textarea>
@@ -580,6 +741,7 @@
 									<div class="DEChatTA">
 										<i class="DATIconA DATIconA04"></i>
 										<span class="DEChatTAC">评论</span>
+										<span class="DEChatTAC">(<i class="DEChatTACNum">2</i>)</span>
 									</div>
 									<span class="DECTopLine"></span>
 									<div class="DEChatTA">
@@ -589,7 +751,8 @@
 									<span class="DECTopLine"></span>
 									<div isclick="no" class="DEChatTA DEChatTACancelZan">
 										<i class="DATIconA DATIconA06"></i>
-										<span class="DEChatTAC">赞(1)</span>
+										<span class="DEChatTAC">赞</span>
+										<span class="DEChatTAC disnone">(<i class="DEChatTACNum">0</i>)</span>
 									</div>
 									<span class="DECTopLine"></span>
 									<div isclick="no" class="DEChatTA DEChatTACancelCollect">
@@ -620,8 +783,8 @@
 											
 											<p class="DECommentARightContent">
 												&nbsp;
-												<a class="DECommentARightContentName">Van</a>
-												:嗯嗯嗯嗯
+												<a class="DECommentARightContentName">✿天天晴朗~❀</a>
+												:生活真棒~
 											</p>
 
 											<div class="DECommentARightBottom">
@@ -638,8 +801,8 @@
 											
 											<p class="DECommentARightContent">
 												&nbsp;
-												<a class="DECommentARightContentName">Van</a>
-												:嗯嗯嗯嗯
+												<a class="DECommentARightContentName">  可乐要冰奶茶要温。</a>
+												:带我一个！
 											</p>
 
 											<div class="DECommentARightBottom">
@@ -667,12 +830,28 @@
 								</div>
 							</div>
 						</div>
+
+
+
 					</div>
 				</div>
 
 				<!-- 右边版块 -->
 				<div id="QACColumnRightRight">
-					
+					<!-- 签到 -->
+					<div id="QACCRRCheckin"></div>
+
+					<!-- 广告 -->
+					<div id="QACCRRAdv"></div>
+
+					<!-- 谁在意我 -->
+					<div id="QACCRRCare"></div>
+
+					<!-- 生日提醒 -->
+					<div id="QACCRRBirthday"></div>
+
+					<!-- 谁看过我 -->
+					<div id="QACCRRWho"></div>
 				</div>
 			</div>
 		</div>
