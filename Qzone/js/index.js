@@ -1,5 +1,42 @@
 $(function(){
 
+
+	//评论
+	$(".DECContentBottomBtn").click(function(){
+
+
+		var txtcomment = $(this).parent().parent().find(".DECCtxt").val();
+		//alert(txtcomment);
+		var htmlComment = '';
+		htmlComment += '		<div class="DECommentA">                                                ';
+		htmlComment += '			<a class="DECommentAPic"><img src="images/MyHeader.jpg"></a>		';
+		htmlComment += '			<div class="DECommentARight">										';			
+		htmlComment += '				<p class="DECommentARightContent">								';
+		htmlComment += '					&nbsp;														';
+		htmlComment += '					<a class="DECommentARightContentName">Van</a>				';
+		htmlComment += '					:'+txtcomment+'													';
+		htmlComment += '				</p>															';
+		htmlComment += '				<div class="DECommentARightBottom">								';
+		htmlComment += '					<span>12:55</span>											';
+		htmlComment += '					<i class="DATIconA DATIconA DATIconA10"></i>				';
+		htmlComment += '				</div>															';
+		htmlComment += '			</div>																';
+		htmlComment += '		</div>																	';
+
+		$(this).parent().parent().parent().find(".DEComment").append(htmlComment);
+		$(this).parent().parent().find(".DECCtxt").val("");
+
+
+		$(".DECContentBottom").hide();
+		$(".DECCtxt").css({
+			"width":"",
+			"height":""
+		});
+		$(".DECContentIcon").show();
+	});
+
+
+
 	//天气信息隐藏
 	$("#QAWeater").hover(function(){
 		$(".QAWeaterHide").show();
@@ -33,6 +70,14 @@ $(function(){
 		$(".QAMSBottom").fadeOut('3000');
 		//$(".QAMSBottom").fadeout('1000');
 		//$(".QAMSBottom").show();
+
+
+		$(".DECContentBottom").hide();
+		$(".DECCtxt").css({
+			"width":"",
+			"height":""
+		});
+		$(".DECContentIcon").show();
 	});
 
 	//图标变化
@@ -97,6 +142,93 @@ $(function(){
 		
 		
 	});
+
+
+
+	//赞和收藏
+	$(".DEChatTACancelZan").click(function(){
+		$(this).parent().next().removeClass("disnone");
+		var isclick = $(this).attr("isclick");
+		if( isclick == "no"){
+			//var htmlword = $(this).find(".DEChatTAC").html();
+			$(this).find(".DEChatTAC").html("取消赞(1)");
+			$(this).attr("isclick","yes");
+			$(this).parent().next().find(".DECLikeMyHeader").css("display","block");
+			
+		}
+		else{
+
+			//判断是不是有赞
+			
+			var len= $(this).parent().next().find("a").length;
+			//alert(len);
+			if( len == "1" ){
+				$(this).parent().next().addClass("disnone");
+			}
+			$(this).find(".DEChatTAC").html("赞(1)");
+			$(this).attr("isclick","no");
+			$(this).parent().next().find(".DECLikeMyHeader").css("display","none");
+		}
+		
+		
+	});
+	$(".DEChatTACancelCollect").click(function(){
+		var isclick = $(this).attr("isclick");
+		if( isclick == "no"){
+			//var htmlword = $(this).find(".DEChatTAC").html();
+			$(this).find(".DEChatTAC").html("取消收藏");
+			$(this).attr("isclick","yes");
+			//$(this).parent().next().find(".DECLikeMyHeader").css("display","block");
+			
+		}
+		else{
+			$(this).find(".DEChatTAC").html("收藏");
+			$(this).attr("isclick","no");
+			//$(this).parent().next().find(".DECLikeMyHeader").css("display","none");
+		}
+		
+		
+	});
+
+	//个人动态评论框变化
+	$(".DECCtxt").click(function(){
+		$(this).next().hide();
+		$(this).css({
+			"width":"512px",
+			"height":"62px"
+		});
+		//$(".DECContentBottom").show();
+		$(this).next().next().show();
+		return false;
+	});
+	$(".DECContentIcon").click(function(){
+		$(this).parent().find(".DECContentIcon").hide();
+		$(this).parent().find(".DECCtxt").css({
+			"width":"512px",
+			"height":"62px"
+		});
+		//$(".DECContentBottom").show();
+		$(this).parent().find(".DECContentBottom").show();
+		return false;
+	});
+	$(".DECContentBottom").click(function(){
+		$(this).parent().find(".DECContentIcon").hide();
+		$(this).parent().find(".DECCtxt").css({
+			"width":"512px",
+			"height":"62px"
+		});
+		//$(".DECContentBottom").show();
+		$(this).parent().find(".DECContentBottom").show();
+		return false;
+	});
+	/*$(".DECContent").blur(function(){
+		$(".DECContentBottom").hide();
+		$(".DECCtxt").css({
+			"width":"",
+			"height":""
+		});
+		$(".DECContentIcon").show();
+	});*/
 });
 
 //说说发表下拉框

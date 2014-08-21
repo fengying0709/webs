@@ -1,378 +1,59 @@
 <html>
 <head>
-	<title>GAEA</title>
+	<title>作品赏析</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/jquery-ui/css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link id="skin" rel="stylesheet" type="text/css" href="css/skin_blue.css">
-	
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<style type="text/css">
+		
+	#Header{ width: 300px; height: 45px; font-size: 22px; margin: 30px auto; font-size: "微软雅黑"; line-height: 45px; text-align: center; border: 2px solid #e9e9e9; border-left: 0; border-right: 0; color: #666;}
+	.DemoLi{ width: 250px; height: 220px; text-decoration: none; list-style: none; float: left; margin-left: 30px;}
+	.DemoA{ width: 1000px; height: auto; margin: auto; text-decoration: none;}
+	.DemoPic{display: block; width: 240px; height: 180px; float: left; border: 1px solid #ccc;}
+	.DemoPic img{ width: 240px; height: 180px;}
+	.DemoName{text-align: center; height: 40px; display: block; font-size: 14px; line-height: 40px; text-decoration: none; color: #000;}
 
+	</style>
 </head>
 <body>
-	<!-- 皮肤切换 -->
-	<div id="skinChange"></div>
-	<div id="skinChangeAllChoice">
-		<a id="SCACTitle">COLOR SKIN</a>
-		<ul id="SCACArea">
-			<li id="skin_blue" class="SCACEve SCACEve01"></li>
-			<li id="skin_red" class="SCACEve SCACEve02"></li>
-			<li id="skin_yellow" class="SCACEve SCACEve03"></li>
-			<li id="skin_green" class="SCACEve SCACEve04"></li>
-			<li id="skin_darkblue" class="SCACEve SCACEve05"></li>
-			<li id="skin_pink" class="SCACEve SCACEve06"></li>
-			
+
+		<div id="Header">作 品 赏 析</div>	
+
+		<ul class="DemoA">
+			<li class="DemoLi">
+				<a class="DemoPic" href="QQ/index.html" target="_blank"><img src="indexImages/QQIndex.jpg"></a>
+				<a class="DemoName" href="QQ/index.html">腾讯首页</a>
+			</li>
+
+			<li class="DemoLi">
+				<a class="DemoPic" href="WebQQ/webQQ.html" target="_blank"><img src="indexImages/webqq.jpg"></a>
+				<a class="DemoName" href="WebQQ/webQQ.html">webQQ</a>
+			</li>
+
+			<li class="DemoLi">
+				<a class="DemoPic" href="renren/index.html" target="_blank"><img src="indexImages/renren.png"></a>
+				<a class="DemoName" href="renren/index.html">人人网登录</a>
+			</li>
+
+			<li class="DemoLi">
+				<a class="DemoPic" href="Gaea/index.html" target="_blank"></a>
+				<a class="DemoName" href="Gaea/index.html">Gaea</a>
+			</li>
+
+			<li class="DemoLi">
+				<a class="DemoPic" href="newscast/index.html" target="_blank"></a>
+				<a class="DemoName" href="newscast/index.html">newscast</a>
+			</li>
+			<li class="DemoLi">
+				<a class="DemoPic" href="Mail/index.html" target="_blank"></a>
+				<a class="DemoName" href="Mail/index.html">Mail</a>
+			</li>
 		</ul>
-	</div>
-	<div id="skinChangeAllIcon"></div>
+<!-- 		<a target="_blank" href="QQ/index.html">QQ</a>
 
+		<a target="_blank" href="newscast/index.html">newscast</a>
 
-	<div id="Top">
-		<div id="logo"></div>
-		<div id="TopChoice">
-			<a id="TCArea">Gaea</a>
-			<a id="TCAPic"></a>
-			<ul id="TCAContent">
-				<li class="TCACLi"></li>
-				<li class="TCACLi"></li>
-				<li class="TCACLi"></li>
-				<li class="TCACLi"></li>
-				<li class="TCACLi"></li>
-			</ul>
-		</div>
-		<div id="Purchase">
-			<a src="css/images/purchase.png"></a>
-			<span>Purchase</span>
-			
-		</div>
-		<div id="Close">
-			<a src="css/images/cross.png"></a>
-			<span>Close</span>
-		</div>
-	</div>
-
-
-	<!-- 幻灯片PicSlider -->
-	<div bgindex="3" id="PicSlider" class="skin_bottom02">
-			<div id="TAUp">
-				<div id="TATime">
-					
-					<div class="TATCalendar"><i class="fa fa-calendar"></i>Next Event</div>
-					<div class="TATDes">
-						<span id="dd"></span>
-						<span class="TATimedw">d</span>
-					</div>
-					<div class="TATDes">
-						<span id="hh"></span>
-						<span class="TATimedw">h</span>
-					</div>
-					<div class="TATDes">
-						<span id="mm"></span>
-						<span class="TATimedw">m</span>
-					</div>
-					<div class="TATDes">
-						<span id="ss"></span>
-						<span class="TATimedw">s</span>
-					</div>
-				</div>
-
-				<div id="TAUpRight">
-					<a class="btndonate skinA" href="#">DONATE NOW</a>
-					<a class="btnjoin skin_bgcolorQian" href="#">JOIN US</a>
-				</div>
-
-			</div>
-			<div id="TADown">
-				<a id="TADownPic" href="#"></a>
-				<ul id="TADMenu">
-					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">Home</a>
-					</li>
-					<li class="TADMenuLi">
-						<a class="TADMenuLA TADMenuLA03" href="#">
-							Pages
-							<i class="TADMenuLAIcon"></i>
-						</a>
-
-						<ul class="TADMenuLATip TADMenuLATip01 skinA">
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;About Us</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Gallery</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;404 Error</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Typography</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Shortcodes</a></li>
-						</ul>
-
-
-					</li>
-					<li class="TADMenuLi">
-						<a class="TADMenuLA TADMenuLA03" href="#">
-							Events
-							<i class="TADMenuLAIcon"></i>
-						</a>
-						<ul class="TADMenuLATip TADMenuLATip02 skinA">
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Events List</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Events Calendar</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Events Grid</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Single Event</a></li>
-						</ul>
-
-					</li>
-					<li class="TADMenuLi">
-						<a class="TADMenuLA TADMenuLA04" href="#">
-							Projects
-							<i class="TADMenuLAIcon"></i>
-						</a>
-
-						<ul class="TADMenuLATip TADMenuLATip03 skinA">
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Projects List</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Projects Grid</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Single Project</a></li>
-						</ul>
-					</li>
-					<li class="TADMenuLi">
-						<a class="TADMenuLA TADMenuLA05" href="#">
-							Mega Menu
-							<i class="TADMenuLAIcon"></i>
-						</a>
-						<ul class="TADMenuLATip TADMenuLATip04 skinA">
-							
-						</ul>
-					</li>
-					<li class="TADMenuLi">
-						<a class="TADMenuLA TADMenuLA06" href="#">
-							Blog
-							<i class="TADMenuLAIcon"></i>
-						</a>
-
-						<ul class="TADMenuLATip TADMenuLATip05 skinA">
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Classic</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Masonry</a></li>
-							<li class="TADMenuLATipLi"><a class="TADMenuLATipLA">&nbsp;&nbsp;Single Post</a></li>
-						</ul>
-					</li>
-					<li class="TADMenuLi">
-						<a class="TADMenuLA" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
-
-			<span class="PicWordDemo PicWordDemo01">G  R  E  E  N</span>
-			<span class="PicWordDemo PicWordDemo02">IS THE POWER</span>
-			<span class="PicWordDemo PicWordDemo03"></span>
-			<span class="PicWordDemo PicWordDemo04">
-				 Lorem ipsum dolor sit amet, consectetur adipiscing elit.	
-				Nulla convallis egestas rhoncus. Donec facilisis fermentum
-				sem, ac viverra ante luctus vel.
-			</span>
-			<span class="PicWordDemo PicWordDemo05">SUPPOT</span>
-
-			<a class="ChangePicLeft"><</a>
-			<a class="ChangePicRight">></a>
-	</div>
-	<!-- 幻灯片PicSlider  end-->
-
-
-	<!-- 介绍 -->
-	<div id="LeadBlock">
-		<div id="LeadBlockA">
-			<div id="LBATitle">
-				<ul id="LBATLeft">
-					<li upid="LBAContent01" class="LBATLLi skin_bottom">Our Mission</li>
-					<li upid="LBAContent02" class="LBATLLi">Why you should join us</li>
-				</ul>
-				<a id="LBATRight">more about us > </a>
-			</div>
-
-			<div class="LBAContent LBAContent01">
-				<div id="LBACLeft">
-					<p class="LBACTitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.
-					</p>
-					<p class="LBACDes">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
-					</p>
-					<a class="LBACHeng"></a>
-					<a class="LBACBtn skinA"> Download Brochure</a>
-				</div>
-				<a id="LBACRight"></a>
-			</div>
-
-			<div class="LBAContent LBAContent02 disnone">
-				<div class="LBAC2Eve">
-					<a class="LBAC2EIcon LBAC2EIcon_blue">
-						<i class="fa fa-globe"></i>
-					</a>
-					<p class="LBAC2ETitle">To make the planet lively</p>
-					<p class="LBAC2EContent">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
-					</p>
-				</div>
-				<div class="LBAC2Eve">
-					<a class="LBAC2EIcon LBAC2EIcon_yellow">
-						<i class="fa fa-umbrella"></i>
-					</a>
-					<p class="LBAC2ETitle">To make the planet lively</p>
-					<p class="LBAC2EContent">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
-					</p>
-				</div>
-				<div class="LBAC2Eve">
-					<a class="LBAC2EIcon LBAC2EIcon_green">
-						<i class="fa fa-tree"></i>
-					</a>
-					<p class="LBAC2ETitle">To make the planet lively</p>
-					<p class="LBAC2EContent">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!--LatestPosts  -->
-	<div id="LatestPosts">
-		<div id="LatestPostsA">
-			<div id="LPLeft">
-				<div class="LPTtile">
-
-					<a class="LPTA skin_bottom"><i class="LPTA fa fa-folder skin_color"></i>Latest Posts</a>
-				</div>
-				<div class="LPCBox">
-					<a class="LPCBPic LPCBPic01"></a>
-					<div class="LPCBRight">
-						<p class="h3">Borneo orangutan</p>
-						<p class="h3_1 skin_color">Wed 20th July, 14</p>
-						<p class="h3_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel...</p>
-					</div>
-					<a class="LPCBMid skinA">+</a>
-					
-				</div>
-				<div class="LPCBox">
-					<a class="LPCBPic LPCBPic02"></a>
-					<div class="LPCBRight">
-						<p class="h3">Traditional hand weaving in the andes mountains Peru</p>
-						<p class="h3_1 skin_color">Sun 17th July, 14</p>
-						<p class="h3_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel...</p>
-					</div>
-					<a class="LPCBMid skinA">+</a>
-				</div>
-			</div>
-			<div id="LPRight">
-				<div class="LPTtile">
-					<a class="LPTA skin_bottom"><i class="LPTA fa fa-calendar skin_color"></i>  Upcoming Events</a>
-				</div>
-				<ul class="LPRArea">
-					<li class="LPRALi">
-						<a class="LPRALPic"><img src="images/LPRAL01.jpg"> </a>
-						<div class="LPRALRight">
-							<p class="h3R_1">Days</p>
-							<p class="h3R_2">Australia Day</p>
-							<p class="h3R_3"> Canberra ACT 2600, Australia</p>
-						</div>
-					</li>
-					<li class="LPRALi">
-						<a class="LPRALPic"><img src="images/LPRAL02.jpg"> </a>
-						<div class="LPRALRight">
-							<p class="h3R_1">Volunteers</p>
-							<p class="h3R_2">National Volunteer week</p>
-							<p class="h3R_3"> Parc Orsay, Batiment Sequoia</p>
-						</div>
-					</li>
-					<li class="LPRALi">
-						<a class="LPRALPic"><img src="images/LPRAL03.jpg"> </a>
-						<div class="LPRALRight">
-							<p class="h3R_1">Cleanliness</p>
-							<p class="h3R_2">Business cleanup day</p>
-							<p class="h3R_3">  Parc Orsay, Batiment Sequoia</p>
-						</div>
-					</li>
-					<li class="LPRALi">
-						<a class="LPRALPic"><img src="images/LPRAL04.jpg"> </a>
-						<div class="LPRALRight">
-							<p class="h3R_1">World</p>
-							<p class="h3R_2">World's park day</p>
-							<p class="h3R_3"> Canberra ACT 2600, Australia</p>
-						</div>
-					</li>
-				</ul>
-
-				<div class="LPRBottom">
-					<a class="LPRBHeng skin_border"></a>
-					<span class="LPRBWord">See all events</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--LatestPosts end -->
-
-	<div id="Partners">
-		<div id="PartnersA">
-			<div class="PartnersTitle">
-				<a class="PartnersTitleA skin_bottom">
-					<small>Mission</small>
-					Partners
-				</a>
-			</div>
-
-			<div id="PartnersLeft">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem.
-			</div>
-			<div id="PartnersRight">
-				<a class="PartnersRightPic"><img src="images/plogo1.png"> </a>
-				<a class="PartnersRightPic"><img src="images/plogo2.png"> </a>
-				<a class="PartnersRightPic"><img src="images/plogo3.png"> </a>
-				<a class="PartnersRightPic"><img src="images/plogo4.png"> </a>
-				<a class="PartnersRightPic"><img src="images/plogo5.png"> </a>
-			</div>
-		</div>
-
-	</div>
-
-	<div id="Projects" class="skin_bgcolorQian">
-		<div id="ProjectsA">
-			<div class="PATitle">
-				<small>Featured</small>
-				Projects
-				<a class="PATRight">All Projects</a>
-			</div>
-			<ul id="PAContent">
-				<li class="PACLi">
-					<a class="PACLPic PACLPic01">
-						<span class="PACLPicUp"></span>
-					</a>
-					<div class="PACLBottom">
-						<span class="PACLBLeft">Life of the whales</span>
-						<span class="PACLBRight skinA">Oceans</span>
-					</div>
-					<a class="PACLMid skinA">+</a>
-				</li>
-				<li class="PACLi">
-					<a class="PACLPic PACLPic02"><span class="PACLPicUp"></span></a>
-					<div class="PACLBottom">
-						<span class="PACLBLeft">We will miss them</span>
-						<span class="PACLBRight skinA">Forests</span>
-					</div>
-					<a class="PACLMid skinA">+</a>
-				</li>
-				<li class="PACLi">
-					<a class="PACLPic PACLPic03"><span class="PACLPicUp"></span></a>
-					<div class="PACLBottom">
-						<span class="PACLBLeft">How to feed the world</span>
-						<span class="PACLBRight skinA">Food</span>
-					</div>
-					<a class="PACLMid skinA">+</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="FooterTop">FooterTop</div>
-
-	<div id="FooterBottom">FooterBottom</div>
+		<a target="_blank" href="WebQQ/webQQ.html">WebQQ</a> -->
 </body>
 </html>
+
+
+
