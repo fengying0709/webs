@@ -1,5 +1,128 @@
 $(function(){
 
+
+	//转发
+	$(".DEChatTAForword").click(function(){
+
+
+		var fwName = $(this).parent().parent().parent().find(".DEName").html();
+		//alert(fwName);
+		var fwContent = $(this).parent().parent().parent().find(".DEContentTop").html();
+
+		var fwPic = $(this).parent().parent().parent().find(".DEContentDesPic").html();
+
+		var bodyheight = $("#QzoneAll").height();
+		//alert(bodyheight);
+		var thisheight = $("body").scrollTop();
+		$(".forwordMenban").css({"height":bodyheight, "top":thisheight});
+		$(".forwordMenban").removeClass("disnone");
+
+
+
+		$(".forwordBtn").click(function(){
+			var stxt = $(".forwordTxtArea").val();
+
+			var fwhtml = '';
+			fwhtml += '';
+			fwhtml += '			<div class="DECForword">';
+			fwhtml += '				<a class="DECForwordPic">'+fwPic+'</a>';
+			fwhtml += '				<div class="DECForwordDes">';
+			fwhtml += '					<span class="DECForwordName">'+fwName+'</span>';
+			fwhtml += '					<p class="DECForwordContent">';
+			fwhtml += '						:'+ fwContent;
+			fwhtml += '					</p>';
+			fwhtml += '				</div>';
+										
+			fwhtml += '			</div>';
+
+			addShuoshuo(stxt,fwhtml);
+
+			$(".forwordTxtArea").val("");
+			$(".forwordMenban").addClass("disnone");
+
+			$("html,body").animate({scrollTop:"100px"},10);
+		});
+
+
+
+
+
+
+
+		//关闭
+		$(".forwordClose").click(function(){
+			$(".forwordMenban").addClass("disnone");
+		});
+	});
+
+
+	//发表说说
+	$(".QAMSBottomBtnShuoshuo").click(function(){
+		var stxt = $(this).parent().parent().find(".QAMTxtA").val();
+
+		if( stxt == "")
+		{
+			alert("请输入说说的内容！");
+			return false;
+		}
+		else{
+			addShuoshuo(stxt,"");
+			$(this).parent().parent().find(".QAMTxtA").val("");
+		}
+		
+	});
+
+
+	//我的主页
+	$(".TNavMain").hover(function(){
+		$(this).find(".TNavLiUp").stop();
+		$(this).css("background-color"," #FFF");
+		$(this).find(".TNavSpan").css("color","#404040");
+		$(this).find(".DATIconA12").css("background-position","-790px -25px");
+		$(this).find(".TNTI").removeClass("TNavTipIcon");
+		$(this).find(".TNTI").addClass("TNavTipIconhover");
+		//$(this).find(".TNavLiUp").removeClass("disnone");
+		//$(this).find(".TNavLiUp").animate({"height":"0"},10)
+		$(this).find(".TNavLiUp").removeClass("disnone");
+		$(this).find(".TNavLiUp").animate({"height":"233px"},1000);
+	},function(){
+		$(this).css("background-color"," ");
+		$(this).find(".TNavSpan").css("color","");
+		$(this).find(".DATIconA12").css("background-position","");
+		
+		$(this).find(".TNTI").removeClass("TNavTipIconhover");
+		$(this).find(".TNTI").addClass("TNavTipIcon");
+		$(this).find(".TNavLiUp").animate({"height":"0"},100);
+		$(this).find(".TNavLiUp").addClass("disnone");
+		
+	});
+
+
+
+
+	//朋友
+	$(".TNavFriend").hover(function(){
+		$(this).find(".TNavLiUp").stop();
+		$(this).css("background-color"," #FFF");
+		$(this).find(".TNavSpan").css("color","#404040");
+		$(this).find(".DATIconA13").css("background-position","-790px 0px");
+		$(this).find(".TNTI").removeClass("TNavTipIcon");
+		$(this).find(".TNTI").addClass("TNavTipIconhover");
+		//$(this).find(".TNavLiUp").removeClass("disnone");
+		//$(this).find(".TNavLiUp").animate({"height":"0"},10)
+		$(this).find(".TNavLiUp").removeClass("disnone");
+		$(this).find(".TNavLiUp").animate({"height":"312px"},1000);
+	},function(){
+		$(this).css("background-color"," ");
+		$(this).find(".TNavSpan").css("color","");
+		$(this).find(".DATIconA13").css("background-position","");
+		
+		$(this).find(".TNTI").removeClass("TNavTipIconhover");
+		$(this).find(".TNTI").addClass("TNavTipIcon");
+		$(this).find(".TNavLiUp").animate({"height":"0"},100);
+		$(this).find(".TNavLiUp").addClass("disnone");
+		
+	});
 	//门板关闭
 	
 
@@ -38,7 +161,8 @@ $(function(){
 	});
 
 	//评论
-	$(".DECContentBottomBtn").click(function(){
+	$(document).on("click",".DECContentBottomBtn",function(){
+	//$(".DECContentBottomBtn").click(function(){
 		var ct = new Date();
 		var hour = ct.getHours();
 		var minute = ct.getMinutes();
@@ -70,15 +194,15 @@ $(function(){
 		$(this).parent().parent().find(".DECCtxt").val("");
 
 
-		var commentNum = $(this).parent().parent().parent().find(".DEChatTACNum").html();
+		var commentNum = $(this).parent().parent().parent().find(".DEChatTACNumchat").html();
 		if(commentNum == "0"){
-			$(this).parent().parent().parent().find(".DEChatTACNum").parent().removeClass("disnone");
+			$(this).parent().parent().parent().find(".DEChatTACNumchat").parent().removeClass("disnone");
 		}
 
 		//评论数字变化
-		var commentNum = $(this).parent().parent().parent().find(".DEChatTACNum").html();
+		var commentNum = $(this).parent().parent().parent().find(".DEChatTACNumchat").html();
 		commentNum++;
-		$(this).parent().parent().parent().find(".DEChatTACNum").html(commentNum);
+		$(this).parent().parent().parent().find(".DEChatTACNumchat").html(commentNum);
 
 
 
@@ -202,18 +326,19 @@ $(function(){
 
 
 	//赞和收藏
-	$(".DEChatTACancelZan").click(function(){
+	$(document).on("click",".DEChatTACancelZan",function(){
+	//$(".DEChatTACancelZan").click(function(){
 		$(this).parent().next().removeClass("disnone");
 		var isclick = $(this).attr("isclick");
 		if( isclick == "no"){
 			//var htmlword = $(this).find(".DEChatTAC").html();
 			$(this).find(".DEChatTAC:first").html("取消赞");
-			var zanNum = $(this).find(".DEChatTACNum").html();
+			var zanNum = $(this).find(".DEChatTACNumzan").html();
 			if ( zanNum == "0"){
-				$(this).find(".DEChatTACNum").parent().removeClass("disnone");
+				$(this).find(".DEChatTACNumzan").parent().removeClass("disnone");
 			}
 			zanNum++;
-			$(this).find(".DEChatTACNum").html(zanNum);
+			$(this).find(".DEChatTACNumzan").html(zanNum);
 			$(this).attr("isclick","yes");
 			$(this).parent().next().find(".DECLikeMyHeader").css("display","block");
 			
@@ -228,11 +353,11 @@ $(function(){
 				$(this).parent().next().addClass("disnone");
 			}
 			$(this).find(".DEChatTAC:first").html("赞");
-			var zanNum = $(this).find(".DEChatTACNum").html();
+			var zanNum = $(this).find(".DEChatTACNumzan").html();
 			zanNum--;
-			$(this).find(".DEChatTACNum").html(zanNum);
+			$(this).find(".DEChatTACNumzan").html(zanNum);
 			if ( zanNum == "0"){
-				$(this).find(".DEChatTACNum").parent().addClass("disnone");
+				$(this).find(".DEChatTACNumzan").parent().addClass("disnone");
 			}
 			
 			$(this).attr("isclick","no");
@@ -241,7 +366,8 @@ $(function(){
 		
 		
 	});
-	$(".DEChatTACancelCollect").click(function(){
+	$(document).on("click",".DEChatTACancelCollect",function(){
+	//$(".DEChatTACancelCollect").click(function(){
 		var isclick = $(this).attr("isclick");
 		if( isclick == "no"){
 			//var htmlword = $(this).find(".DEChatTAC").html();
@@ -260,7 +386,21 @@ $(function(){
 	});
 
 	//个人动态评论框变化
-	$(".DECCtxt").click(function(){
+	$(document).on("click",".DEChatTAChat",function(){
+	//$(".DECCtxt").click(function(){
+		$(this).parent().parent().parent().find(".DECContentIcon").hide();
+		$(this).parent().parent().parent().find(".DECCtxt").css({
+			"width":"512px",
+			"height":"62px"
+		});
+		//$(".DECContentBottom").show();
+		$(this).parent().parent().parent().find(".DECContentBottom").show();
+		return false;
+	});
+
+
+	$(document).on("click",".DECCtxt",function(){
+	//$(".DECCtxt").click(function(){
 		$(this).next().hide();
 		$(this).css({
 			"width":"512px",
@@ -270,7 +410,8 @@ $(function(){
 		$(this).next().next().show();
 		return false;
 	});
-	$(".DECContentIcon").click(function(){
+	$(document).on("click",".DECContentIcon",function(){
+	//$(".DECContentIcon").click(function(){
 		$(this).parent().find(".DECContentIcon").hide();
 		$(this).parent().find(".DECCtxt").css({
 			"width":"512px",
@@ -280,7 +421,8 @@ $(function(){
 		$(this).parent().find(".DECContentBottom").show();
 		return false;
 	});
-	$(".DECContentBottom").click(function(){
+	$(document).on("click",".DECContentBottom",function(){
+	//$(".DECContentBottom").click(function(){
 		$(this).parent().find(".DECContentIcon").hide();
 		$(this).parent().find(".DECCtxt").css({
 			"width":"512px",
@@ -301,4 +443,115 @@ $(function(){
 });
 
 //说说发表下拉框
+ function addShuoshuo(txtss,fwhtml){
+ 	var ct = new Date();
+		var hour = ct.getHours();
+		var minute = ct.getMinutes();
+		var h1=Math.floor( ( hour % 100 ) /10 );
+		var h2= hour % 10;
+		var mi1=Math.floor( ( minute % 100 ) /10 );
+		var mi2= minute % 10;
+		var txtTime = h1 + '' + h2 + ':' + mi1 + '' + mi2 ;
 
+
+ 	var htmlShuoshuo ='';
+
+ 	htmlShuoshuo += '';
+
+ 	htmlShuoshuo += '	<div class="DynamicEve">';
+	htmlShuoshuo += '		<a class="DEHeader"><img src="images/MyHeader.jpg"> </a>';
+	htmlShuoshuo += '		<div class="DEInfo">';
+	htmlShuoshuo += '			<div class="DEInfoTop">';
+	htmlShuoshuo += '				<div class="DEName">Van</div>';
+	htmlShuoshuo += '				<div class="DELevel">';
+	htmlShuoshuo += '					<div class="QzoneLevel">';
+	htmlShuoshuo += '						<i class="p4">';
+	htmlShuoshuo += '							<span class="n1 d7"></span>';
+	htmlShuoshuo += '							<span class="n2 d4"></span>';
+	htmlShuoshuo += '						</i>';
+	htmlShuoshuo += '					</div>';
+	htmlShuoshuo += '				</div>';
+		
+	htmlShuoshuo += '			</div>';
+	htmlShuoshuo += '			<div class="DEInfoBottom">';
+	htmlShuoshuo += '				<span>'+ txtTime+'</span>';
+	/*htmlShuoshuo += '				<a>苏州市昆山市</a>';
+	htmlShuoshuo += '				<span>来自</span>';
+	htmlShuoshuo += '				<a>小米</a>';*/
+	htmlShuoshuo += '				<i class="DATIconA DATIconA03"></i>';
+	htmlShuoshuo += '				<a>浏览(0)</a>';
+	htmlShuoshuo += '			</div>';
+	htmlShuoshuo += '		</div>';
+	htmlShuoshuo += '		<div class="DEContent">';
+	htmlShuoshuo += '			<div class="DEContentTop">';
+	htmlShuoshuo += 				txtss;
+	htmlShuoshuo += '			</div>';
+	htmlShuoshuo += '			<div class="DEContentDes">'+fwhtml+'</div>';
+	htmlShuoshuo += '		</div>';
+	htmlShuoshuo += '		<div class="DEChat">';
+	htmlShuoshuo += '			<div class="DECTop">';
+	htmlShuoshuo += '				<div class="DEChatTA DEChatTAChat">';
+	htmlShuoshuo += '					<i class="DATIconA DATIconA04"></i>';
+	htmlShuoshuo += '					<span class="DEChatTAC">评论</span>';
+	htmlShuoshuo += '					<span class="DEChatTAC disnone">(<i class="DEChatTACNumchat">0</i>)</span>';
+	htmlShuoshuo += '				</div>';
+	htmlShuoshuo += '				<span class="DECTopLine"></span>';
+	htmlShuoshuo += '				<div class="DEChatTA DEChatTAForword">';
+	htmlShuoshuo += '					<i class="DATIconA DATIconA05"></i>';
+	htmlShuoshuo += '					<span class="DEChatTAC">转发</span>';
+	htmlShuoshuo += '				</div>';
+	htmlShuoshuo += '				<span class="DECTopLine"></span>';
+	htmlShuoshuo += '				<div isclick="no" class="DEChatTA DEChatTACancelZan">';
+	htmlShuoshuo += '					<i class="DATIconA DATIconA06"></i>';
+	htmlShuoshuo += '					<span class="DEChatTAC">赞</span>';
+	htmlShuoshuo += '					<span class="DEChatTAC disnone">(<i class="DEChatTACNumzan">0</i>)</span>';
+	htmlShuoshuo += '				</div>';
+	htmlShuoshuo += '				<span class="DECTopLine"></span>';
+	htmlShuoshuo += '				<div isclick="no" class="DEChatTA DEChatTACancelCollect">';
+	htmlShuoshuo += '					<i class="DATIconA DATIconA07"></i>';
+	htmlShuoshuo += '					<span class="DEChatTAC">收藏</span>';
+	htmlShuoshuo += '				</div>';
+	htmlShuoshuo += '				<span class="DECTopLine"></span>';
+	htmlShuoshuo += '				<div class="DEChatTA DEChatTASpec">';
+	htmlShuoshuo += '					<i class="DATIconA DATIconA08"></i>';
+	htmlShuoshuo += '				</div>';
+									
+	htmlShuoshuo += '			</div>';
+
+	htmlShuoshuo += '			<div class="DECLike disnone">';
+	htmlShuoshuo += '				<div class="DECLBtn">';
+	htmlShuoshuo += '					<i class="DATIconA DATIconA09"></i>';
+	htmlShuoshuo += '				</div>';
+	/*htmlShuoshuo += '				<a class="DECLikeHeader"><img src="images/header01.jpg"> </a>';*/
+	htmlShuoshuo += '				<a ishide="no" class="DECLikeMyHeader"><img src="images/MyHeader.jpg"> </a>';
+	htmlShuoshuo += '			</div>';
+
+
+
+	htmlShuoshuo += '			<!-- 评论区 -->';
+	htmlShuoshuo += '			<div class="DEComment">';
+
+									
+	htmlShuoshuo += '			</div>';
+	htmlShuoshuo += '			<!-- 评论区 end -->';
+
+
+	htmlShuoshuo += '			<div class="DECContent">';
+	htmlShuoshuo += '				<textarea class="DECCtxt"  placeholder="我也说一句"></textarea>';
+	htmlShuoshuo += '				<div class="DECContentIcon"> ';
+	htmlShuoshuo += '					<i class="DECCIcon"></i>';
+	htmlShuoshuo += '				</div>';
+
+	htmlShuoshuo += '				<div class="DECContentBottom">';
+	htmlShuoshuo += '					<i class="QAMSBottomIconA QAMSBottomIconAemot DECContentBottomIcon1" hid="QAMSBottomIconAemot"></i>';
+	htmlShuoshuo += '					<i class="QAMSBottomIconA QAMSBottomIconAaite DECContentBottomIcon1" hid="QAMSBottomIconAaite"></i>';
+
+	htmlShuoshuo += '					<div class="QAMSBottomBtn DECContentBottomBtn">发表</div>';
+	htmlShuoshuo += '				</div>';
+	htmlShuoshuo += '			</div>';
+	htmlShuoshuo += '		</div>';
+	htmlShuoshuo += '	</div>';
+
+
+	$("#ShuoshuoNew").append(htmlShuoshuo);
+ }
