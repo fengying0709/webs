@@ -1,0 +1,165 @@
+#All{ width: 1349px; height: 920px; margin: auto; overflow: hidden; background-image: url("images/bg.jpg"); background-repeat: repeat;}
+#Header{ width: 1349px; height: 131px;}
+#Middle{ width: 1349px; height: 600px;  position: relative;/* overflow: hidden;*/}
+#Footer{ width: 1349px; height: 128px; margin-top: 50px;  background-image: url("images/foot_bg.png"); background-repeat: repeat-x;;}
+
+
+.disnone{ display: none;}
+
+
+
+/*Header*/
+#headerA{ width: 1200px; height: 131px; background-image: url("images/header_bg.png"); margin: auto; position: relative; z-index: 9999;}
+#HLogo{ width: 132px; height: 42px; display: block; background-image: url("images/logo.png"); left: 140px; position: absolute; top: 40px;}
+#HMenu{ width: 500px; height: 44px; position: absolute; top: 40px; left: 310px; position: relative;}
+#HRight{ width: 200px; height: 44px; position: absolute; top: 40px; left: 930px;}
+#HRight a,span{ font-size: 11px; line-height: 44px; color: #999; font-weight: bold;}
+#HRight a{cursor: pointer;}
+.HMenuLi{  padding: 17px 0; float: left; cursor: pointer;}
+.HMenuLiA{ width: 70px; height: 10px; display: block; background-image: url("images/menu_bg.png"); color: #999; font-size: 14px; background-repeat: no-repeat;}
+.HMenuLiA01{ background-position: 0 0;}
+.HMenuLiA02{ background-position: 0 -20px;}
+.HMenuLiA03{ background-position: 0 -40px;}
+.HMenuLiA04{ background-position: 0 -60px;}
+.HMenuLiA05{ background-position: 0 -80px;}
+.HMenuLiA01:hover{ background-position: -81px 0;}
+.HMenuLiA02:hover{ background-position: -81px -20px;}
+.HMenuLiA03:hover{ background-position: -81px -40px;}
+.HMenuLiA04:hover{ background-position: -81px -60px;}
+.HMenuLiA05:hover{ background-position: -81px -80px;}
+.HMenuLiTip01{width: 360px; height: 20px; padding: 30px 0 10px 40px; position: absolute; background-image: url("images/gnb_01_bg.png"); background-repeat: no-repeat; left: -40px; top: 30px;}
+.HMenuLiTip02{width: 550px; height: 20px; padding: 30px 0 10px 40px; position: absolute; background-image: url("images/gnb_02_bg.png"); background-repeat: no-repeat; left: -40px; top: 30px;}
+.HMNav11{ width: 60px; height: 10px; background-image: url("images/gnb_menu_depth01.png"); margin-right: 20px; float: left;}
+.HMNav12{ width: 60px; height: 10px; background-image: url("images/gnb_menu_depth01.png"); background-position: 0 -35px; margin-right: 10px;float: left;}
+.HMNav11:hover{background-position: -140px 0;}
+.HMNav12:hover{background-position: -140px -35px;}
+
+
+.HMNav21{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); margin-right: 20px; float: left;}
+.HMNav22{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: 0 -35px; margin-right: 16px; float: left;}
+.HMNav23{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: 0 -70px; margin-right: 16px; float: left;}
+.HMNav24{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: 0 -105px; margin-right: 16px; float: left;}
+.HMNav25{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: 0 -140px; margin-right: 16px; float: left;}
+.HMNav26{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: 0 -175px; margin-right: 16px; float: left;}
+.HMNav27{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: 0 -210px; margin-right: 16px; float: left;}
+.HMNav21:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px 0; margin-right: 20px; float: left;}
+.HMNav22:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px -35px; margin-right: 16px; float: left;}
+.HMNav23:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px -70px; margin-right: 16px; float: left;}
+.HMNav24:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px -105px; margin-right: 16px; float: left;}
+.HMNav25:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px -140px; margin-right: 16px; float: left;}
+.HMNav26:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px -175px; margin-right: 16px; float: left;}
+.HMNav27:hover{width: 50px; height: 10px; background-image: url("images/gnb_menu_depth02.png"); background-position: -142px -210px; margin-right: 16px; float: left;}
+.HMNav31{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth03.png"); background-position: 0 0; margin-right: 20px; float: left;}
+.HMNav32{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth03.png"); background-position: 0 -35px; margin-right: 20px; float: left;}
+.HMNav33{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth03.png"); background-position: 0 -70px; margin-right: 20px; float: left;}
+.HMNav34{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth03.png"); background-position: 0 -105px; margin-right: 20px; float: left;}
+.HMNav35{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth03.png"); background-position: 0 -140px; margin-right: 20px; float: left;}
+.HMNav31:hover{width: 30px; height: 10px; background-image: url("images/gnb_menu_depth03.png"); background-position: -140px 0; margin-right: 20px; float: left;}
+.HMNav32:hover{width: 30px; height: 10px; background-image: url("images/gnb_menu_depth03.png"); background-position: -140px -35px; margin-right: 20px; float: left;}
+.HMNav33:hover{width: 30px; height: 10px; background-image: url("images/gnb_menu_depth03.png"); background-position: -140px -70px; margin-right: 20px; float: left;}
+.HMNav34:hover{width: 30px; height: 10px; background-image: url("images/gnb_menu_depth03.png"); background-position: -140px -105px; margin-right: 20px; float: left;}
+.HMNav35:hover{width: 30px; height: 10px; background-image: url("images/gnb_menu_depth03.png"); background-position: -140px -140px; margin-right: 20px; float: left;}
+.HMNav41{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth04.png"); background-position: 0 0; margin-right: 20px; float: left;}
+.HMNav41:hover{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth04.png"); background-position: -140px 0; margin-right: 20px; float: left;}
+.HMNav51{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: 0 0; margin-right: 20px; float: left;}
+.HMNav52{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: 0 -35px; margin-right: 20px; float: left;}
+.HMNav53{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: 0 -70px; margin-right: 20px; float: left;}
+.HMNav54{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: 0 -105px; margin-right: 20px; float: left;}
+.HMNav55{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: 0 -140px; margin-right: 20px; float: left;}
+.HMNav51:hover{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: -140px 0; margin-right: 20px; float: left;}
+.HMNav52:hover{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: -140px -35px; margin-right: 20px; float: left;}
+.HMNav53:hover{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: -140px -70px; margin-right: 20px; float: left;}
+.HMNav54:hover{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: -140px -105px; margin-right: 20px; float: left;}
+.HMNav55:hover{ width: 30px; height: 10px;  background-image: url("images/gnb_menu_depth05.png"); background-position: -140px -140px; margin-right: 20px; float: left;}
+
+
+
+
+/*切换按钮*/
+.allow{ width: 40px; height: 59px; background-image: url("images/allow.png"); position: absolute; left: 110px; top:250px; cursor: pointer; display: none;}
+.next{ width: 40px; height: 59px; background-image: url("images/next.png"); position: absolute; left: 1220px; top:250px; cursor: pointer;}
+
+
+
+
+
+/*Middle*/
+#MiddleA{ width: 980px; height: 600px; margin: auto; overflow: hidden;}
+
+.MiddleA01{ width: 980px; height: 600px; margin: auto; position: absolute;}
+.MiddleA02{ width: 980px; height: 600px; margin: auto; position: absolute; left: 1400px;}
+.MiddleA03{ width: 931px; height: 600px; margin: auto; position: absolute; left: 1400px;}
+.MiddleA04{ width: 931px; height: 600px; margin: auto; position: absolute; left: 1400px;} 
+
+
+
+.slid10{ width: 980px; height: 556px; background-image: url("images/slide01_bg.png"); z-index: 1;}
+.slid11{ width: 980px; height: 295px; display: block; position: absolute; top: -131px; background-image: url("images/slide11.png"); z-index: 5;}
+.slid12{ width: 980px; height: 171px; display: block; position: absolute; top: 231px; background-image: url("images/slide12.png"); z-index: 5;}
+.slid13{ width: 980px; height: 350px; display: block; position: absolute; top: 330px; background-image: url("images/slide13.png"); z-index: 5;}
+.slid14{ width: 980px; height: 423px; display: block; background-image: url("images/slide14.png"); background-position: 0 150px; background-repeat: no-repeat;}
+
+
+
+.slid20{ width: 980px; height: 556px; background-image: url("images/slide02_bg.png"); background-repeat: no-repeat; z-index: 1; background-position: 0 -30px;}
+.slid21{ width: 980px; height: 395px; display: block; position: absolute; top: -131px; background-image: url("images/slide21.png"); z-index: 5; background-repeat: no-repeat;}
+.slid22{ width: 980px; height: 300px; display: block; position: absolute; top: 290px; left: 1400px; background-image: url("images/slide22.png"); z-index: 5; background-repeat: no-repeat;}
+.slid23{ width: 980px; height: 260px; display: block; position: absolute; top: 180px; left: 1400px; background-image: url("images/slide23.png"); z-index: 5; background-repeat: no-repeat;}
+.slid24{ width: 980px; height: 151px; display: block; position: absolute; top: 390px; left: 1400px; background-image: url("images/slide24.png"); z-index: 5; background-repeat: no-repeat;}
+.slid25{ width: 980px; height: 176px; display: block; position: absolute; top: 180px; left: 1400px; background-image: url("images/slide25.png"); z-index: 5; background-repeat: no-repeat;}
+.slidLine21{ overflow: hidden; width: 77px; /*height: 114px;*/ height: 0; top: 350px; display: block; position: absolute; background-image: url("images/slide02_line01.png"); z-index: 5;}
+.slidLine22{ overflow: hidden; width: 91px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line02.png"); top: 380px; left: 300px;}
+.slidLine23{ overflow: hidden; width: 70px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line03.png"); top: 380px; left: 600px;}
+
+.hideslidLine21{ width: 77px; height: 114px; display: block; position: absolute; top: 350px; z-index: 6; background-color: #38332D;}
+
+
+
+.slid30{ width: 980px; height: 556px; background-image: url("images/slide03_bg.png"); background-repeat: no-repeat; z-index: 1; background-position: 0 -30px;}
+.slid31{ width: 980px; height: 395px; display: block; position: absolute; top: -131px; background-image: url("images/slide31.png"); z-index: 5; background-repeat: no-repeat;}
+.slid32{ width: 980px; height: 300px; display: block; position: absolute; top: 200px; left: 1400px; background-image: url("images/slide32.png"); z-index: 5; background-repeat: no-repeat;}
+.slid33{ width: 980px; height: 260px; display: block; position: absolute; top: 350px; left: 1400px; background-image: url("images/slide33.png"); z-index: 5; background-repeat: no-repeat;}
+.slid34{ width: 980px; height: 250px; display: block; position: absolute; top: 180px; left: 1400px; background-image: url("images/slide34.png"); z-index: 5; background-repeat: no-repeat;}
+.slid35{ width: 980px; height: 306px; display: block; position: absolute; top: 220px; left: 1400px; background-image: url("images/slide35.png"); z-index: 5; background-repeat: no-repeat;}
+.slidLine31{  overflow: hidden; width: 77px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line01.png"); top: 350px;}
+.slidLine32{  overflow: hidden; width: 91px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line02.png"); top: 340px; left: 300px;}
+.slidLine33{  overflow: hidden; width: 70px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line03.png"); top: 380px; left: 600px;}
+
+
+
+.slid40{ width: 931px; height: 556px; background-image: url("images/slide04_bg.png"); background-repeat: no-repeat; z-index: 1; background-position: 0 -30px;}
+.slid41{ width: 931px; height: 395px; display: block; position: absolute; top: -131px; background-image: url("images/slide41.png"); z-index: 5; background-repeat: no-repeat;}
+.slid42{ width: 931px; height: 162px; display: block; position: absolute; top: 200px; left: 1400px; background-image: url("images/slide42.png"); z-index: 5; background-repeat: no-repeat;}
+.slid43{ width: 931px; height: 185px; display: block; position: absolute; top: 350px; left: 1400px; background-image: url("images/slide43.png"); z-index: 5; background-repeat: no-repeat;}
+.slid44{ width: 931px; height: 202px; display: block; position: absolute; top: 180px; left: 1400px; background-image: url("images/slide44.png"); z-index: 5; background-repeat: no-repeat;}
+.slid45{ width: 931px; height: 289px; display: block; position: absolute; top: 260px; left: 1400px; background-image: url("images/slide45.png"); z-index: 5; background-repeat: no-repeat;}
+.slidLine41{  overflow: hidden; width: 77px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line01.png"); top: 350px;}
+.slidLine42{  overflow: hidden; width: 91px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line02.png"); top: 320px; left: 300px;}
+.slidLine43{  overflow: hidden; width: 70px; height: 0; display: block; position: absolute; background-image: url("images/slide02_line03.png"); top: 350px; left: 620px;}
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+#FooterContent{ width: 980px; height: 128px; margin: auto;}
+#FCUp{ width: 955px; height: 40px; padding-left: 25px;}
+.f1{ width: 100px; height: 40px; display: block; background-image: url("images/f1.png"); float: left;}
+.f2{ width: 270px; height: 40px; padding-left: 20px; font-size: 11px; color: #BDBCBB; line-height: 40px; float: left; font-family: Verdana,Arial,sans-serif;}
+.f3{ width: 65px; padding-left: 30px;}
+.fr{ width: 39px; height: 11px; padding: 15px 20px; display: block; float: right;}
+.fr img{ width: 39px; height: 11px;}
+#FCBottom{ width: 980px; height: 67px; padding-top: 20px;}
+.FCBLeft{ width: 600px; height: 67px; float: left;}
+.fb-t{ width: 600px; height: 24px; float: left;}
+.fb-t-A{ width: auto; overflow: auto; height: 10px; margin:6px 0 0 20px; display: block; float: left;}
+.fb-t-A img{ height: 10px;}
+.fb-t-S{ width: 31px; height: 20px; padding-left: 20px; display: block; float: left;}
+.fb-b{ width: 600px; height: 29px; float: left;}
+.fb-b a{ height: 10px;}
+.FCBRight{ width: 200px; height: 67px; float: right; background-image: url("images/fbr.gif"); background-repeat: no-repeat;}

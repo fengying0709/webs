@@ -1,32 +1,173 @@
 $(function(){
+	//左侧固定不动
+	//获取要定位元素距离浏览器顶部的距离  
+/*	var navH = $("#QACCL3AFix").offset().top;
+	var posH = $("#QACCL3AFix").position().top;
+	var chaH = navH - posH;
+	//alert(chaH);
+	//alert(navH+"."+posH);
+	//alert(navH);
+	//滚动条事件  
+	$(window).scroll(function(){   
+	//获取滚动条的滑动距离   
+		var scroH = $(this).scrollTop();  
 
+		//滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定  
+		if(scroH >= navH){  
+			$("#QACCL3AFix").css({"top":navH,"position":"fixed"});
+			
+		}
+	}); */
+
+	//出现卡片
+	$(".DEHeader").hover(function(){
+		$(".QACard").removeClass("disnone");
+		/*var xx=$(this).offset().left；
+		var yy=$(this).offset().top;
+		alert(xx + "  " + yy);*/
+		var cheader = $(this).find("img").attr("src");
+		//alert(cheader); 
+		var cname = $(this).next().find(".DEName").html();
+
+		var cxz = $(this).parent().attr("xz");
+
+		var cloc = $(this).parent().attr("loc");
+
+		var csex = $(this).parent().attr("sex");
+
+		$(".QACard").css({
+			"top":y,
+			"left":x
+		});
+		$(".QACardAHeader").css("background-image",'url("'+ cheader +'")');
+		$(".QACardMidName").html(cname);
+		$(".QACardMidSex").html(csex);
+		$(".QACardMidXingzuo").html(cxz);
+		$(".QACardMidLocation").html(cloc);
+
+
+	},function(){
+		$(".QACard").addClass("disnone");
+	});
+
+
+	$(".DEName").hover(function(){
+		$(".QACard").removeClass("disnone");
+		/*var xx=$(this).offset().left；
+		var yy=$(this).offset().top;
+		alert(xx + "  " + yy);*/
+		
+		//var cheader = $(this).parent().parent().parent().find(".DEHeader").html();
+		var cheader = $(this).parent().parent().parent().find(".DEHeader").find("img").attr("src");
+		//alert(cheader);
+		//alert(cheader); 
+		var cname = $(this).html();
+
+		var cxz = $(this).parent().parent().attr("xz");
+
+		var cloc = $(this).parent().parent().attr("loc");
+
+		var csex = $(this).parent().parent().attr("sex");
+
+		$(".QACard").css({
+			"top":y,
+			"left":x
+		});
+
+		$(".QACardAHeader").css("background-image",'url("'+ cheader +'")');
+		//$(".QACardAHeader").html(cheader);
+		$(".QACardMidName").html(cname);
+		$(".QACardMidSex").html(csex);
+		$(".QACardMidXingzuo").html(cxz);
+		$(".QACardMidLocation").html(cloc);
+	},function(){
+		$(".QACard").addClass("disnone");
+	});
+
+
+
+	//获取鼠标的坐标
+	$(document).mousemove(function(e){
+	  //$("#test").html("X: " + e.pageX + ", Y: " + e.pageY);
+	  x = e.pageX;
+	  y = e.pageY;
+	});
+
+
+
+	//隐藏举报按钮
+	$(".DEChatTASpec").hover(function(){
+		$(this).find(".DEChatTASpecUl").removeClass("disnone");
+		$(this).find(".DEChatTASpecKong").removeClass("disnone");
+
+
+		$(".DECTASHide").click(function(){
+			$(this).parent().parent().parent().parent().parent().hide();
+		});
+
+
+		$(".DECTASJvbao").click(function(){
+			alert("举报成功！");
+		});
+
+	},function(){
+		$(this).find(".DEChatTASpecUl").addClass("disnone");
+		$(this).find(".DEChatTASpecKong").addClass("disnone");
+	});
+
+	
 
 	//转发
-	$(".DEChatTAForword").click(function(){
+	$(document).on("click",".DEChatTAForword",function(){
+	//$(".DEChatTAForword").click(function(){
 
 
-		var fwName = $(this).parent().parent().parent().find(".DEName").html();
+		//var 
+		fwName = $(this).parent().parent().parent().find(".DEName").html();
 		//alert(fwName);
-		var fwContent = $(this).parent().parent().parent().find(".DEContentTop").html();
+		//var 
+		fwContent = $(this).parent().parent().parent().find(".DEContentTop").html();
 
-		var fwPic = $(this).parent().parent().parent().find(".DEContentDesPic").html();
+		//var 
+		fwlen= $(this).parent().next().parent().find(".DEContentDes").find("a").length;
+		
 
-		var bodyheight = $("#QzoneAll").height();
+		//var 
+		fwPic = $(this).parent().parent().parent().find(".DEContentDesPic").html();
+		
+		var bodyheight = $("#QzoneAll").height() + "41px";
 		//alert(bodyheight);
 		var thisheight = $("body").scrollTop();
-		$(".forwordMenban").css({"height":bodyheight, "top":thisheight});
+		//var fwheight = thisheight + "20px";
+		//$(".forwordMenban").css({"height":bodyheight, "top":"0"});
+		//$(".forword").css({"top":thisheight});
+		$("html,body").animate({scrollTop:thisheight},10);
 		$(".forwordMenban").removeClass("disnone");
 
+		//拖动
+		$(".forword").draggable({ 
+			handle: ".forwordTitle" ,
+			containment: "parent"
+		});
 
-
-		$(".forwordBtn").click(function(){
+		/*$(".forwordBtn").click(function(){
 			var stxt = $(".forwordTxtArea").val();
+
+			if( fwPic == null){
+				var cdes = 'DECForwordDes';
+				fwPic = '';
+			}
+			else{
+				//alert("0");
+				var cdes = 'DECForwordDesPic';
+			}
+			
 
 			var fwhtml = '';
 			fwhtml += '';
 			fwhtml += '			<div class="DECForword">';
 			fwhtml += '				<a class="DECForwordPic">'+fwPic+'</a>';
-			fwhtml += '				<div class="DECForwordDes">';
+			fwhtml += '				<div class="'+cdes+'">';
 			fwhtml += '					<span class="DECForwordName">'+fwName+'</span>';
 			fwhtml += '					<p class="DECForwordContent">';
 			fwhtml += '						:'+ fwContent;
@@ -35,7 +176,12 @@ $(function(){
 										
 			fwhtml += '			</div>';
 
+
+
+
 			addShuoshuo(stxt,fwhtml);
+
+
 
 			$(".forwordTxtArea").val("");
 			$(".forwordMenban").addClass("disnone");
@@ -43,7 +189,9 @@ $(function(){
 			$("html,body").animate({scrollTop:"100px"},10);
 		});
 
-
+*/
+		//出现卡片
+		
 
 
 
@@ -54,6 +202,50 @@ $(function(){
 			$(".forwordMenban").addClass("disnone");
 		});
 	});
+
+	$(document).on("click",".forwordBtn",function(){
+	//$(".forwordBtn").click(function(){
+			var stxt = $(".forwordTxtArea").val();
+
+			if( fwPic == null){
+				var cdes = 'DECForwordDes';
+				fwPic = '';
+			}
+			else{
+				//alert("0");
+				var cdes = 'DECForwordDesPic';
+			}
+			
+
+			var fwhtml = '';
+			fwhtml += '';
+			fwhtml += '			<div class="DECForword">';
+			fwhtml += '				<a class="DECForwordPic">'+fwPic+'</a>';
+			fwhtml += '				<div class="'+cdes+'">';
+			fwhtml += '					<span class="DECForwordName">'+fwName+'</span>';
+			fwhtml += '					<p class="DECForwordContent">';
+			fwhtml += '						:'+ fwContent;
+			fwhtml += '					</p>';
+			fwhtml += '				</div>';
+										
+			fwhtml += '			</div>';
+
+
+
+			//alert(fwhtml);
+			addShuoshuo(stxt,fwhtml);
+
+
+
+			$(".forwordTxtArea").val("");
+			$(".forwordMenban").addClass("disnone");
+
+			$("html,body").animate({scrollTop:"100px"},10);
+		});
+
+
+
+
 
 
 	//发表说说
@@ -69,6 +261,8 @@ $(function(){
 			addShuoshuo(stxt,"");
 			$(this).parent().parent().find(".QAMTxtA").val("");
 		}
+		$(this).parent().hide();
+		return false;
 		
 	});
 
@@ -86,7 +280,7 @@ $(function(){
 		$(this).find(".TNavLiUp").removeClass("disnone");
 		$(this).find(".TNavLiUp").animate({"height":"233px"},1000);
 	},function(){
-		$(this).css("background-color"," ");
+		$(this).css("background-color","");
 		$(this).find(".TNavSpan").css("color","");
 		$(this).find(".DATIconA12").css("background-position","");
 		
@@ -113,7 +307,7 @@ $(function(){
 		$(this).find(".TNavLiUp").removeClass("disnone");
 		$(this).find(".TNavLiUp").animate({"height":"312px"},1000);
 	},function(){
-		$(this).css("background-color"," ");
+		$(this).css("background-color","");
 		$(this).find(".TNavSpan").css("color","");
 		$(this).find(".DATIconA13").css("background-position","");
 		
@@ -135,13 +329,15 @@ $(function(){
 		<a class="mbclose"></a>
 	</div>*/
 	$(".DEContentDesPic").click(function(){
+		var thisimg = $(this).html();
+
 		var stop = $("body").scrollTop();  
 
 		var htmlMenban = '';
 		htmlMenban+='  ';	
 		htmlMenban+=' <div class="menban"> 					';
 		htmlMenban+=' 	<div class="mbbg">					';
-		htmlMenban+=' 		<img src="images/comment2.jpg">	';
+		htmlMenban+=       thisimg							 ;
 		htmlMenban+=' 	</div>								';
 		htmlMenban+=' 	<a class="mbclose"></a>				';
 		htmlMenban+=' </div>								';
@@ -160,8 +356,118 @@ $(function(){
 		});
 	});
 
+
+	$(document).on("click",".DECForwordPic",function(){
+	//$(".DECForwordPic").click(function(){
+		var thisimg = $(this).html();
+
+		var stop = $("body").scrollTop();  
+
+		var htmlMenban = '';
+		htmlMenban+='  ';	
+		htmlMenban+=' <div class="menban"> 					';
+		htmlMenban+=' 	<div class="mbbg">					';
+		htmlMenban+=       thisimg							 ;
+		htmlMenban+=' 	</div>								';
+		htmlMenban+=' 	<a class="mbclose"></a>				';
+		htmlMenban+=' </div>								';
+
+		$("#QzoneTop").hide();
+		$("#QzoneAll").hide();
+
+		$("body").append(htmlMenban);
+
+
+		$(".mbclose").click(function(){
+			$("html,body").animate({scrollTop:stop},10);
+			$(this).parent().hide();
+			$("#QzoneTop").show();
+			$("#QzoneAll").show();
+		});
+	});
+
+	//回复的回复
+	$(document).on("click",".DATIconA10",function(){
+		$(this).parent().parent().find(".DECContentReply").show();
+		var replyName = $(this).parent().parent().find(".DECommentARightContentName").html();
+		var replyContent = "回复" + replyName;
+		//alert(replyContent);
+		$(this).parent().parent().find(".DECCtxtReply").attr("placeholder",replyContent);
+		$(this).parent().parent().find(".DECCtxtReply").attr("replyName",replyName);
+
+
+
+		return false;
+	});
+	$(document).on("click",".DATIconA10Reply",function(){
+		//alert("1");
+		$(this).parent().parent().parent().parent().parent().find(".DECContentReply").show();
+		var replyName = $(this).parent().parent().find(".DECommentARightContentNameReplyMain").html();
+		var replyContent = "回复" + replyName;
+		//alert(replyContent);
+		$(this).parent().parent().parent().parent().parent().find(".DECCtxtReply").attr("placeholder",replyContent);
+		$(this).parent().parent().parent().parent().parent().find(".DECCtxtReply").attr("replyName",replyName);
+
+
+
+
+		return false;
+	});
+	
+	$(document).on("click",".DECContentReply",function(){
+		$(this).show();
+		return false;
+	});
+
+	//回复的回复发表
+	$(document).on("click",".DECContentBottomBtnReply",function(){
+
+		var txtReply = $(this).parent().parent().find(".DECCtxtReply").val();
+		if( txtReply == "" || txtReply == null){
+			alert("请输入评论内容再评论！");
+			return false;
+		}
+		var replyPerson = $(this).parent().parent().find(".DECCtxtReply").attr("replyName");
+
+		//alert("1");
+		var htmlReplyComment ='';
+		htmlReplyComment +='					<li>																								';
+		htmlReplyComment +='						<a class="DECommentAPicReply"><img src="images/MyHeader.jpg"></a>								';
+		htmlReplyComment +='						<div class="DECommentARightReply">																';
+		htmlReplyComment +='							<p class="DECommentARightContentReply">														';
+		htmlReplyComment +='								<a class="DECommentARightContentNameReply DECommentARightContentNameReplyMain">Van</a>	';
+		htmlReplyComment +='								<span class="DECommentARightContentNameSpanReply">回复</span>							';
+		htmlReplyComment +='								<a class="DECommentARightContentNameReply">'+replyPerson+'</a>								';
+
+		htmlReplyComment +='								:'+txtReply+'																					';
+		htmlReplyComment +='							</p>																						';
+		htmlReplyComment +='							<div class="DECommentARightBottomReply">													';
+		htmlReplyComment +='								<span>12:55</span>																		';
+		htmlReplyComment +='								<i class="DATIconA DATIconA10Reply"></i>												';
+		htmlReplyComment +='							</div>																						';
+		htmlReplyComment +='						</div>																							';
+		htmlReplyComment +='					</li>																								';
+
+
+
+
+		$(this).parent().parent().parent().find(".DECommentAReplyArea").append(htmlReplyComment);
+		$(this).parent().parent().find(".DECCtxtReply").val("");
+		$(this).parent().parent().hide();
+
+		return false;
+	});
+	
+
+
 	//评论
 	$(document).on("click",".DECContentBottomBtn",function(){
+		var txtcomment = $(this).parent().parent().find(".DECCtxt").val();
+		if( txtcomment == null || txtcomment ==""){
+			alert("请输入评论内容再评论!");
+			return false;
+		}
+
 	//$(".DECContentBottomBtn").click(function(){
 		var ct = new Date();
 		var hour = ct.getHours();
@@ -172,7 +478,7 @@ $(function(){
 		var mi2= minute % 10;
 		var txtTime = h1 + '' + h2 + ':' + mi1 + '' + mi2 ;
 
-		var txtcomment = $(this).parent().parent().find(".DECCtxt").val();
+		
 		//alert(txtcomment);
 		var htmlComment = '';
 		htmlComment += '		<div class="DECommentA">                                                ';
@@ -185,8 +491,22 @@ $(function(){
 		htmlComment += '				</p>															';
 		htmlComment += '				<div class="DECommentARightBottom">								';
 		htmlComment += '					<span>' + txtTime + '</span>								';
-		htmlComment += '					<i class="DATIconA DATIconA DATIconA10"></i>				';
+		htmlComment += '					<i class="DATIconA DATIconA10"></i>							';
 		htmlComment += '				</div>															';
+		//回复的回复
+		htmlComment += '				<div class="DECommentAReply">																									';
+		htmlComment += '						<ul class="DECommentAReplyArea"></ul>																					';
+		htmlComment += '						<div class="DECContentReply">																							';
+		htmlComment += '							<textarea class="DECCtxtReply" replyName="" placeholder="我也说一句"></textarea>									';
+		htmlComment += '							<div class="DECContentBottomReply">																					';
+		htmlComment += '								<i class="QAMSBottomIconA QAMSBottomIconAemot DECContentBottomIcon1" hid="QAMSBottomIconAemot"></i>				';
+		htmlComment += '								<i class="QAMSBottomIconA QAMSBottomIconAaite DECContentBottomIcon1" hid="QAMSBottomIconAaite"></i>				';
+		htmlComment += '								<div class="QAMSBottomBtn DECContentBottomBtnReply">发表</div>													';
+		htmlComment += '							</div>																												';
+		htmlComment += '						</div>																													';
+		htmlComment += '					</div>																														';
+
+
 		htmlComment += '			</div>																';
 		htmlComment += '		</div>																	';
 
@@ -213,6 +533,9 @@ $(function(){
 			"height":""
 		});
 		$(".DECContentIcon").show();
+
+
+		return false;
 	});
 
 
@@ -246,6 +569,10 @@ $(function(){
 		return false;
 		//$(".QAMShuoshuo").css("height","");
 	});
+
+
+
+	//取消焦点
 	$("body").click(function(){
 		$(".QAMSBottom").fadeOut('3000');
 		//$(".QAMSBottom").fadeout('1000');
@@ -258,6 +585,7 @@ $(function(){
 			"height":""
 		});
 		$(".DECContentIcon").show();
+		$(".DECContentReply").hide();
 	});
 
 	//图标变化
@@ -440,25 +768,62 @@ $(function(){
 		});
 		$(".DECContentIcon").show();
 	});*/
+
+	TimeNow();
+	$(".QAWeaterDate").html(dateNow);
+
+
+
+
+
 });
 
-//说说发表下拉框
- function addShuoshuo(txtss,fwhtml){
- 	var ct = new Date();
+
+
+
+var fwName ='';
+		//alert(fwName);
+var fwContent = '';
+
+var fwlen= '';
+		
+
+var fwPic = '';
+
+var x ='';
+var y ='';
+
+
+var txtTime ='';
+
+var dateNow ='';
+
+
+//当前Time
+function TimeNow(){
+		var ct = new Date();
 		var hour = ct.getHours();
 		var minute = ct.getMinutes();
+		var month = ct.getMonth() + 1;
+		var date = ct.getDate();
 		var h1=Math.floor( ( hour % 100 ) /10 );
 		var h2= hour % 10;
 		var mi1=Math.floor( ( minute % 100 ) /10 );
 		var mi2= minute % 10;
-		var txtTime = h1 + '' + h2 + ':' + mi1 + '' + mi2 ;
+		txtTime = h1 + '' + h2 + ':' + mi1 + '' + mi2 ;
+		dateNow = month + "月"+ date+"日";
+}
 
+//说说发表下拉框
+ function addShuoshuo(txtss,fwhtml){
+ 	
+	TimeNow();
 
  	var htmlShuoshuo ='';
 
  	htmlShuoshuo += '';
 
- 	htmlShuoshuo += '	<div class="DynamicEve">';
+ 	htmlShuoshuo += '	<div xz="处女座" loc="扬州" sex="女" class="DynamicEve">';
 	htmlShuoshuo += '		<a class="DEHeader"><img src="images/MyHeader.jpg"> </a>';
 	htmlShuoshuo += '		<div class="DEInfo">';
 	htmlShuoshuo += '			<div class="DEInfoTop">';
@@ -514,6 +879,13 @@ $(function(){
 	htmlShuoshuo += '				<span class="DECTopLine"></span>';
 	htmlShuoshuo += '				<div class="DEChatTA DEChatTASpec">';
 	htmlShuoshuo += '					<i class="DATIconA DATIconA08"></i>';
+	htmlShuoshuo += '					<i class="DEChatTASpecKong"></i>';
+	htmlShuoshuo += '					<ul class="DEChatTASpecUl disnone">';
+	htmlShuoshuo += '						<li class="DECTASHide">隐藏</li>';
+	htmlShuoshuo += '						<li class="DECTASLine"></li>';
+	htmlShuoshuo += '						<li class="DECTASJvbao">举报</li>';
+	htmlShuoshuo += '					</ul>';
+
 	htmlShuoshuo += '				</div>';
 									
 	htmlShuoshuo += '			</div>';
@@ -552,6 +924,73 @@ $(function(){
 	htmlShuoshuo += '		</div>';
 	htmlShuoshuo += '	</div>';
 
+	 var ssnHtml = $("#ShuoshuoNew").html();
+	$("#ShuoshuoNew").html(htmlShuoshuo + ssnHtml);
 
-	$("#ShuoshuoNew").append(htmlShuoshuo);
+
+
+
+	$(".DEHeader").hover(function(){
+		$(".QACard").removeClass("disnone");
+		/*var xx=$(this).offset().left；
+		var yy=$(this).offset().top;
+		alert(xx + "  " + yy);*/
+		var cheader = $(this).find("img").attr("src");
+		//alert(cheader); 
+		var cname = $(this).next().find(".DEName").html();
+
+		var cxz = $(this).parent().attr("xz");
+
+		var cloc = $(this).parent().attr("loc");
+
+		var csex = $(this).parent().attr("sex");
+
+		$(".QACard").css({
+			"top":y,
+			"left":x
+		});
+		$(".QACardAHeader").css("background-image",'url("'+ cheader +'")');
+		$(".QACardMidName").html(cname);
+		$(".QACardMidSex").html(csex);
+		$(".QACardMidXingzuo").html(cxz);
+		$(".QACardMidLocation").html(cloc);
+
+
+	},function(){
+		$(".QACard").addClass("disnone");
+	});
+
+
+	$(".DEName").hover(function(){
+		$(".QACard").removeClass("disnone");
+		/*var xx=$(this).offset().left；
+		var yy=$(this).offset().top;
+		alert(xx + "  " + yy);*/
+		
+		//var cheader = $(this).parent().parent().parent().find(".DEHeader").html();
+		var cheader = $(this).parent().parent().parent().find(".DEHeader").find("img").attr("src");
+		//alert(cheader);
+		//alert(cheader); 
+		var cname = $(this).html();
+
+		var cxz = $(this).parent().parent().attr("xz");
+
+		var cloc = $(this).parent().parent().attr("loc");
+
+		var csex = $(this).parent().parent().attr("sex");
+
+		$(".QACard").css({
+			"top":y,
+			"left":x
+		});
+
+		$(".QACardAHeader").css("background-image",'url("'+ cheader +'")');
+		//$(".QACardAHeader").html(cheader);
+		$(".QACardMidName").html(cname);
+		$(".QACardMidSex").html(csex);
+		$(".QACardMidXingzuo").html(cxz);
+		$(".QACardMidLocation").html(cloc);
+	},function(){
+		$(".QACard").addClass("disnone");
+	});
  }

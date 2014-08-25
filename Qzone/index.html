@@ -2,9 +2,11 @@
 <head>
 	<title>Qzone</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui/css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
@@ -15,6 +17,29 @@
 		</div>
 		<a class="mbclose"></a>
 	</div> -->
+
+
+	<div class="QACard disnone">
+		<!-- <div id="test"></div> -->
+		<div class="QACardA">
+			<i class="QACardIcon"></i>
+			<a class="QACardAHeader"></a>
+			<div class="QACardMid">
+				<ul>
+					<li class="QACSpan QACardMidName">Van</li>
+					<li>
+						<span class="QACSpanDes QACardMidSex">女</span> 
+						<span class="QACSpanDes QACardMidXingzuo">处女座</span>
+						<span class="QACSpanDes QACardMidLocation">扬州</span>
+					</li>
+				</ul>
+			</div>
+			<div class="QACardBottom">
+				<span class="QACSpan QACardBottomChat">聊天</span>
+			</div>
+		</div>
+		
+	</div>
 
 	<!-- 转发的门板 -->
 	<div class="forwordMenban disnone">
@@ -578,12 +603,12 @@
 						</div>
 						<div class="c3">应用中心</div>
 					</div>	
-					<div class="QACCL3A">
+					<div class="QACCL3A ">
 						<!-- <h3 class="QACCL3ATitle">猜你感兴趣 </h3> -->
 						<a href="#"><img src="images/lm3_3.jpg"> </a>
 						<div class="c3">水下婚纱摄影顶尖品牌！预约送豪礼！</div>
 					</div>	
-					<div class="QACCL3A">
+					<div id="QACCL3AFix" class="QACCL3A">
 						<h3 class="QACCL3ATitle">发现生活</h3>
 						<a href="#"><img src="images/lm3_4.jpg"> </a>
 						<div class="c3">知名总统鞋，众星力捧，降价限量售卖中</div>
@@ -721,7 +746,7 @@
 
 						<div id="ShuoshuoNew"></div>
 
-						<div class="DynamicEve">
+						<div xz="处女座" loc="苏州" sex="男" class="DynamicEve">
 							<a class="DEHeader"><img src="images/mh01.jpg"> </a>
 							<div class="DEInfo">
 								<div class="DEInfoTop">
@@ -788,6 +813,13 @@
 									<span class="DECTopLine"></span>
 									<div class="DEChatTA DEChatTASpec">
 										<i class="DATIconA DATIconA08"></i>
+										<i class="DEChatTASpecKong"></i>
+										<!-- <i class="DEChatTASpecUlTip"></i> -->
+										<ul class="DEChatTASpecUl disnone">
+											<li class="DECTASHide">隐藏</li>
+											<li class="DECTASLine"></li>
+											<li class="DECTASJvbao">举报</li>
+										</ul>
 									</div>
 									
 								</div>
@@ -827,7 +859,7 @@
 						</div>
 
 
-						<div class="DynamicEve">
+						<div xz="摩羯座" loc="扬州" sex="女" class="DynamicEve">
 							<a class="DEHeader"><img src="images/header03.png"> </a>
 							<div class="DEInfo">
 								<div class="DEInfoTop">
@@ -886,6 +918,12 @@
 									<span class="DECTopLine"></span>
 									<div class="DEChatTA DEChatTASpec">
 										<i class="DATIconA DATIconA08"></i>
+										<i class="DEChatTASpecKong"></i>
+										<ul class="DEChatTASpecUl disnone">
+											<li class="DECTASHide">隐藏</li>
+											<li class="DECTASLine"></li>
+											<li class="DECTASJvbao">举报</li>
+										</ul>
 									</div>
 									
 								</div>
@@ -925,7 +963,7 @@
 						</div>
 
 
-						<div class="DynamicEve">
+						<div xz="金牛座" loc="绥化" sex="女" class="DynamicEve">
 							<a class="DEHeader"><img src="images/mh02.jpg"> </a>
 							<div class="DEInfo">
 								<div class="DEInfoTop">
@@ -981,6 +1019,14 @@
 									<span class="DECTopLine"></span>
 									<div class="DEChatTA DEChatTASpec">
 										<i class="DATIconA DATIconA08"></i>
+
+										<i class="DEChatTASpecKong"></i>
+
+										<ul class="DEChatTASpecUl disnone">
+											<li class="DECTASHide">隐藏</li>
+											<li class="DECTASLine"></li>
+											<li class="DECTASJvbao">举报</li>
+										</ul>
 									</div>
 									
 								</div>
@@ -1008,7 +1054,38 @@
 
 											<div class="DECommentARightBottom">
 												<span>12:55</span>
-												<i class="DATIconA DATIconA DATIconA10"></i>
+												<i class="DATIconA DATIconA10"></i>
+											</div>
+
+											<div class="DECommentAReply">
+												<ul class="DECommentAReplyArea">
+													<li>
+														<a class="DECommentAPicReply"><img src="images/header06.jpg"></a>
+														<div class="DECommentARightReply">
+															<p class="DECommentARightContentReply">
+																<a class="DECommentARightContentNameReply DECommentARightContentNameReplyMain">吴广兴</a>
+																<span class="DECommentARightContentNameSpanReply">回复</span>
+																<a class="DECommentARightContentNameReply">✿天天晴朗~❀</a>
+
+																:哈哈
+															</p>
+															<div class="DECommentARightBottomReply">
+																<span>12:55</span>
+																<i class="DATIconA DATIconA10Reply"></i>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<div class="DECContentReply">
+													<textarea class="DECCtxtReply"  placeholder="我也说一句"></textarea>
+
+													<div class="DECContentBottomReply">
+														<i class="QAMSBottomIconA QAMSBottomIconAemot DECContentBottomIcon1" hid="QAMSBottomIconAemot"></i>
+														<i class="QAMSBottomIconA QAMSBottomIconAaite DECContentBottomIcon1" hid="QAMSBottomIconAaite"></i>
+
+														<div class="QAMSBottomBtn DECContentBottomBtnReply">发表</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -1027,6 +1104,40 @@
 											<div class="DECommentARightBottom">
 												<span>12:55</span>
 												<i class="DATIconA DATIconA DATIconA10"></i>
+											</div>
+
+
+											<div class="DECommentAReply">
+												<ul class="DECommentAReplyArea">
+													<li>
+														<a class="DECommentAPicReply"><img src="images/header06.jpg"></a>
+														<div class="DECommentARightReply">
+															<p class="DECommentARightContentReply">
+																<a class="DECommentARightContentNameReply DECommentARightContentNameReplyMain">吴广兴</a>
+																<span class="DECommentARightContentNameSpanReply">回复</span>
+																<a class="DECommentARightContentNameReply">✿天天晴朗~❀</a>
+
+																:哈哈
+															</p>
+															<div class="DECommentARightBottomReply">
+																<span>12:55</span>
+																<i class="DATIconA DATIconA10Reply"></i>
+															</div>
+														</div>
+													</li>
+												</ul>
+
+
+												<div class="DECContentReply">
+													<textarea class="DECCtxtReply" replyName="" placeholder="我也说一句"></textarea>
+
+													<div class="DECContentBottomReply">
+														<i class="QAMSBottomIconA QAMSBottomIconAemot DECContentBottomIcon1" hid="QAMSBottomIconAemot"></i>
+														<i class="QAMSBottomIconA QAMSBottomIconAaite DECContentBottomIcon1" hid="QAMSBottomIconAaite"></i>
+
+														<div class="QAMSBottomBtn DECContentBottomBtnReply">发表</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -1061,7 +1172,9 @@
 					<div id="QACCRRCheckin"></div>
 
 					<!-- 广告 -->
-					<div id="QACCRRAdv"></div>
+					<div id="QACCRRAdv">
+						<img src="css/images/adv.jpg">
+					</div>
 
 					<!-- 谁在意我 -->
 					<div id="QACCRRCare"></div>
@@ -1070,7 +1183,10 @@
 					<div id="QACCRRBirthday"></div>
 
 					<!-- 谁看过我 -->
-					<div id="QACCRRWho"></div>
+					<div id="QACCRRWho">
+						<div id="QACCRRWhoTop"></div>
+						<ul id="QACCRRWhoUl"></ul>
+					</div>
 				</div>
 			</div>
 		</div>
